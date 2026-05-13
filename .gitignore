@@ -1,0 +1,12 @@
+# Ignore everything except knowledge-base
+*
+
+# Allow knowledge-base directory
+!knowledge-base/
+!knowledge-base/**
+
+# Allow .gitignore itself
+!.gitignore
+
+# Allow README
+!README.md

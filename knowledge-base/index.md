@@ -1,0 +1,332 @@
+# 📚 混沌动力学与保守系统 — 研究知识库
+
+> **维护说明**：本知识库用于系统整理混沌动力学领域（尤其是保守混沌系统）的精读论文笔记。
+> 每次上传论文后将自动追加条目。
+
+---
+
+## 📖 论文列表
+
+| 编号 | 论文标题 | 作者 | 年份 | 期刊/会议 | 核心主题 | 笔记链接 |
+|:---:|---------|------|:---:|----------|---------|---------|
+| 001 | Generating multicluster conservative chaotic flows from a generalized Sprott-A system | Cang S, Li Y, Kang Z, Wang Z | 2020 | Chaos, Solitons and Fractals 133 | 广义Sprott-A系统的多簇保守混沌流 | [paper_001_广义Sprott-A系统多簇保守混沌流.md](paper_001_广义Sprott-A系统多簇保守混沌流.md) |
+| 002 | Multistability Analysis of a Fractional-Order Multi-Wing Chaotic System and its Circuit Realization | Liu T, Sun B, Li P, Ma T, Ma Y | 2024 | Mobile Networks and Applications 29 | 分数阶多翼混沌系统多稳定性分析与电路实现 | [paper_002_分数阶多翼混沌系统多稳定性分析.md](paper_002_分数阶多翼混沌系统多稳定性分析.md) |
+| 003 | Parallel bi-memristor hyperchaotic map with extreme multistability | Bao H, Gu Y, Xu Q, Zhang X, Bao B | 2022 | Chaos, Solitons and Fractals 160 | 并行双忆阻器超混沌映射的极端多稳态 | [paper_003_并行双忆阻器超混沌映射极端多稳态.md](paper_003_并行双忆阻器超混沌映射极端多稳态.md) |
+| 004 | A New Hyperchaotic Map Based on Discrete Memristor and Meminductor: Dynamics Analysis, Encryption Application, and DSP Implementation | Liu X, Mou J, Zhang Y, Cao Y | 2024 | IEEE Trans. Ind. Electron. 71(5) | 离散忆阻器与忆感器5-D超混沌映射及图像加密 | [paper_004_离散忆阻器与忆感器超混沌映射.md](paper_004_离散忆阻器与忆感器超混沌映射.md) |
+| 005 | Optical encryption using a sparse-data-driven framework | Zhou Q, Zhang L, Wang X, Xu B, Xue J, Zhang Y | 2023 | Optics and Lasers in Engineering 171 | 稀疏数据驱动框架的光学加密（DL+散斑成像） | [paper_005_稀疏数据驱动框架光学加密.md](paper_005_稀疏数据驱动框架光学加密.md) |
+| 006 | An n-Dimensional Chaotic System Generation Method Using Parametric Pascal Matrix | Zhang Y, Hua Z, Bao H, Huang H, Zhou Y | 2022 | IEEE Trans. Ind. Informat. 18(12) | 基于参数帕斯卡矩阵的n维混沌系统生成方法 | [paper_006_参数帕斯卡矩阵n维混沌系统生成方法.md](paper_006_参数帕斯卡矩阵n维混沌系统生成方法.md) |
+| 007 | Discrete memristive hyperchaotic map with heterogeneous and homogeneous multistability and its applications | Zhou M, Li G, Pan H, Song X | 2025 | Chaos, Solitons and Fractals 194 | 具有异质与同质多稳态的离散忆阻超混沌映射 | [paper_007_异质同质多稳态离散忆阻超混沌映射.md](paper_007_异质同质多稳态离散忆阻超混沌映射.md) |
+| 008 | Spatiotemporal chaos in multiple dynamically coupled map lattices and its application in a novel image encryption algorithm | Tao Y, Cui W, Zhang Z | 2020 | Journal of Information Security and Applications 55 | 多重动态耦合映射格子时空混沌及随机扩散图像加密 | [paper_008_多重动态耦合映射格子时空混沌图像加密.md](paper_008_多重动态耦合映射格子时空混沌图像加密.md) |
+| 009 | Memristor-induced hyperchaos, multiscroll and extreme multistability in fractional-order HNN: Image encryption and FPGA implementation | Kong X, Yu F, Yao W, Cai S, Zhang J, Lin H | 2024 | Neural Networks 171 | 分数阶忆阻HNN超混沌多涡卷极端多稳定性及FPGA实现 | [paper_009_分数阶忆阻HNN超混沌图像加密FPGA.md](paper_009_分数阶忆阻HNN超混沌图像加密FPGA.md) |
+| 010 | Multiple face images encryption based on a new non-adjacent dynamic coupled mapping lattice | Du L, Teng L, Liu H, Lu H | 2024 | Expert Systems With Applications 238 | 非邻接动态耦合映射格子(NCMLP)多人脸图像加密 | [paper_010_非邻接动态耦合映射格子多人脸图像加密.md](paper_010_非邻接动态耦合映射格子多人脸图像加密.md) |
+| 011 | Spatiotemporal Chaos in a Sine Map Lattice With Discrete Memristor Coupling | He S, Yan B, Wu X, Wang H, Iu HHC | 2024 | IEEE Trans. Circuits Syst. I 71(3) | 离散忆阻器耦合正弦图格时空混沌（模拟+数字电路实现） | [paper_011_离散忆阻器耦合正弦图格时空混沌.md](paper_011_离散忆阻器耦合正弦图格时空混沌.md) |
+| 012 | Calculation of Lyapunov exponents in systems with impacts | de Souza SLT, Caldas IL | 2004 | Chaos, Solitons and Fractals 19 | 冲击系统Lyapunov指数计算（超越映射方法） | [paper_012_冲击系统Lyapunov指数计算.md](paper_012_冲击系统Lyapunov指数计算.md) |
+
+---
+
+## 🔬 研究方向脉络
+
+### 保守混沌系统 (Conservative Chaotic Systems)
+
+```
+Nosé-Hoover 振荡器 (1985)
+  └── Sprott-A 系统 (1994) — 最简保守混沌系统之一
+        └── 广义 Sprott-A 系统 (Cang et al., 2020) — 多簇保守混沌流
+```
+
+### 分数阶混沌系统 (Fractional-Order Chaotic Systems)
+
+```
+传统分数阶定义 (R-L, Caputo, G-L)
+  └── Conformable Fractional Derivative (CFD)
+        └── 多翼混沌系统 (Liu et al., 2024) — 多稳定性分析与电路实现
+              ├── 镜像对称多稳定性
+              ├── 状态转移现象
+              └── Multisim + DSP 硬件实现
+```
+
+### 离散忆阻器混沌系统 (Discrete Memristor Chaotic Systems)
+
+```
+离散忆阻器建模 (Bao et al., 2021)
+  └── 离散忆阻器超混沌映射
+        ├── 二维忆阻映射 (Li et al., 2021) — 安全通信应用
+        ├── 并行双忆阻器映射 (Bao et al., 2022) — 极端多稳态
+        │     ├── 平面固定点集
+        │     ├── 忆阻器初始状态依赖动力学
+        │     └── STM32 数字硬件实现
+        └── 双记忆元件映射 (Liu et al., 2024) — 离散忆阻器+离散忆感器
+              ├── 首个离散忆感器模型
+              ├── 5-D隐藏吸引子超混沌
+              ├── 6种不同类型吸引子
+              ├── 多稳态（共存吸引子）
+              ├── DNA编码图像加密
+              └── TMS320F28335 DSP实现
+```
+
+### 高维混沌系统生成方法 (High-Dimensional Chaotic System Generation)
+
+```
+传统高维混沌系统生成方法
+  ├── 级联同构混沌映射 (Wu et al., 2021)
+  ├── 反馈控制器策略 (Shen et al., 2014; Chen et al., 2018)
+  └── 正弦函数种子映射 (Natiq et al., 2018)
+        └── 参数帕斯卡矩阵方法 (Zhang et al., 2022) — 本文
+              ├── 系统化n维混沌系统生成框架
+              ├── Jacobian矩阵与状态无关
+              ├── 可生成n维Arnold Cat映射（保守系统）
+              ├── 可生成n维耗散型超混沌映射
+              ├── 更大的Lyapunov指数和相关维数
+              └── STM32F407硬件实现 + NIST测试通过
+```
+
+### 光学加密与深度学习 (Optical Encryption × Deep Learning)
+
+```
+传统光学加密 (DRPE, CGI, CGH)
+  └── DL 攻击暴露安全性漏洞 (2019-2021)
+        └── DL 辅助光学加密 (2020-2022)
+              └── 安全性过度依赖网络模型 ← 核心问题
+                    └── 稀疏数据驱动框架 (Zhou et al., 2023)
+                          ├── 稀疏化操作恢复密钥安全性
+                          ├── 双网络架构（嵌入数据生成器 + 自适应解码器）
+                          ├── 无需重训练的密钥分配机制
+                          └── 可推广至多种光学密码系统
+```
+
+### 时空混沌系统与图像加密 (Spatiotemporal Chaotic Systems)
+
+```
+CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
+  ├── OCML (Meherzi, 2009) — 单向耦合
+  ├── GNCML (Khellat, 2011) — 全局非局部耦合
+  ├── ACLML (Zhang, 2013) — Arnold耦合Logistic映射格子
+  ├── NCML (Zhang & Wang, 2014) — 非邻接耦合
+  │     └── NCMLP (Du et al., 2024) — 动态耦合系数+1D-ISAL映射 ← 010号论文
+  │           ├── 动态耦合系数T_e替代固定θ
+  │           ├── 1D-ISAL替代Logistic映射
+  │           ├── 参数范围扩展至(0,+∞)
+  │           ├── KED>7.65，KEB稳定理想值
+  │           ├── 人脸检测差异化隐私加密
+  │           ├── 3D比特级+3D像素级循环移位
+  │           ├── 3D双索引扩散
+  │           └── NPCR≈99.63%，UACI≈33.47%，IE>7.9992
+  └── MCML (Wang, 2019) — 相邻+非相邻耦合，固定参数
+        └── MDCML (Tao et al., 2020) — 动态耦合参数 ← 008号论文
+              ├── 动态耦合参数消除混沌缺陷
+              ├── KS熵密度和广度显著提升
+              ├── 随机扩散策略（非相邻像素依赖）
+              ├── 先扩散后置乱架构
+              └── 400位SHA-512密钥，NPCR≈99.61%，UACI≈33.45%
+  └── DMSML (He et al., 2024) — 离散忆阻器耦合Sine映射格子 ← 011号论文
+        ├── 首次将离散忆阻器作为耦合器引入CML
+        ├── 差分输入防发散机制（x_i(n)-x_i(n-1)）
+        ├── 3m维系统，≥m个正Lyapunov指数
+        ├── 无穷多个固定点→无穷多个共存吸引子
+        ├── 首个离散忆阻器混沌映射模拟电路（Psim）
+        ├── DSP数字电路验证（TMS320）
+        └── Knowm物理忆阻器器件验证
+```
+
+### 分数阶忆阻Hopfield神经网络 (Fractional-Order Memristive HNN)
+
+```
+整数阶忆阻HNN (2020-2022)
+  ├── Lin et al. (2020) — 多稳态忆阻器
+  ├── Yu et al. (2021) — 电磁感应HNN
+  ├── Bao et al. (2022) — 双忆阻器偏移控制
+  └── Wan et al. (2023) — 对称多涡卷
+        ↓
+分数阶忆阻HNN (2022-2024)
+  ├── Yu et al. (2022) — 6D FOMHNN
+  ├── Ding et al. (2022) — 耦合FOD忆阻器
+  └── Kong et al. (2024) — 5D FOMHNN ← 009号论文
+        ├── 两类新型分数阶忆阻器模型
+        ├── 超混沌（两正LE）+ 多涡卷（1-6涡卷）
+        ├── 极端多稳定性（初始偏移增强共存）
+        ├── "超频"现象（低阶次高复杂性）
+        ├── 高效XOR图像加密（IE=7.9995）
+        └── FPGA完整硬件实现（XC7Z020）
+```
+
+### 关键技术演进
+
+| 时期 | 发展方向 | 代表工作 |
+|------|---------|---------|
+| 1985 | Nosé-Hoover 恒温器 | Nosé-Hoover 振荡器 |
+| 1994 | 简单保守混沌流 | Sprott-A 系统 |
+| 2014 | Conformable分数阶导数定义 | Khalil et al., J. Comput. Appl. Math. |
+| 2017 | 广义 Hamilton 系统框架 | Cang et al., IJBC |
+| 2018 | 非保守系统中的保守混沌 | Cang et al., IJBC |
+| 2020 | 多簇保守混沌流拓扑 | Cang et al., CSF |
+| 2021 | 离散忆阻器超混沌映射 | Bao et al., IEEE TCAS-I |
+| 2022 | 并行双忆阻器极端多稳态 | Bao et al., CSF (本文) |
+| 2024 | 分数阶多翼混沌系统多稳定性 | Liu T et al., Mobile Netw. Appl. |
+| 2022 | 并行双忆阻器极端多稳态 | Bao H et al., CSF |
+| 2022 | 参数帕斯卡矩阵n维混沌系统 | Zhang Y et al., IEEE TII |
+| 2024 | 离散忆阻器+忆感器5-D超混沌映射 | Liu X et al., IEEE TIE |
+| 2023 | 稀疏数据驱动框架的光学加密 | Zhou Q et al., Opt. Lasers Eng. |
+| 2020 | 多重动态耦合映射格子时空混沌系统 | Tao Y et al., JISA |
+| 2024 | 分数阶忆阻HNN超混沌多涡卷FPGA实现 | Kong X et al., Neural Networks |
+| 2024 | 非邻接动态耦合映射格子多人脸图像加密 | Du L et al., ESWA |
+| 2024 | 离散忆阻器耦合正弦图格时空混沌 | He S et al., IEEE TCAS-I |
+| 2004 | 冲击系统Lyapunov指数计算（超越映射方法） | de Souza SLT, Caldas IL, CSF |
+
+### 非光滑系统Lyapunov指数计算 (Non-smooth Systems LE Calculation)
+
+```
+光滑系统LE计算 (Oseledec, 1968; Wolf, 1985)
+  ├── 连续系统：Benettin算法 (1980)
+  ├── 离散映射：QR分解法 (Eckmann-Ruelle, 1985)
+  └── 小数据集：Rosenstein算法 (1993)
+        ↓
+非光滑系统LE计算
+  ├── Müller方法 (1995)：直接处理不连续性
+  ├── Stefanski方法 (2000)：映射同步估计
+  └── de Souza方法 (2004) — 本文 012号论文
+        ├── 超越映射框架
+        ├── QR分解避免数值溢出
+        ├── 冲击振子系统
+        ├── 冲击对系统（周期激励）
+        └── 冲击对系统（混沌激励）
+```
+
+### 核心概念索引
+
+- **保守混沌**：Lyapunov 指数之和为零的混沌系统，相空间体积守恒
+- **Hamiltonian**：系统的能量函数，决定等值面几何形状
+- **多簇流 (Multicluster Flows)**：相空间中围绕多个中心分布的混沌轨迹
+- **等值面 (Isosurface)**：Hamiltonian 为常数时的三维曲面，约束系统运动范围
+- **熵分析**：近似熵、样本熵、模糊熵用于量化时间序列复杂度
+- **Conformable Fractional Derivative (CFD)**：一种简化的分数阶导数定义，形式优雅
+- **多翼混沌系统 (Multi-Wing Chaotic System)**：能产生多翼形状吸引子的混沌系统
+- **多稳定性 (Multistability)**：同一参数下不同初始条件产生多种共存吸引子的现象
+- **Adomian分解法 (ADM)**：求解非线性微分方程的半解析数值方法
+- **状态转移 (State Transition)**：吸引子形状随时间变化的现象
+- **离散忆阻器 (Discrete Memristor)**：通过差分建模从连续忆阻器离散化得到的离散非线性元件
+- **平面固定点集 (Plane Fixed Point Set)**：无穷多个固定点构成的平面，是极端多稳态的基础
+- **极端多稳态 (Extreme Multistability)**：系统具有无穷多个共存吸引子的现象
+- **并行双忆阻器架构 (Parallel Bi-memristor Architecture)**：将两个离散忆阻器并行连接构建混沌系统的方法
+- **离散忆感器 (Discrete Meminductor)**：通过差分建模从连续忆感器离散化得到的离散非线性元件，本文首次提出
+- **隐藏吸引子 (Hidden Attractor)**：其吸引域不包含任何不稳定平衡点邻域的吸引子
+- **DNA编码加密**：利用DNA碱基编码规则对图像进行置乱和扩散的加密方法
+- **稀疏数据驱动 (Sparse-Data-Driven)**：通过稀疏化操作将密钥安全与网络安全解耦的框架设计思想
+- **散斑成像 (Speckle-based Imaging)**：利用光波经散射介质后形成的随机干涉图样进行信息编码与重建
+- **U-Net**：编码器-解码器结构的卷积神经网络，广泛用于图像分割与重建任务
+- **嵌入数据生成器 (Embedded-data Generator)**：将密钥编码为光学散斑的CNN模型
+- **自适应解码器 (Adaptive Decoder)**：从稀疏散斑重建高质量图像的CNN模型
+- **帕斯卡矩阵 (Pascal Matrix)**：由帕斯卡三角形元素构成的下三角矩阵，行列式为1，具有特殊的特征值性质
+- **参数化帕斯卡矩阵 (Parametric Pascal Matrix)**：通过参数化第一行和第一列构造的帕斯卡矩阵变体
+- **Arnold Cat映射**：一种经典的保守混沌映射，具有面积保持、行列式为1等特性
+- **Jacobian矩阵与状态无关**：系统的Jacobian矩阵不依赖于观测状态，仅由参数矩阵决定
+- **超混沌 (Hyperchaos)**：具有两个或两个以上正Lyapunov指数的混沌系统
+- **异质多稳态 (Heterogeneous Multistability)**：同一参数下不同初始条件产生不同大小和形状的吸引子共存现象
+- **同质多稳态 (Homogeneous Multistability)**：同一参数下不同初始条件产生相同大小和形状的吸引子共存现象
+- **指数-正弦型离散忆阻器 (SE-DM)**：$M(q_n) = e^{-\sin(\pi q_n)} - 1$，007论文提出的新型离散忆阻器模型
+- **SEDMM映射**：Sinusoidal-Exponential Discrete Memristive Map，三维离散忆阻超混沌映射
+- **Cube置乱**：将彩色图像重构为三维立方体进行置乱的加密技术
+- **GF(257)扩散**：基于伽罗瓦域GF(257)的图像扩散算法
+- **耦合映射格子 (CML)**：Kaneko提出的经典时空混沌系统，将空间划分为格子并在时间与空间上同时演化
+- **多重耦合映射格子 (MCML)**：Wang提出的改进CML，引入非相邻格子耦合增强扩散效果
+- **多重动态耦合映射格子 (MDCML)**：Tao等提出的MCML改进版，将固定耦合参数替换为由Logistic映射驱动的动态耦合参数，消除混沌缺陷
+- **动态耦合参数**：耦合参数随时间通过混沌映射动态变化，使格子间能量扩散更均匀
+- **KS熵密度**：所有正Lyapunov指数之和除以格子总数，衡量时空混沌系统的整体混沌强度
+- **KS熵广度**：具有正LE的格子占比，衡量混沌在空间上的分布均匀性
+- **随机扩散 (Random-based Diffusion)**：每个密文像素依赖于两个不相邻的随机密文像素的扩散策略，打破传统链式扩散的相邻依赖
+- **服务序列 (Service Sequence)**：由指令序列和控制序列生成的随机访问顺序，决定扩散操作的执行路径
+- **NPCR**：像素变化率，衡量加密算法对明文微小变化的敏感程度，理想值99.6094%
+- **UACI**：统一平均变化强度，衡量密文像素值变化的平均幅度，理想值33.4635%
+- **分数阶微分 (FOD)**：整数阶微分的推广，可记录过去、现在和未来的信息，具有记忆性/遗传性
+- **Caputo分数阶导数**：常用分数阶导数定义之一，便于处理初始值问题
+- **Adomian分解法 (ADM)**：求解非线性微分方程的半解析数值方法，空间复杂度O(1)，时间复杂度O(n)
+- **分数阶忆阻器**：采用分数阶微分建模的忆阻器，具有更丰富的动力学行为
+- **FOMHNN**：Fractional-Order Memristive Hopfield Neural Network，分数阶忆阻Hopfield神经网络
+- **"超频"现象**：分数阶系统中低阶次带来更高混沌复杂性的现象
+- **多涡卷吸引子**：具有多个涡卷结构的混沌吸引子，涡卷数与不稳定平衡点数相关
+- **初始偏移增强共存**：通过改变忆阻器初始状态产生多个共存吸引子的现象
+- **NCMLP**：Non-adjacent Coupled Mapping Lattice with dynamic Parameter，非邻接动态耦合映射格子，在NCML基础上引入动态耦合系数和1D-ISAL格子映射
+- **1D-ISAL**：1D Improved Sine-Logistic map，$x_{n+1}=|\sin(10(1+20\mu)(\pi x_n(x_n+1)))|$，全参数范围混沌的一维映射
+- **动态耦合系数**：$T_e=|e^{\sin(10(1+20d)(\pi e(e+1)))}|$，由混沌映射驱动的时变耦合系数，替代固定耦合系数
+- **3D双索引扩散**：在三个维度上使用双索引序列进行像素值扩散的加密操作，增强多图像间耦合度
+- **人脸检测差异化加密**：利用人脸检测技术识别隐私区域，对隐私信息和非隐私信息采用不同加密策略的方法
+- **DMSML**：Discrete Memristor Sine Map Lattice，离散忆阻器耦合正弦映射格子，首次将离散忆阻器作为耦合器引入CML框架
+- **差分输入防发散**：使用 $x_i(n) - x_i(n-1)$ 作为离散忆阻器输入，利用差分的自我平衡特性避免累加操作导致的系统发散
+- **忆阻器耦合**：用离散忆阻器替代传统CML中的线性耦合项，实现非线性状态依赖耦合
+- **Knowm忆阻器**：一种商用物理忆阻器器件，具有明确的开关电压和电阻参数，可用于混沌电路的物理实现
+- **冲击系统 (Impact System)**：包含冲击（碰撞）事件的非光滑动力系统，轨迹在冲击瞬间不连续
+- **超越映射 (Transcendental Map)**：描述冲击系统在冲击瞬间状态变量之间关系的迭代映射，结合了冲击间运动的解析解和冲击瞬间的过渡条件
+- **牛顿冲击定律 (Newton's Impact Law)**：冲击瞬间速度反向且按恢复系数衰减的过渡条件：$\dot{x}^+ = -r\dot{x}^-$
+- **恢复系数 (Coefficient of Restitution)**：描述冲击后速度与冲击前速度之比的参数，$r \in [0,1]$
+- **冲击振子 (Impact Oscillator)**：具有单侧振幅约束的周期激励振子，在约束处发生冲击
+- **冲击对系统 (Impact-Pair System)**：质点在间隙中运动，边界可周期或混沌振动的冲击系统
+- **QR分解算法**：将雅可比矩阵乘积转换为正交矩阵与上三角矩阵乘积，避免Lyapunov指数计算中的数值溢出
+
+---
+
+## 📊 跨论文对比
+
+### 保守系统 vs 分数阶多翼系统 vs 离散忆阻器系统 vs 双记忆元件系统
+
+| 对比维度 | 001 - Cang et al. (2020) | 002 - Liu T et al. (2024) | 003 - Bao et al. (2022) | **004 - Liu X et al. (2024)** |
+|---------|-------------------------|------------------------|---------------------------|------------------------------|
+| **系统类型** | 保守混沌系统 | 耗散型分数阶混沌系统 | 离散忆阻器超混沌映射 | **离散忆阻器+忆感器超混沌映射** |
+| **数学特征** | 相空间体积守恒 | 相空间体积收缩 | 离散映射，体积收缩 | **5-D离散映射，体积收缩** |
+| **Lyapunov指数** | (+, 0, -)，和为零 | (+, 0, -)，和为负 | (+, +, 0/-) 超混沌 | **超混沌** |
+| **吸引子形态** | 多簇吸引子 | 多翼吸引子（2-4翼） | 多片/多线段超混沌 | **6种不同类型** |
+| **分数阶** | 整数阶 | q=0.9 (CFD定义) | 整数阶离散 | **整数阶离散** |
+| **多稳定性** | 多簇共存 | 镜像对称、混沌气泡 | 极端多稳态（无穷多） | **有限多稳态（共存吸引子）** |
+| **平衡点** | 有限个 | 有限个 | 平面固定点集（无穷多） | **无固定点（隐藏吸引子）** |
+| **硬件实现** | 未涉及 | Multisim + DSP | STM32微控制器 | **TMS320F28335 DSP** |
+| **应用场景** | 理论分析 | 图像加密、通信 | 理论分析+硬件验证 | **图像加密+硬件验证** |
+| **期刊级别** | CSF (二区) | Mobile Netw. Appl. (三区) | CSF (二区) | **IEEE TIE (一区)** |
+
+### 研究互补性
+
+- **001号论文**提供了保守混沌系统的理论基础
+- **002号论文**拓展到分数阶领域，提供了硬件实现范例
+- **003号论文**开辟了离散忆阻器系统的新方向，首次实现极端多稳态
+- **004号论文**首次提出离散忆感器模型，构建了同时融合两种记忆元件的5-D超混沌系统，并通过图像加密和DSP实现完成了从理论到应用的闭环
+- **005号论文**开辟了光学加密×深度学习的交叉方向，通过稀疏数据驱动框架解决了DL辅助光学加密中安全性过度依赖网络模型和缺乏灵活性的两大核心问题
+- **006号论文**提出了基于参数帕斯卡矩阵的n维混沌系统生成方法，建立了系统化的高维混沌系统生成框架，可同时生成保守型(Arnold Cat)和耗散型超混沌系统，为混沌系统的设计提供了新的数学工具
+- **007号论文**提出了四种新型离散忆阻器模型，首次在同一系统中同时观察到异质多稳态和同质多稳态，发现了忆阻器周期性导致的无穷多个共存同质吸引子现象，设计了Cube+Arnold+GF257三层图像加密方案
+- **008号论文**开辟了时空混沌系统方向，通过动态耦合参数解决了MCML的混沌缺陷问题，提出了随机扩散策略打破传统链式扩散的相邻依赖模式，从耦合机制改进的角度为混沌加密系统的设计提供了新思路
+- **009号论文**首次在分数阶忆阻HNN中同时发现超混沌、多涡卷、极端多稳定性和"超频"现象，提出了无需扩散置乱的高效XOR图像加密方案，并完成了分数阶神经网络及图像加密的完整FPGA硬件实现，填补了该领域空白
+- **010号论文**提出了NCMLP模型，从动态耦合系数和格子映射两个维度改进了NCML，实现了更宽参数范围和更强混沌性能；同时创新性地引入人脸检测技术实现隐私信息的差异化加密，提出了3D比特级循环移位和3D双索引扩散的多图像加密方案，为时空混沌系统在隐私保护场景的应用提供了新思路
+- **011号论文**首次将离散忆阻器作为耦合器引入CML框架，提出了DMSML模型，通过差分输入机制解决了离散忆阻器累加发散难题；系统维度3m可扩展，具有≥m个正LE和无穷多个共存吸引子；首次实现了离散忆阻器混沌映射的模拟电路（Psim），并通过DSP和Knowm物理器件验证了物理可实现性
+- 十一篇论文共同展示了加密系统从纯数学混沌到物理光学实现、从硬件电路到深度学习驱动、从低维到高维系统生成、从异质到同质多稳态、从全局加密到隐私差异化保护、从线性耦合到忆阻器非线性耦合的完整研究图谱
+
+### 离散忆阻器系统演进对比
+
+| 对比维度 | 003 - Bao et al. (2022) 并行双忆阻器 | 004 - Liu X et al. (2024) 离散忆阻器+忆感器 | **007 - Zhou et al. (2025) 异质同质多稳态** |
+|---------|-------------------------------------|------------------------------------------|---------------------------------------------|
+| **系统类型** | 并行双忆阻器超混沌映射 | 离散忆阻器+忆感器5-D超混沌映射 | **正弦-指数型离散忆阻器3-D超混沌映射** |
+| **维度** | 2维 | 5维 | **3维** |
+| **忆阻器模型** | 双忆阻器并行 | 离散忆阻器+离散忆感器 | **指数-正弦组合型忆阻器** |
+| **多稳态类型** | 极端多稳态（无穷多） | 有限多稳态（共存吸引子） | **异质+同质多稳态共存** |
+| **同质多稳态** | 不涉及 | 不涉及 | **首次观察到无穷多个共存同质吸引子** |
+| **平衡点** | 平面固定点集（无穷多） | 无固定点（隐藏吸引子） | **无穷多个固定点** |
+| **超混沌** | 是（2个正LE） | 是（多正LE） | **是（2个正LE）** |
+| **图像加密** | 未涉及 | DNA编码加密 | **Cube+Arnold+GF257三层加密** |
+| **硬件实现** | STM32微控制器 | TMS320F28335 DSP | **TMS320F28335 DSP** |
+| **期刊级别** | CSF (二区) | IEEE TIE (一区) | **CSF (二区)** |
+
+### 离散忆阻器系统 vs 参数帕斯卡矩阵方法
+
+| 对比维度 | 003 - Bao et al. (2022) 并行双忆阻器 | 004 - Liu X et al. (2024) 离散忆阻器+忆感器 | **006 - Zhang et al. (2022) 参数帕斯卡矩阵** |
+|---------|-------------------------------------|------------------------------------------|---------------------------------------------|
+| **系统类型** | 离散忆阻器超混沌映射 | 离散忆阻器+忆感器超混沌映射 | **n维离散混沌系统（基于帕斯卡矩阵）** |
+| **数学基础** | 离散忆阻器建模 | 离散忆阻器+离散忆感器建模 | **帕斯卡矩阵理论** |
+| **维度** | 2维 | 5维 | **任意n维** |
+| **参数矩阵** | 忆阻器状态依赖 | 忆阻器+忆感器状态依赖 | **参数化帕斯卡矩阵** |
+| **Jacobian特性** | 状态依赖 | 状态依赖 | **与状态无关** |
+| **LE特性** | 超混沌(2正LE) | 超混沌(多正LE) | **超混沌(多正LE)** |
+| **Arnold Cat映射** | 不涉及 | 不涉及 | **可生成n维Arnold Cat映射** |
+| **保守性** | 耗散型 | 耗散型 | **可生成保守型(Arnold Cat)** |
+| **硬件实现** | STM32微控制器 | TMS320F28335 DSP | **STM32F407VET6** |
+| **应用场景** | 理论分析+硬件验证 | 图像加密+DSP实现 | **PRNG+安全通信+IoT** |
+| **期刊级别** | CSF (二区) | IEEE TIE (一区) | **IEEE TII (一区)** |
+
+---
+
+*最后更新：2026-05-13*
+*本次更新：新增论文012精读笔记 - 冲击系统Lyapunov指数计算（Chaos, Solitons and Fractals 2004）*
