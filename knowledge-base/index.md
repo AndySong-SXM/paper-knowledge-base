@@ -22,6 +22,7 @@
 | 011 | Spatiotemporal Chaos in a Sine Map Lattice With Discrete Memristor Coupling | He S, Yan B, Wu X, Wang H, Iu HHC | 2024 | IEEE Trans. Circuits Syst. I 71(3) | 离散忆阻器耦合正弦图格时空混沌（模拟+数字电路实现） | [paper_011_离散忆阻器耦合正弦图格时空混沌.md](paper_011_离散忆阻器耦合正弦图格时空混沌.md) |
 | 012 | Calculation of Lyapunov exponents in systems with impacts | de Souza SLT, Caldas IL | 2004 | Chaos, Solitons and Fractals 19 | 冲击系统Lyapunov指数计算（超越映射方法） | [paper_012_冲击系统Lyapunov指数计算.md](paper_012_冲击系统Lyapunov指数计算.md) |
 | 013 | Parameter identification for discrete memristive chaotic map using adaptive differential evolution algorithm | Peng Y, He S, Sun K | 2022 | Nonlinear Dynamics 107 | 自适应差分进化算法识别离散忆阻混沌映射参数 | [paper_013_ADE离散忆阻混沌映射参数识别.md](paper_013_ADE离散忆阻混沌映射参数识别.md) |
+| 014 | A construction method of N-dimensional non-degenerate discrete memristive hyperchaotic map | Huang L, Liu J, Xiang J, Zhang Z, Du X | 2022 | Chaos, Solitons and Fractals 160 | N维非退化离散忆阻超混沌映射构造方法（三角波忆阻器+种子函数） | [paper_014_N维非退化离散忆阻超混沌映射构造方法.md](paper_014_N维非退化离散忆阻超混沌映射构造方法.md) |
 
 ---
 
@@ -63,6 +64,15 @@ Nosé-Hoover 振荡器 (1985)
               ├── 多稳态（共存吸引子）
               ├── DNA编码图像加密
               └── TMS320F28335 DSP实现
+        └── N维非退化离散忆阻超混沌映射 (Huang et al., 2022) — 014号论文
+              ├── 三角波周期型离散忆阻器模型（新型）
+              ├── N-1个忆阻器串联耦合构造
+              ├── 种子函数机制（维度可调+形式多样）
+              ├── 非退化超混沌数学证明（最小LE>0）
+              ├── 超宽参数范围（$k \in [-6\times10^{10}, 6\times10^{10}]$）
+              ├── 初始增强行为+状态转移现象
+              ├── 噪声鲁棒性系统分析（首次）
+              └── TMS320F28335 DSP实现 + NIST 15项全通过
 ```
 
 ### 高维混沌系统生成方法 (High-Dimensional Chaotic System Generation)
@@ -72,13 +82,20 @@ Nosé-Hoover 振荡器 (1985)
   ├── 级联同构混沌映射 (Wu et al., 2021)
   ├── 反馈控制器策略 (Shen et al., 2014; Chen et al., 2018)
   └── 正弦函数种子映射 (Natiq et al., 2018)
-        └── 参数帕斯卡矩阵方法 (Zhang et al., 2022) — 本文
+        └── 参数帕斯卡矩阵方法 (Zhang et al., 2022) — 006号论文
               ├── 系统化n维混沌系统生成框架
               ├── Jacobian矩阵与状态无关
               ├── 可生成n维Arnold Cat映射（保守系统）
               ├── 可生成n维耗散型超混沌映射
               ├── 更大的Lyapunov指数和相关维数
               └── STM32F407硬件实现 + NIST测试通过
+        └── N-1忆阻器耦合方法 (Huang et al., 2022) — 014号论文
+              ├── 种子函数驱动的n维构造框架
+              ├── Jacobian矩阵与状态相关（忆阻器状态依赖）
+              ├── 非退化超混沌（数学证明最小LE>0）
+              ├── 超宽参数范围（$10^{10}$量级）
+              ├── 初始增强+状态转移+无限共存吸引子
+              └── TMS320F28335 DSP实现 + 噪声鲁棒性分析
 ```
 
 ### 光学加密与深度学习 (Optical Encryption × Deep Learning)
@@ -173,6 +190,7 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
 | 2024 | 离散忆阻器耦合正弦图格时空混沌 | He S et al., IEEE TCAS-I |
 | 2004 | 冲击系统Lyapunov指数计算（超越映射方法） | de Souza SLT, Caldas IL, CSF |
 | 2022 | 自适应差分进化算法识别离散忆阻混沌映射参数 | Peng Y, He S, Sun K, Nonlinear Dyn |
+| 2022 | N维非退化离散忆阻超混沌映射构造方法 | Huang L et al., CSF |
 
 ### 非光滑系统Lyapunov指数计算 (Non-smooth Systems LE Calculation)
 
@@ -332,6 +350,7 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
 - **011号论文**首次将离散忆阻器作为耦合器引入CML框架，提出了DMSML模型，通过差分输入机制解决了离散忆阻器累加发散难题；系统维度3m可扩展，具有≥m个正LE和无穷多个共存吸引子；首次实现了离散忆阻器混沌映射的模拟电路（Psim），并通过DSP和Knowm物理器件验证了物理可实现性
 - 十一篇论文共同展示了加密系统从纯数学混沌到物理光学实现、从硬件电路到深度学习驱动、从低维到高维系统生成、从异质到同质多稳态、从全局加密到隐私差异化保护、从线性耦合到忆阻器非线性耦合的完整研究图谱
 - **013号论文**首次将智能优化算法应用于离散忆阻混沌映射的参数识别，提出了自适应差分进化(ADE)算法和双目标函数（时间序列+回归映射）混合策略，解决了具有共存吸引子的复杂混沌系统参数识别难题，为离散忆阻混沌系统的同步控制和安全通信应用奠定了理论基础
+- **014号论文**提出了基于N-1个三角波忆阻器串联耦合的N维非退化离散超混沌映射构造方法，通过种子函数机制实现了维度可调和形式多样的系统构造，严格数学证明了非退化性（最小LE>0），首次系统分析了噪声对离散忆阻器混沌系统的影响，超宽参数范围（$10^{10}$量级）和初始增强/状态转移现象为密码学应用提供了良好基础
 
 ### 离散忆阻器系统演进对比
 
@@ -367,4 +386,4 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
 ---
 
 *最后更新：2026-05-14*
-*本次更新：新增论文013精读笔记 - 自适应差分进化算法识别离散忆阻混沌映射参数（Nonlinear Dynamics 2022）*
+*本次更新：新增论文014精读笔记 - N维非退化离散忆阻超混沌映射构造方法（Chaos, Solitons and Fractals 2022）*
