@@ -21,6 +21,7 @@
 | 010 | Multiple face images encryption based on a new non-adjacent dynamic coupled mapping lattice | Du L, Teng L, Liu H, Lu H | 2024 | Expert Systems With Applications 238 | 非邻接动态耦合映射格子(NCMLP)多人脸图像加密 | [paper_010_非邻接动态耦合映射格子多人脸图像加密.md](paper_010_非邻接动态耦合映射格子多人脸图像加密.md) |
 | 011 | Spatiotemporal Chaos in a Sine Map Lattice With Discrete Memristor Coupling | He S, Yan B, Wu X, Wang H, Iu HHC | 2024 | IEEE Trans. Circuits Syst. I 71(3) | 离散忆阻器耦合正弦图格时空混沌（模拟+数字电路实现） | [paper_011_离散忆阻器耦合正弦图格时空混沌.md](paper_011_离散忆阻器耦合正弦图格时空混沌.md) |
 | 012 | Calculation of Lyapunov exponents in systems with impacts | de Souza SLT, Caldas IL | 2004 | Chaos, Solitons and Fractals 19 | 冲击系统Lyapunov指数计算（超越映射方法） | [paper_012_冲击系统Lyapunov指数计算.md](paper_012_冲击系统Lyapunov指数计算.md) |
+| 013 | Parameter identification for discrete memristive chaotic map using adaptive differential evolution algorithm | Peng Y, He S, Sun K | 2022 | Nonlinear Dynamics 107 | 自适应差分进化算法识别离散忆阻混沌映射参数 | [paper_013_ADE离散忆阻混沌映射参数识别.md](paper_013_ADE离散忆阻混沌映射参数识别.md) |
 
 ---
 
@@ -171,6 +172,7 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
 | 2024 | 非邻接动态耦合映射格子多人脸图像加密 | Du L et al., ESWA |
 | 2024 | 离散忆阻器耦合正弦图格时空混沌 | He S et al., IEEE TCAS-I |
 | 2004 | 冲击系统Lyapunov指数计算（超越映射方法） | de Souza SLT, Caldas IL, CSF |
+| 2022 | 自适应差分进化算法识别离散忆阻混沌映射参数 | Peng Y, He S, Sun K, Nonlinear Dyn |
 
 ### 非光滑系统Lyapunov指数计算 (Non-smooth Systems LE Calculation)
 
@@ -189,6 +191,30 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
         ├── 冲击振子系统
         ├── 冲击对系统（周期激励）
         └── 冲击对系统（混沌激励）
+```
+
+### 混沌系统参数识别与智能优化 (Parameter Identification & Metaheuristics)
+
+```
+传统参数识别方法
+  ├── 时间序列误差法：直接比较状态变量差异
+  └── 回归映射法：比较吸引子结构相似性
+        ↓
+智能优化算法应用于混沌系统参数识别
+  ├── 连续混沌系统
+  │     ├── 差分进化(DE)算法 (Wei et al., 2017)
+  │     ├── 粒子群优化(PSO) (Peng et al., 2018)
+  │     ├── JAYA算法 (Chen et al., 2018)
+  │     ├── 人工蜂群(ABC)算法
+  │     └── 鸟群算法(BSA)
+  └── 离散混沌系统
+        ├── 分数阶离散混沌系统 (Peng et al., 2019)
+        └── 离散忆阻混沌映射 ⭐ 013号论文 (Peng et al., 2022)
+              ├── 自适应差分进化(ADE)算法
+              ├── 双目标函数策略（时间序列+回归映射）
+              ├── 全局搜索+局部搜索混合机制
+              ├── 自适应参数调整(CR, F)
+              └── 抗噪声性能优化(SNR≥15dB)
 ```
 
 ### 核心概念索引
@@ -260,6 +286,17 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
 - **冲击振子 (Impact Oscillator)**：具有单侧振幅约束的周期激励振子，在约束处发生冲击
 - **冲击对系统 (Impact-Pair System)**：质点在间隙中运动，边界可周期或混沌振动的冲击系统
 - **QR分解算法**：将雅可比矩阵乘积转换为正交矩阵与上三角矩阵乘积，避免Lyapunov指数计算中的数值溢出
+- **参数识别 (Parameter Identification)**：通过优化算法使识别系统参数匹配原始系统参数的过程
+- **差分进化算法 (DE)**：基于种群智能的元启发式优化算法，包含初始化、变异、交叉、选择四个步骤
+- **自适应差分进化 (ADE)**：改进的DE算法，自适应调整交叉概率CR和变异因子F
+- **时间序列法 (Time Sequences)**：基于原始系统与识别系统生成的时间序列误差进行参数识别
+- **回归映射法 (Return Maps)**：基于原始系统与识别系统混沌吸引子结构相似性进行参数识别
+- **共存吸引子 (Coexisting Attractors)**：同一参数下不同初始条件产生不同吸引子的现象
+- **局部最优解 (Local Optimum)**：优化算法陷入的非全局最优解
+- **全局搜索 (Global Search)**：在参数空间大范围搜索最优解
+- **局部搜索 (Local Search)**：在最优解附近小范围精细搜索
+- **加性高斯白噪声 (AWGN)**：均值为零、功率谱密度均匀分布的随机噪声
+- **信噪比 (SNR)**：信号功率与噪声功率的比值，衡量抗噪声性能指标
 
 ---
 
@@ -294,6 +331,7 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
 - **010号论文**提出了NCMLP模型，从动态耦合系数和格子映射两个维度改进了NCML，实现了更宽参数范围和更强混沌性能；同时创新性地引入人脸检测技术实现隐私信息的差异化加密，提出了3D比特级循环移位和3D双索引扩散的多图像加密方案，为时空混沌系统在隐私保护场景的应用提供了新思路
 - **011号论文**首次将离散忆阻器作为耦合器引入CML框架，提出了DMSML模型，通过差分输入机制解决了离散忆阻器累加发散难题；系统维度3m可扩展，具有≥m个正LE和无穷多个共存吸引子；首次实现了离散忆阻器混沌映射的模拟电路（Psim），并通过DSP和Knowm物理器件验证了物理可实现性
 - 十一篇论文共同展示了加密系统从纯数学混沌到物理光学实现、从硬件电路到深度学习驱动、从低维到高维系统生成、从异质到同质多稳态、从全局加密到隐私差异化保护、从线性耦合到忆阻器非线性耦合的完整研究图谱
+- **013号论文**首次将智能优化算法应用于离散忆阻混沌映射的参数识别，提出了自适应差分进化(ADE)算法和双目标函数（时间序列+回归映射）混合策略，解决了具有共存吸引子的复杂混沌系统参数识别难题，为离散忆阻混沌系统的同步控制和安全通信应用奠定了理论基础
 
 ### 离散忆阻器系统演进对比
 
@@ -328,5 +366,5 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
 
 ---
 
-*最后更新：2026-05-13*
-*本次更新：新增论文012精读笔记 - 冲击系统Lyapunov指数计算（Chaos, Solitons and Fractals 2004）*
+*最后更新：2026-05-14*
+*本次更新：新增论文013精读笔记 - 自适应差分进化算法识别离散忆阻混沌映射参数（Nonlinear Dynamics 2022）*
