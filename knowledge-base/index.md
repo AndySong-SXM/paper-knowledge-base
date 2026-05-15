@@ -23,6 +23,7 @@
 | 012 | Calculation of Lyapunov exponents in systems with impacts | de Souza SLT, Caldas IL | 2004 | Chaos, Solitons and Fractals 19 | 冲击系统Lyapunov指数计算（超越映射方法） | [paper_012_冲击系统Lyapunov指数计算.md](paper_012_冲击系统Lyapunov指数计算.md) |
 | 013 | Parameter identification for discrete memristive chaotic map using adaptive differential evolution algorithm | Peng Y, He S, Sun K | 2022 | Nonlinear Dynamics 107 | 自适应差分进化算法识别离散忆阻混沌映射参数 | [paper_013_ADE离散忆阻混沌映射参数识别.md](paper_013_ADE离散忆阻混沌映射参数识别.md) |
 | 014 | A construction method of N-dimensional non-degenerate discrete memristive hyperchaotic map | Huang L, Liu J, Xiang J, Zhang Z, Du X | 2022 | Chaos, Solitons and Fractals 160 | N维非退化离散忆阻超混沌映射构造方法（三角波忆阻器+种子函数） | [paper_014_N维非退化离散忆阻超混沌映射构造方法.md](paper_014_N维非退化离散忆阻超混沌映射构造方法.md) |
+| 015 | Complex chaotic attractor via fractal process with parabolic map and triangular map | Yan D, Shi H, Wu J, Ji'e M, Wang L, Duan S | 2023 | Eur. Phys. J. Plus 138 | 抛物线映射和三角映射分形过程生成复杂多涡卷混沌吸引子及图像加密 | [paper_015_抛物线三角映射分形过程复杂混沌吸引子.md](paper_015_抛物线三角映射分形过程复杂混沌吸引子.md) |
 
 ---
 
@@ -191,6 +192,7 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
 | 2004 | 冲击系统Lyapunov指数计算（超越映射方法） | de Souza SLT, Caldas IL, CSF |
 | 2022 | 自适应差分进化算法识别离散忆阻混沌映射参数 | Peng Y, He S, Sun K, Nonlinear Dyn |
 | 2022 | N维非退化离散忆阻超混沌映射构造方法 | Huang L et al., CSF |
+| 2023 | 抛物线映射和三角映射分形过程复杂多涡卷混沌吸引子 | Yan D et al., EPJ Plus |
 
 ### 非光滑系统Lyapunov指数计算 (Non-smooth Systems LE Calculation)
 
@@ -233,6 +235,29 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
               ├── 全局搜索+局部搜索混合机制
               ├── 自适应参数调整(CR, F)
               └── 抗噪声性能优化(SNR≥15dB)
+```
+
+### 分形过程多涡卷混沌系统 (Fractal Process Multi-scroll Chaotic Systems)
+
+```
+Julia分形过程 (Bouallegue, 2015)
+  ├── 二元分形 + Lorenz/Chua系统 → 分离/嵌套吸引子
+  ├── 三元分形 (Dai et al., 2019) → 3D空间吸引子
+  ├── Julia分形 + Logistic映射 (Slimane et al., 2017) → 多涡卷
+  ├── 不同分形过程 (Yan et al., 2022) → 环形/嵌套环形
+  └── Julia分形 + 抛物线/三角映射 ⭐ 015号论文 (Yan et al., 2023)
+        ├── 抛物线映射(pm)：$u=2p(1-p)-q^2, v=2q$ → 抛物线分布多涡卷
+        ├── 三角映射(tm)：$u=p+2p(1-p)-q^2, v=q+2q(1-2p)$ → 三角分布多涡卷
+        ├── 涡卷数量公式：$C = C_1 \times 2^n$
+        ├── 分离型多涡卷吸引子（完全/部分分离）
+        ├── 混合映射(pm+tm/tm+pm) → 幅度显著增大
+        ├── MCU硬件验证（STM32F407ZGT6 + AD5689）
+        ├── FIPS 140-2 + SP 800-22双重随机性测试全通过
+        └── S-box置乱 + 水波扩散图像加密
+              ├── SHA-256哈希扰动密钥（明文相关）
+              ├── 水波传播扩散（随机激励+波纹扩散）
+              ├── 信息熵≈7.9993，NPCR≈99.61%
+              └── 鲁棒性：密文丢失50%像素仍可解密
 ```
 
 ### 核心概念索引
@@ -315,6 +340,13 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
 - **局部搜索 (Local Search)**：在最优解附近小范围精细搜索
 - **加性高斯白噪声 (AWGN)**：均值为零、功率谱密度均匀分布的随机噪声
 - **信噪比 (SNR)**：信号功率与噪声功率的比值，衡量抗噪声性能指标
+- **Julia分形过程 ($P_J$)**：基于Julia集迭代 $Z_{n+1} = Z_n^2 + Z_c$ 的开关函数，将混沌系统时间序列映射为分形多涡卷吸引子
+- **抛物线映射 (pm)**：$u=2p(1-p)-q^2, v=2q$，与Julia分形过程结合生成抛物线分布的多涡卷吸引子
+- **三角映射 (tm)**：$u=p+2p(1-p)-q^2, v=q+2q(1-2p)$，与Julia分形过程结合生成三角分布的多涡卷吸引子
+- **分形级联**：多次串联 $P_J$ 操作，每次使涡卷数翻倍，满足 $C = C_1 \times 2^n$
+- **水波扩散**：受水波传播启发的像素扩散方法，以随机位置为"激励"中心向周围像素传播修改
+- **分离型吸引子**：通过多分形过程和不同输入函数生成的空间上完全或部分分离的多涡卷吸引子
+- **混合映射 (pm+tm)**：交替使用抛物线映射和三角映射，可显著增大吸引子幅度
 
 ---
 
@@ -351,6 +383,7 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
 - 十一篇论文共同展示了加密系统从纯数学混沌到物理光学实现、从硬件电路到深度学习驱动、从低维到高维系统生成、从异质到同质多稳态、从全局加密到隐私差异化保护、从线性耦合到忆阻器非线性耦合的完整研究图谱
 - **013号论文**首次将智能优化算法应用于离散忆阻混沌映射的参数识别，提出了自适应差分进化(ADE)算法和双目标函数（时间序列+回归映射）混合策略，解决了具有共存吸引子的复杂混沌系统参数识别难题，为离散忆阻混沌系统的同步控制和安全通信应用奠定了理论基础
 - **014号论文**提出了基于N-1个三角波忆阻器串联耦合的N维非退化离散超混沌映射构造方法，通过种子函数机制实现了维度可调和形式多样的系统构造，严格数学证明了非退化性（最小LE>0），首次系统分析了噪声对离散忆阻器混沌系统的影响，超宽参数范围（$10^{10}$量级）和初始增强/状态转移现象为密码学应用提供了良好基础
+- **015号论文**提出了抛物线映射和三角映射两种新的非线性映射方法，与Julia分形过程结合生成拓扑复杂的多涡卷混沌吸引子，涡卷数量满足 $C = C_1 \times 2^n$ 可灵活调节；首次提出混合映射(pm+tm)实现幅度控制；基于水波传播原理的像素扩散方法具有新颖性和良好的扩散效果；MCU硬件验证和双重随机性测试完善了实验验证链条
 
 ### 离散忆阻器系统演进对比
 
@@ -385,5 +418,5 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
 
 ---
 
-*最后更新：2026-05-14*
-*本次更新：新增论文014精读笔记 - N维非退化离散忆阻超混沌映射构造方法（Chaos, Solitons and Fractals 2022）*
+*最后更新：2026-05-15*
+*本次更新：新增论文015精读笔记 - 抛物线映射和三角映射分形过程复杂混沌吸引子（Eur. Phys. J. Plus 2023）*
