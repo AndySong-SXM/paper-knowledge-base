@@ -25,6 +25,7 @@
 | 014 | A construction method of N-dimensional non-degenerate discrete memristive hyperchaotic map | Huang L, Liu J, Xiang J, Zhang Z, Du X | 2022 | Chaos, Solitons and Fractals 160 | N维非退化离散忆阻超混沌映射构造方法（三角波忆阻器+种子函数） | [paper_014_N维非退化离散忆阻超混沌映射构造方法.md](paper_014_N维非退化离散忆阻超混沌映射构造方法.md) |
 | 015 | Complex chaotic attractor via fractal process with parabolic map and triangular map | Yan D, Shi H, Wu J, Ji'e M, Wang L, Duan S | 2023 | Eur. Phys. J. Plus 138 | 抛物线映射和三角映射分形过程生成复杂多涡卷混沌吸引子及图像加密 | [paper_015_抛物线三角映射分形过程复杂混沌吸引子.md](paper_015_抛物线三角映射分形过程复杂混沌吸引子.md) |
 | 016 | Memristor initial-boosted extreme multistability in the novel dual-memristor hyperchaotic maps | Zhang S, Zhang H, Wang C | 2023 | Chaos, Solitons and Fractals 174 | 新型双忆阻器超混沌映射中忆阻器初始增强的极端多稳态 | [paper_016_双忆阻器初始增强极端多稳态.md](paper_016_双忆阻器初始增强极端多稳态.md) |
+| 017 | An n-dimensional discrete attractor with sinusoidal waveform | Li G, Song X, Xu W | 2024 | Nonlinear Dynamics | 具有正弦波形的n维离散吸引子 | [paper_017_n维正弦波形离散吸引子.md](paper_017_n维正弦波形离散吸引子.md) |
 
 ---
 
@@ -98,6 +99,13 @@ Nosé-Hoover 振荡器 (1985)
               ├── 超宽参数范围（$10^{10}$量级）
               ├── 初始增强+状态转移+无限共存吸引子
               └── TMS320F28335 DSP实现 + 噪声鲁棒性分析
+        └── 正弦波形n维离散吸引子 (Li et al., 2024) — 017号论文
+              ├── 正弦函数闭环反馈耦合机制
+              ├── Jacobian矩阵与状态相关
+              ├── 可生成2D/3D/4D正弦波形混沌吸引子
+              ├── 参数a_i控制轨迹范围，参数b_i控制波形周期
+              ├── 4维系统可实现超混沌（4个正LE）
+              └── 潜在应用：PRNG、图像加密
 ```
 
 ### 光学加密与深度学习 (Optical Encryption × Deep Learning)
@@ -195,6 +203,7 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
 | 2022 | N维非退化离散忆阻超混沌映射构造方法 | Huang L et al., CSF |
 | 2023 | 抛物线映射和三角映射分形过程复杂混沌吸引子 | Yan D et al., EPJ Plus |
 | 2023 | 新型双忆阻器超混沌映射中忆阻器初始增强的极端多稳态 | Zhang S et al., CSF |
+| 2024 | 具有正弦波形的n维离散吸引子 | Li G et al., Nonlinear Dyn |
 
 ### 非光滑系统Lyapunov指数计算 (Non-smooth Systems LE Calculation)
 
@@ -387,6 +396,7 @@ Julia分形过程 (Bouallegue, 2015)
 - **014号论文**提出了基于N-1个三角波忆阻器串联耦合的N维非退化离散超混沌映射构造方法，通过种子函数机制实现了维度可调和形式多样的系统构造，严格数学证明了非退化性（最小LE>0），首次系统分析了噪声对离散忆阻器混沌系统的影响，超宽参数范围（$10^{10}$量级）和初始增强/状态转移现象为密码学应用提供了良好基础
 - **015号论文**提出了抛物线映射和三角映射两种新的非线性映射方法，与Julia分形过程结合生成拓扑复杂的多涡卷混沌吸引子，涡卷数量满足 $C = C_1 \times 2^n$ 可灵活调节；首次提出混合映射(pm+tm)实现幅度控制；基于水波传播原理的像素扩散方法具有新颖性和良好的扩散效果；MCU硬件验证和双重随机性测试完善了实验验证链条
 - **016号论文**首次在离散映射中实现初始增强极端多稳态，通过并行两个具有周期三角函数忆阻值的离散忆阻器（SSDM和SCDM），构建了能产生线性和平面极端多稳态的最简单离散映射；揭示忆阻器初始条件的周期循环特性（周期为2），实现固定偏移的非破坏性增强；微控制器硬件实现和NIST 15项测试全部通过验证了理论结果
+- **017号论文**提出了基于正弦函数闭环反馈耦合的n维离散混沌系统构造方法，能够生成具有正弦波形形状的混沌吸引子；系统分析了不动点分布、Jacobian矩阵、特征方程等理论问题；通过2D/3D/4D系统仿真实验验证了方法有效性，4维系统可实现超混沌状态；参数a_i控制轨迹范围，参数b_i控制波形周期，为吸引子形态调控提供了理论依据
 
 ---
 
@@ -424,4 +434,4 @@ Julia分形过程 (Bouallegue, 2015)
 ---
 
 *最后更新：2026-05-16*
-*本次更新：新增论文016精读笔记 - 新型双忆阻器超混沌映射中忆阻器初始增强的极端多稳态（Chaos, Solitons and Fractals 2023）*
+*本次更新：新增论文017精读笔记 - 具有正弦波形的n维离散吸引子（Nonlinear Dynamics 2024）*
