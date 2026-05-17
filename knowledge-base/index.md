@@ -26,6 +26,7 @@
 | 015 | Complex chaotic attractor via fractal process with parabolic map and triangular map | Yan D, Shi H, Wu J, Ji'e M, Wang L, Duan S | 2023 | Eur. Phys. J. Plus 138 | 抛物线映射和三角映射分形过程生成复杂多涡卷混沌吸引子及图像加密 | [paper_015_抛物线三角映射分形过程复杂混沌吸引子.md](paper_015_抛物线三角映射分形过程复杂混沌吸引子.md) |
 | 016 | Memristor initial-boosted extreme multistability in the novel dual-memristor hyperchaotic maps | Zhang S, Zhang H, Wang C | 2023 | Chaos, Solitons and Fractals 174 | 新型双忆阻器超混沌映射中忆阻器初始增强的极端多稳态 | [paper_016_双忆阻器初始增强极端多稳态.md](paper_016_双忆阻器初始增强极端多稳态.md) |
 | 017 | An n-dimensional discrete attractor with sinusoidal waveform | Li G, Song X, Xu W | 2024 | Nonlinear Dynamics | 具有正弦波形的n维离散吸引子 | [paper_017_n维正弦波形离散吸引子.md](paper_017_n维正弦波形离散吸引子.md) |
+| 018 | Design of intelligent computing networks for nonlinear chaotic fractional Rossler system | Bukhari A H, Raja M A Z, Rafiq N, Shoaib M, Kiani A K, Shu C M | 2022 | Chaos, Solitons and Fractals 157 | 分数阶Rossler系统的RBFN神经网络求解器 | [paper_018_分数阶Rossler系统智能计算网络.md](paper_018_分数阶Rossler系统智能计算网络.md) |
 
 ---
 
@@ -204,6 +205,7 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
 | 2023 | 抛物线映射和三角映射分形过程复杂混沌吸引子 | Yan D et al., EPJ Plus |
 | 2023 | 新型双忆阻器超混沌映射中忆阻器初始增强的极端多稳态 | Zhang S et al., CSF |
 | 2024 | 具有正弦波形的n维离散吸引子 | Li G et al., Nonlinear Dyn |
+| 2022 | 分数阶Rossler系统RBFN神经网络求解器 | Bukhari A H et al., CSF |
 
 ### 非光滑系统Lyapunov指数计算 (Non-smooth Systems LE Calculation)
 
@@ -433,5 +435,5 @@ Julia分形过程 (Bouallegue, 2015)
 
 ---
 
-*最后更新：2026-05-16*
-*本次更新：新增论文017精读笔记 - 具有正弦波形的n维离散吸引子（Nonlinear Dynamics 2024）*
+*最后更新：2026-05-17*
+*本次更新：新增论文018精读笔记 - 非线性混沌分数Rossler系统的智能计算网络设计（Chaos, Solitons and Fractals 2022）*
