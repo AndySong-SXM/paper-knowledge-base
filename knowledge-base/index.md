@@ -27,6 +27,7 @@
 | 016 | Memristor initial-boosted extreme multistability in the novel dual-memristor hyperchaotic maps | Zhang S, Zhang H, Wang C | 2023 | Chaos, Solitons and Fractals 174 | 新型双忆阻器超混沌映射中忆阻器初始增强的极端多稳态 | [paper_016_双忆阻器初始增强极端多稳态.md](paper_016_双忆阻器初始增强极端多稳态.md) |
 | 017 | An n-dimensional discrete attractor with sinusoidal waveform | Li G, Song X, Xu W | 2024 | Nonlinear Dynamics | 具有正弦波形的n维离散吸引子 | [paper_017_n维正弦波形离散吸引子.md](paper_017_n维正弦波形离散吸引子.md) |
 | 018 | Design of intelligent computing networks for nonlinear chaotic fractional Rossler system | Bukhari A H, Raja M A Z, Rafiq N, Shoaib M, Kiani A K, Shu C M | 2022 | Chaos, Solitons and Fractals 157 | 分数阶Rossler系统的RBFN神经网络求解器 | [paper_018_分数阶Rossler系统智能计算网络.md](paper_018_分数阶Rossler系统智能计算网络.md) |
+| 019 | Chaotic attractors with separated scrolls | Bouallegue K | 2015 | Chaos 25(7) 073108 | Julia分形过程生成分离涡卷混沌吸引子 | [paper_019_分离涡卷混沌吸引子.md](paper_019_分离涡卷混沌吸引子.md) |
 
 ---
 
@@ -206,6 +207,7 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
 | 2023 | 新型双忆阻器超混沌映射中忆阻器初始增强的极端多稳态 | Zhang S et al., CSF |
 | 2024 | 具有正弦波形的n维离散吸引子 | Li G et al., Nonlinear Dyn |
 | 2022 | 分数阶Rossler系统RBFN神经网络求解器 | Bukhari A H et al., CSF |
+| 2015 | Julia分形过程生成分离涡卷混沌吸引子 | Bouallegue K, Chaos |
 
 ### 非光滑系统Lyapunov指数计算 (Non-smooth Systems LE Calculation)
 
@@ -253,12 +255,18 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
 ### 分形过程多涡卷混沌系统 (Fractal Process Multi-scroll Chaotic Systems)
 
 ```
-Julia分形过程 (Bouallegue, 2015)
-  ├── 二元分形 + Lorenz/Chua系统 → 分离/嵌套吸引子
-  ├── 三元分形 (Dai et al., 2019) → 3D空间吸引子
-  ├── Julia分形 + Logistic映射 (Slimane et al., 2017) → 多涡卷
-  ├── 不同分形过程 (Yan et al., 2022) → 环形/嵌套环形
-  └── Julia分形 + 抛物线/三角映射 ⭐ 015号论文 (Yan et al., 2023)
+Julia分形过程 (Gaston Julia, 1919)
+  │
+  └── Julia分形混沌吸引子 (Bouallegue, 2011)
+        │
+        └── 分离涡卷混沌吸引子 ⭐ 019号论文 (Bouallegue, 2015) — 奠基性工作
+              ├── 首次提出分离涡卷概念
+              ├── Julia分形过程 + Chua/Lorenz系统
+              ├── 分离涡卷 + 嵌套涡卷结构
+              ├── 新型超混沌定义（涡卷集合）
+              └── 应用于安全通信/加密
+                    │
+                    ├── 抛物线/三角映射分形过程 ⭐ 015号论文 (Yan et al., 2023)
         ├── 抛物线映射(pm)：$u=2p(1-p)-q^2, v=2q$ → 抛物线分布多涡卷
         ├── 三角映射(tm)：$u=p+2p(1-p)-q^2, v=q+2q(1-2p)$ → 三角分布多涡卷
         ├── 涡卷数量公式：$C = C_1 \times 2^n$
@@ -435,5 +443,5 @@ Julia分形过程 (Bouallegue, 2015)
 
 ---
 
-*最后更新：2026-05-17*
-*本次更新：新增论文018精读笔记 - 非线性混沌分数Rossler系统的智能计算网络设计（Chaos, Solitons and Fractals 2022）*
+*最后更新：2026-05-18*
+*本次更新：新增论文019精读笔记 - Julia分形过程生成分离涡卷混沌吸引子（Chaos 2015）*
