@@ -28,6 +28,7 @@
 | 017 | An n-dimensional discrete attractor with sinusoidal waveform | Li G, Song X, Xu W | 2024 | Nonlinear Dynamics | 具有正弦波形的n维离散吸引子 | [paper_017_n维正弦波形离散吸引子.md](paper_017_n维正弦波形离散吸引子.md) |
 | 018 | Design of intelligent computing networks for nonlinear chaotic fractional Rossler system | Bukhari A H, Raja M A Z, Rafiq N, Shoaib M, Kiani A K, Shu C M | 2022 | Chaos, Solitons and Fractals 157 | 分数阶Rossler系统的RBFN神经网络求解器 | [paper_018_分数阶Rossler系统智能计算网络.md](paper_018_分数阶Rossler系统智能计算网络.md) |
 | 019 | Chaotic attractors with separated scrolls | Bouallegue K | 2015 | Chaos 25(7) 073108 | Julia分形过程生成分离涡卷混沌吸引子 | [paper_019_分离涡卷混沌吸引子.md](paper_019_分离涡卷混沌吸引子.md) |
+| 020 | A Modified Interpolated Cell Mapping Method | Ge Z.-M., Lee S.-C. | 1997 | Journal of Sound and Vibration 208(5) | 改进插值细胞映射方法（全局分析） | [paper_020_改进插值细胞映射方法.md](paper_020_改进插值细胞映射方法.md) |
 
 ---
 
@@ -208,6 +209,34 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
 | 2024 | 具有正弦波形的n维离散吸引子 | Li G et al., Nonlinear Dyn |
 | 2022 | 分数阶Rossler系统RBFN神经网络求解器 | Bukhari A H et al., CSF |
 | 2015 | Julia分形过程生成分离涡卷混沌吸引子 | Bouallegue K, Chaos |
+| 1997 | 改进插值细胞映射方法（全局分析） | Ge Z.-M. et al., JSV |
+
+### 细胞映射方法演进 (Cell Mapping Methods Evolution)
+
+```
+传统数值积分方法 (IGP)
+  ├── 网格点数值积分
+  └── 计算量随维数指数增长
+        ↓
+Hsu细胞映射方法 (1980s)
+  ├── SCM (Simple Cell Mapping)
+  │     └── 每个细胞一个像细胞
+  ├── GCM (Generalized Cell Mapping)
+  │     └── 多个像细胞 + 马尔可夫链理论
+  └── 局限：sink cell假设、插值误差、内存需求大
+        ↓
+Tongue插值细胞映射 (ICM, 1988)
+  ├── 节点首次映射作为参考
+  ├── 插值构造后续映射
+  └── 局限：参数选择敏感、不区分关键细胞、无法区分多吸引子
+        ↓
+本文方法 (MICM, 1997) ⭐ 020号论文
+  ├── 双准则系统（0.01/0.1细胞大小）
+  ├── 变周期映射构造
+  ├── 细胞分类（吸引/流域/边界）
+  ├── 两阶段分析（周期吸引子+未确定吸引子）
+  └── 精确映射补救（计算效率提升100倍）
+```
 
 ### 非光滑系统Lyapunov指数计算 (Non-smooth Systems LE Calculation)
 
@@ -368,6 +397,21 @@ Julia分形过程 (Gaston Julia, 1919)
 - **水波扩散**：受水波传播启发的像素扩散方法，以随机位置为"激励"中心向周围像素传播修改
 - **分离型吸引子**：通过多分形过程和不同输入函数生成的空间上完全或部分分离的多涡卷吸引子
 - **混合映射 (pm+tm)**：交替使用抛物线映射和三角映射，可显著增大吸引子幅度
+- **细胞映射方法 (Cell Mapping)**：将状态空间离散化为细胞阵列进行全局分析的方法，包括SCM、GCM、ICM、MICM等
+- **简单细胞映射 (SCM)**：Simple Cell Mapping，每个细胞构建一个像细胞的全局分析方法
+- **广义细胞映射 (GCM)**：Generalized Cell Mapping，构建多个像细胞并应用有限马尔可夫链理论
+- **插值细胞映射 (ICM)**：Interpolated Cell Mapping，通过插值构造细胞映射的方法
+- **改进插值细胞映射 (MICM)**：Modified ICM，本文020提出的改进方法，采用双准则+变周期+细胞分类
+- **流域细胞 (Basin Cell)**：细胞及其相邻细胞都导向同一吸引子的细胞，表示吸引域的核心区域
+- **边界细胞 (Boundary Cell)**：细胞及其相邻细胞导向不同吸引子的细胞，表示吸引域边界
+- **吸引细胞 (Attracting Cell)**：吸引域中细胞的最终映射所在的细胞，表示吸引子位置
+- **Sink Cell**：感兴趣区域之外的大细胞，是映射到区域外细胞的吸引子
+- **未确定吸引子 (Undetermined Attractor)**：未被第一准则定位的吸引子集合，需进一步分析
+- **高分辨率分析 (High Resolution Analysis)**：对边界细胞中的点进行精细插值映射的分析方法
+- **精确映射方法 (Exact Mappings)**：使用数值积分而非插值进行映射的精确分析方法
+- **吸引域 (Basin of Attraction)**：所有最终收敛到某一吸引子的初始条件集合
+- **吸引域边界 (Basin Boundary)**：不同吸引域之间的边界，可能是光滑或分形的
+- **Poincaré映射**：将连续系统流简化为离散映射的技术，用于周期系统分析
 
 ---
 
@@ -443,5 +487,5 @@ Julia分形过程 (Gaston Julia, 1919)
 
 ---
 
-*最后更新：2026-05-18*
-*本次更新：新增论文019精读笔记 - Julia分形过程生成分离涡卷混沌吸引子（Chaos 2015）*
+*最后更新：2026-05-19*
+*本次更新：新增论文020精读笔记 - 改进插值细胞映射方法（JSV 1997），完善细胞映射方法演进脉络*
