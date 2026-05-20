@@ -29,6 +29,7 @@
 | 018 | Design of intelligent computing networks for nonlinear chaotic fractional Rossler system | Bukhari A H, Raja M A Z, Rafiq N, Shoaib M, Kiani A K, Shu C M | 2022 | Chaos, Solitons and Fractals 157 | 分数阶Rossler系统的RBFN神经网络求解器 | [paper_018_分数阶Rossler系统智能计算网络.md](paper_018_分数阶Rossler系统智能计算网络.md) |
 | 019 | Chaotic attractors with separated scrolls | Bouallegue K | 2015 | Chaos 25(7) 073108 | Julia分形过程生成分离涡卷混沌吸引子 | [paper_019_分离涡卷混沌吸引子.md](paper_019_分离涡卷混沌吸引子.md) |
 | 020 | A Modified Interpolated Cell Mapping Method | Ge Z.-M., Lee S.-C. | 1997 | Journal of Sound and Vibration 208(5) | 改进插值细胞映射方法（全局分析） | [paper_020_改进插值细胞映射方法.md](paper_020_改进插值细胞映射方法.md) |
+| 021 | The missing memristor found | Strukov D B, Snider G S, Stewart D R, Williams R S | 2008 | Nature 453 | 忆阻器的物理实现（HP Labs奠基性工作） | [paper_021_发现缺失的忆阻器.md](paper_021_发现缺失的忆阻器.md) |
 
 ---
 
@@ -53,10 +54,15 @@ Nosé-Hoover 振荡器 (1985)
               └── Multisim + DSP 硬件实现
 ```
 
-### 离散忆阻器混沌系统 (Discrete Memristor Chaotic Systems)
+### 忆阻器发现与离散忆阻器混沌系统 (Memristor Discovery & Discrete Memristor Chaotic Systems)
 
 ```
-离散忆阻器建模 (Bao et al., 2021)
+Chua理论预言 (1971) — 忆阻器作为第四种基本电路元件
+  └── Chua-Kang忆阻系统 (1976) — 广义忆阻系统理论
+        └── ★ 物理实现 (Strukov et al., 2008) — HP Labs发现缺失的忆阻器 ← 021号论文
+              ├── 掺杂漂移模型（TiO₂器件）
+              ├── 纳米尺度效应（1/D²增强）
+              └── 离散忆阻器建模 (Bao et al., 2021)
   └── 离散忆阻器超混沌映射
         ├── 二维忆阻映射 (Li et al., 2021) — 安全通信应用
         ├── 并行双忆阻器映射 (Bao et al., 2022) — 极端多稳态
@@ -210,6 +216,9 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
 | 2022 | 分数阶Rossler系统RBFN神经网络求解器 | Bukhari A H et al., CSF |
 | 2015 | Julia分形过程生成分离涡卷混沌吸引子 | Bouallegue K, Chaos |
 | 1997 | 改进插值细胞映射方法（全局分析） | Ge Z.-M. et al., JSV |
+| 1971 | 忆阻器理论预言 | Chua L.O., IEEE Trans. Circuit Theory |
+| 1976 | 忆阻系统理论 | Chua L.O. & Kang S.M., Proc. IEEE |
+| 2008 | 忆阻器物理实现（HP Labs） | Strukov D.B. et al., Nature |
 
 ### 细胞映射方法演进 (Cell Mapping Methods Evolution)
 
@@ -412,6 +421,12 @@ Julia分形过程 (Gaston Julia, 1919)
 - **吸引域 (Basin of Attraction)**：所有最终收敛到某一吸引子的初始条件集合
 - **吸引域边界 (Basin Boundary)**：不同吸引域之间的边界，可能是光滑或分形的
 - **Poincaré映射**：将连续系统流简化为离散映射的技术，用于周期系统分析
+- **忆阻器 (Memristor)**：第四种基本无源电路元件，提供电荷与磁通之间的函数关系，由Chua于1971年理论预言，2008年由HP Labs物理实现
+- **忆阻 (Memristance)**：忆阻器的特征量，定义为磁通对电荷的微分：$M = d\varphi/dq$
+- **掺杂漂移模型**：Strukov等人提出的忆阻器物理模型，基于掺杂边界在电场下的移动
+- **纳米尺度效应**：忆阻效应强度与器件厚度的平方成反比（$\propto 1/D^2$），在纳米尺度增强$10^6$倍
+- **硬开关 (Hard Switching)**：当状态变量达到边界时忆阻器完全切换到开态或关态的行为
+- **动态负微分电阻**：忆阻器在特定条件下表现出的表观负阻效应，依赖于频率和器件历史
 
 ---
 
@@ -487,5 +502,5 @@ Julia分形过程 (Gaston Julia, 1919)
 
 ---
 
-*最后更新：2026-05-19*
-*本次更新：新增论文020精读笔记 - 改进插值细胞映射方法（JSV 1997），完善细胞映射方法演进脉络*
+*最后更新：2026-05-20*
+*本次更新：新增论文021精读笔记 - 发现缺失的忆阻器（Nature 2008），完善忆阻器发现与研究脉络*
