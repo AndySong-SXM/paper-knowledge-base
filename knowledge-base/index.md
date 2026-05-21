@@ -30,6 +30,7 @@
 | 019 | Chaotic attractors with separated scrolls | Bouallegue K | 2015 | Chaos 25(7) 073108 | Julia分形过程生成分离涡卷混沌吸引子 | [paper_019_分离涡卷混沌吸引子.md](paper_019_分离涡卷混沌吸引子.md) |
 | 020 | A Modified Interpolated Cell Mapping Method | Ge Z.-M., Lee S.-C. | 1997 | Journal of Sound and Vibration 208(5) | 改进插值细胞映射方法（全局分析） | [paper_020_改进插值细胞映射方法.md](paper_020_改进插值细胞映射方法.md) |
 | 021 | The missing memristor found | Strukov D B, Snider G S, Stewart D R, Williams R S | 2008 | Nature 453 | 忆阻器的物理实现（HP Labs奠基性工作） | [paper_021_发现缺失的忆阻器.md](paper_021_发现缺失的忆阻器.md) |
+| 022 | Designing Hyperchaotic Systems With Any Desired Number of Positive Lyapunov Exponents via A Simple Model | Shen C, Yu S, Lü J, Chen G | 2014 | IEEE Trans. Circuits Syst. I 61(8) | 闭环级联耦合设计任意正LE数量超混沌系统 | [paper_022_任意正Lyapunov指数数量超混沌系统设计.md](paper_022_任意正Lyapunov指数数量超混沌系统设计.md) |
 
 ---
 
@@ -219,6 +220,20 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
 | 1971 | 忆阻器理论预言 | Chua L.O., IEEE Trans. Circuit Theory |
 | 1976 | 忆阻系统理论 | Chua L.O. & Kang S.M., Proc. IEEE |
 | 2008 | 忆阻器物理实现（HP Labs） | Strukov D.B. et al., Nature |
+| 2014 | 闭环级联耦合设计任意正LE数量超混沌系统 | Shen C et al., IEEE TCAS-I |
+
+### 高维超混沌系统设计方法演进
+
+```
+传统超混沌系统构造方法 (Rossler 1979, Chen 2006)
+  ├── 状态反馈控制 (Hu 2009, Li 2005)
+  │     └── 局限：缺乏系统理论，依赖经验试错
+  └── 本文方法 (Shen et al., 2014) ⭐ 022号论文
+        ├── 反控制原理 → 闭环级联耦合
+        ├── 特征值圆周分布理论
+        ├── 正LE数量通用公式：N_LE+ = f(n)
+        └── 18维/21维系统数值验证
+```
 
 ### 细胞映射方法演进 (Cell Mapping Methods Evolution)
 
@@ -466,6 +481,7 @@ Julia分形过程 (Gaston Julia, 1919)
 - **015号论文**提出了抛物线映射和三角映射两种新的非线性映射方法，与Julia分形过程结合生成拓扑复杂的多涡卷混沌吸引子，涡卷数量满足 $C = C_1 \times 2^n$ 可灵活调节；首次提出混合映射(pm+tm)实现幅度控制；基于水波传播原理的像素扩散方法具有新颖性和良好的扩散效果；MCU硬件验证和双重随机性测试完善了实验验证链条
 - **016号论文**首次在离散映射中实现初始增强极端多稳态，通过并行两个具有周期三角函数忆阻值的离散忆阻器（SSDM和SCDM），构建了能产生线性和平面极端多稳态的最简单离散映射；揭示忆阻器初始条件的周期循环特性（周期为2），实现固定偏移的非破坏性增强；微控制器硬件实现和NIST 15项测试全部通过验证了理论结果
 - **017号论文**提出了基于正弦函数闭环反馈耦合的n维离散混沌系统构造方法，能够生成具有正弦波形形状的混沌吸引子；系统分析了不动点分布、Jacobian矩阵、特征方程等理论问题；通过2D/3D/4D系统仿真实验验证了方法有效性，4维系统可实现超混沌状态；参数a_i控制轨迹范围，参数b_i控制波形周期，为吸引子形态调控提供了理论依据
+- **022号论文**提出了闭环级联耦合设计任意正Lyapunov指数数量超混沌系统的通用方法，建立了n维系统与正LE数量之间的确定关系；核心创新包括特征值圆周分布理论和正LE数量通用公式；通过18维和21维超混沌系统的数值仿真验证了理论正确性；为保密通信和图像加密领域的高安全性混沌系统设计提供了理论基础
 
 ---
 
@@ -502,5 +518,5 @@ Julia分形过程 (Gaston Julia, 1919)
 
 ---
 
-*最后更新：2026-05-20*
-*本次更新：新增论文021精读笔记 - 发现缺失的忆阻器（Nature 2008），完善忆阻器发现与研究脉络*
+*最后更新：2026-05-21*
+*本次更新：新增论文022精读笔记 - 设计具有任意正Lyapunov指数数量的超混沌系统（IEEE TCAS-I 2014），建立高维超混沌系统设计的通用理论框架*
