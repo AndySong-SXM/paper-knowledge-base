@@ -31,6 +31,7 @@
 | 020 | A Modified Interpolated Cell Mapping Method | Ge Z.-M., Lee S.-C. | 1997 | Journal of Sound and Vibration 208(5) | 改进插值细胞映射方法（全局分析） | [paper_020_改进插值细胞映射方法.md](paper_020_改进插值细胞映射方法.md) |
 | 021 | The missing memristor found | Strukov D B, Snider G S, Stewart D R, Williams R S | 2008 | Nature 453 | 忆阻器的物理实现（HP Labs奠基性工作） | [paper_021_发现缺失的忆阻器.md](paper_021_发现缺失的忆阻器.md) |
 | 022 | Designing Hyperchaotic Systems With Any Desired Number of Positive Lyapunov Exponents via A Simple Model | Shen C, Yu S, Lü J, Chen G | 2014 | IEEE Trans. Circuits Syst. I 61(8) | 闭环级联耦合设计任意正LE数量超混沌系统 | [paper_022_任意正Lyapunov指数数量超混沌系统设计.md](paper_022_任意正Lyapunov指数数量超混沌系统设计.md) |
+| 023 | A novel image encryption algorithm based on coupled map lattices model | Fan S, Chen K, Tian J | 2023 | Multimedia Tools and Applications | 基于PWLCM-CML的图像加密算法（中间序列复用+双向扩散） | [paper_023_CML-PWLCM图像加密算法.md](paper_023_CML-PWLCM图像加密算法.md) |
 
 ---
 
@@ -149,6 +150,13 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
   │           ├── 3D比特级+3D像素级循环移位
   │           ├── 3D双索引扩散
   │           └── NPCR≈99.63%，UACI≈33.47%，IE>7.9992
+  ├── PWLCM-CML (Fan et al., 2023) — PWLCM映射+中间序列复用 ← 023号论文
+  │     ├── PWLCM替代Logistic映射（更好平衡性）
+  │     ├── 中间混沌序列F复用（提高效率）
+  │     ├── 双向扩散机制（前向+反向）
+  │     ├── 明文相关密钥（SHA-256哈希）
+  │     ├── 信息熵7.9995，NPCR≈99.59%
+  │     └── 鲁棒性：抗裁剪和噪声攻击
   └── MCML (Wang, 2019) — 相邻+非相邻耦合，固定参数
         └── MDCML (Tao et al., 2020) — 动态耦合参数 ← 008号论文
               ├── 动态耦合参数消除混沌缺陷
@@ -208,6 +216,7 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
 | 2024 | 分数阶忆阻HNN超混沌多涡卷FPGA实现 | Kong X et al., Neural Networks |
 | 2024 | 非邻接动态耦合映射格子多人脸图像加密 | Du L et al., ESWA |
 | 2024 | 离散忆阻器耦合正弦图格时空混沌 | He S et al., IEEE TCAS-I |
+| 2023 | 基于PWLCM-CML的图像加密算法（中间序列复用+双向扩散） | Fan S et al., Multimedia Tools Appl. |
 | 2004 | 冲击系统Lyapunov指数计算（超越映射方法） | de Souza SLT, Caldas IL, CSF |
 | 2022 | 自适应差分进化算法识别离散忆阻混沌映射参数 | Peng Y, He S, Sun K, Nonlinear Dyn |
 | 2022 | N维非退化离散忆阻超混沌映射构造方法 | Huang L et al., CSF |
@@ -518,5 +527,5 @@ Julia分形过程 (Gaston Julia, 1919)
 
 ---
 
-*最后更新：2026-05-21*
-*本次更新：新增论文022精读笔记 - 设计具有任意正Lyapunov指数数量的超混沌系统（IEEE TCAS-I 2014），建立高维超混沌系统设计的通用理论框架*
+*最后更新：2026-05-22*
+*本次更新：新增论文023精读笔记 - 基于PWLCM-CML的图像加密算法（Multimedia Tools and Applications 2023），提出中间混沌序列复用和双向扩散机制*
