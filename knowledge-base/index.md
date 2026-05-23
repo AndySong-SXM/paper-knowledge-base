@@ -32,6 +32,7 @@
 | 021 | The missing memristor found | Strukov D B, Snider G S, Stewart D R, Williams R S | 2008 | Nature 453 | 忆阻器的物理实现（HP Labs奠基性工作） | [paper_021_发现缺失的忆阻器.md](paper_021_发现缺失的忆阻器.md) |
 | 022 | Designing Hyperchaotic Systems With Any Desired Number of Positive Lyapunov Exponents via A Simple Model | Shen C, Yu S, Lü J, Chen G | 2014 | IEEE Trans. Circuits Syst. I 61(8) | 闭环级联耦合设计任意正LE数量超混沌系统 | [paper_022_任意正Lyapunov指数数量超混沌系统设计.md](paper_022_任意正Lyapunov指数数量超混沌系统设计.md) |
 | 023 | A novel image encryption algorithm based on coupled map lattices model | Fan S, Chen K, Tian J | 2023 | Multimedia Tools and Applications | 基于PWLCM-CML的图像加密算法（中间序列复用+双向扩散） | [paper_023_CML-PWLCM图像加密算法.md](paper_023_CML-PWLCM图像加密算法.md) |
+| 024 | A New Full Chaos Coupled Mapping Lattice and Its Application in Privacy Image Encryption | Wang X, Liu P | 2022 | IEEE Trans. Circuits Syst. I 69(3) | 新型全混沌耦合映射格子(TWMCML)及隐私图像加密 | [paper_024_新型全混沌耦合映射格子隐私图像加密.md](paper_024_新型全混沌耦合映射格子隐私图像加密.md) |
 
 ---
 
@@ -157,6 +158,14 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
   │     ├── 明文相关密钥（SHA-256哈希）
   │     ├── 信息熵7.9995，NPCR≈99.59%
   │     └── 鲁棒性：抗裁剪和噪声攻击
+  ├── TWMCML (Wang et al., 2022) — 混沌函数耦合 ← 024号论文
+  │     ├── 混沌函数f(z)替代固定耦合系数ε
+  │     ├── 1-DTWS双参数宽范围系统
+  │     ├── 参数空间(0,+∞)，全格子混沌
+  │     ├── 首次理论证明抵抗动态退化
+  │     ├── 边缘检测+隐私区域差异化加密
+  │     ├── 三维比特级耦合XOR置乱
+  │     └── NPCR≈99.61%，UACI≈33.46%
   └── MCML (Wang, 2019) — 相邻+非相邻耦合，固定参数
         └── MDCML (Tao et al., 2020) — 动态耦合参数 ← 008号论文
               ├── 动态耦合参数消除混沌缺陷
@@ -217,6 +226,7 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
 | 2024 | 非邻接动态耦合映射格子多人脸图像加密 | Du L et al., ESWA |
 | 2024 | 离散忆阻器耦合正弦图格时空混沌 | He S et al., IEEE TCAS-I |
 | 2023 | 基于PWLCM-CML的图像加密算法（中间序列复用+双向扩散） | Fan S et al., Multimedia Tools Appl. |
+| 2022 | 新型全混沌耦合映射格子(TWMCML)及隐私图像加密 | Wang X, Liu P, IEEE TCAS-I |
 | 2004 | 冲击系统Lyapunov指数计算（超越映射方法） | de Souza SLT, Caldas IL, CSF |
 | 2022 | 自适应差分进化算法识别离散忆阻混沌映射参数 | Peng Y, He S, Sun K, Nonlinear Dyn |
 | 2022 | N维非退化离散忆阻超混沌映射构造方法 | Huang L et al., CSF |
@@ -527,5 +537,5 @@ Julia分形过程 (Gaston Julia, 1919)
 
 ---
 
-*最后更新：2026-05-22*
-*本次更新：新增论文023精读笔记 - 基于PWLCM-CML的图像加密算法（Multimedia Tools and Applications 2023），提出中间混沌序列复用和双向扩散机制*
+*最后更新：2026-05-23*
+*本次更新：新增论文024精读笔记 - 新型全混沌耦合映射格子(TWMCML)及隐私图像加密（IEEE TCAS-I 2022），首次理论证明混沌系统抵抗动态退化，提出混沌函数耦合机制*
