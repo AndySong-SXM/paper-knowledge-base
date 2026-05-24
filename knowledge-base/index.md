@@ -33,6 +33,7 @@
 | 022 | Designing Hyperchaotic Systems With Any Desired Number of Positive Lyapunov Exponents via A Simple Model | Shen C, Yu S, Lü J, Chen G | 2014 | IEEE Trans. Circuits Syst. I 61(8) | 闭环级联耦合设计任意正LE数量超混沌系统 | [paper_022_任意正Lyapunov指数数量超混沌系统设计.md](paper_022_任意正Lyapunov指数数量超混沌系统设计.md) |
 | 023 | A novel image encryption algorithm based on coupled map lattices model | Fan S, Chen K, Tian J | 2023 | Multimedia Tools and Applications | 基于PWLCM-CML的图像加密算法（中间序列复用+双向扩散） | [paper_023_CML-PWLCM图像加密算法.md](paper_023_CML-PWLCM图像加密算法.md) |
 | 024 | A New Full Chaos Coupled Mapping Lattice and Its Application in Privacy Image Encryption | Wang X, Liu P | 2022 | IEEE Trans. Circuits Syst. I 69(3) | 新型全混沌耦合映射格子(TWMCML)及隐私图像加密 | [paper_024_新型全混沌耦合映射格子隐私图像加密.md](paper_024_新型全混沌耦合映射格子隐私图像加密.md) |
+| 025 | Deterministic Nonperiodic Flow | Lorenz E N | 1963 | J. Atmos. Sci. 20 | 混沌理论奠基性论文—Lorenz系统与蝴蝶效应 | [paper_025_Lorenz确定性非周期流.md](paper_025_Lorenz确定性非周期流.md) |
 
 ---
 
@@ -41,9 +42,11 @@
 ### 保守混沌系统 (Conservative Chaotic Systems)
 
 ```
-Nosé-Hoover 振荡器 (1985)
-  └── Sprott-A 系统 (1994) — 最简保守混沌系统之一
-        └── 广义 Sprott-A 系统 (Cang et al., 2020) — 多簇保守混沌流
+Lorenz系统 (1963) — 混沌理论奠基 ⭐ 025号论文
+  │
+  └── Nosé-Hoover 振荡器 (1985)
+        └── Sprott-A 系统 (1994) — 最简保守混沌系统之一
+              └── 广义 Sprott-A 系统 (Cang et al., 2020) — 多簇保守混沌流
 ```
 
 ### 分数阶混沌系统 (Fractional-Order Chaotic Systems)
@@ -208,6 +211,7 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
 
 | 时期 | 发展方向 | 代表工作 |
 |------|---------|---------|
+| 1963 | 混沌理论奠基 | Lorenz系统 — 确定性非周期流 |
 | 1985 | Nosé-Hoover 恒温器 | Nosé-Hoover 振荡器 |
 | 1994 | 简单保守混沌流 | Sprott-A 系统 |
 | 2014 | Conformable分数阶导数定义 | Khalil et al., J. Comput. Appl. Math. |
@@ -537,5 +541,5 @@ Julia分形过程 (Gaston Julia, 1919)
 
 ---
 
-*最后更新：2026-05-23*
-*本次更新：新增论文024精读笔记 - 新型全混沌耦合映射格子(TWMCML)及隐私图像加密（IEEE TCAS-I 2022），首次理论证明混沌系统抵抗动态退化，提出混沌函数耦合机制*
+*最后更新：2026-05-24*
+*本次更新：新增论文025精读笔记 - Lorenz确定性非周期流（J. Atmos. Sci. 1963），混沌理论奠基性论文，首次发现确定性系统的非周期行为和对初始条件的敏感依赖性（蝴蝶效应）*
