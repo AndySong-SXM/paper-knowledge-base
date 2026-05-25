@@ -34,6 +34,7 @@
 | 023 | A novel image encryption algorithm based on coupled map lattices model | Fan S, Chen K, Tian J | 2023 | Multimedia Tools and Applications | 基于PWLCM-CML的图像加密算法（中间序列复用+双向扩散） | [paper_023_CML-PWLCM图像加密算法.md](paper_023_CML-PWLCM图像加密算法.md) |
 | 024 | A New Full Chaos Coupled Mapping Lattice and Its Application in Privacy Image Encryption | Wang X, Liu P | 2022 | IEEE Trans. Circuits Syst. I 69(3) | 新型全混沌耦合映射格子(TWMCML)及隐私图像加密 | [paper_024_新型全混沌耦合映射格子隐私图像加密.md](paper_024_新型全混沌耦合映射格子隐私图像加密.md) |
 | 025 | Deterministic Nonperiodic Flow | Lorenz E N | 1963 | J. Atmos. Sci. 20 | 混沌理论奠基性论文—Lorenz系统与蝴蝶效应 | [paper_025_Lorenz确定性非周期流.md](paper_025_Lorenz确定性非周期流.md) |
+| 026 | Julia Sets in the Quaternions | Norton A | 1989 | Comput. & Graphics 13(2) | 四元数Julia集—高维分形几何与四维混沌动力学 | [paper_026_四元数Julia集.md](paper_026_四元数Julia集.md) |
 
 ---
 
@@ -240,6 +241,7 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
 | 2022 | 分数阶Rossler系统RBFN神经网络求解器 | Bukhari A H et al., CSF |
 | 2015 | Julia分形过程生成分离涡卷混沌吸引子 | Bouallegue K, Chaos |
 | 1997 | 改进插值细胞映射方法（全局分析） | Ge Z.-M. et al., JSV |
+| 1989 | 四元数Julia集—高维分形几何奠基 | Norton A., Comput. & Graphics |
 | 1971 | 忆阻器理论预言 | Chua L.O., IEEE Trans. Circuit Theory |
 | 1976 | 忆阻系统理论 | Chua L.O. & Kang S.M., Proc. IEEE |
 | 2008 | 忆阻器物理实现（HP Labs） | Strukov D.B. et al., Nature |
@@ -355,6 +357,14 @@ Julia分形过程 (Gaston Julia, 1919)
               ├── 水波传播扩散（随机激励+波纹扩散）
               ├── 信息熵≈7.9993，NPCR≈99.61%
               └── 鲁棒性：密文丢失50%像素仍可解密
+        └── 四元数Julia集 ⭐ 026号论文 (Norton, 1989) — 高维扩展奠基性工作
+              ├── 复平面Julia集嵌入四元数空间
+              ├── 四元数多项式 $ax^2+b$（$a,b$复数）的动力学
+              ├── 临界集：实部为零的二维球面 $S^2$
+              ├── 降维可视化策略（三维切片）
+              ├── 连接模式控制（旋转复平面Julia集）
+              ├── 边界追踪算法高效计算
+              └── 四维Mandelbrot集分类框架
 ```
 
 ### 核心概念索引
@@ -541,5 +551,5 @@ Julia分形过程 (Gaston Julia, 1919)
 
 ---
 
-*最后更新：2026-05-24*
-*本次更新：新增论文025精读笔记 - Lorenz确定性非周期流（J. Atmos. Sci. 1963），混沌理论奠基性论文，首次发现确定性系统的非周期行为和对初始条件的敏感依赖性（蝴蝶效应）*
+*最后更新：2026-05-25*
+*本次更新：新增论文026精读笔记 - Julia Sets in the Quaternions (Comput. & Graphics 1989)，四元数Julia集研究的奠基性论文，将复平面Julia集扩展到四维四元数空间，揭示了高维分形几何的丰富结构*
