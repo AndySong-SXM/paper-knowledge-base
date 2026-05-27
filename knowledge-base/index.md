@@ -36,6 +36,7 @@
 | 025 | Deterministic Nonperiodic Flow | Lorenz E N | 1963 | J. Atmos. Sci. 20 | 混沌理论奠基性论文—Lorenz系统与蝴蝶效应 | [paper_025_Lorenz确定性非周期流.md](paper_025_Lorenz确定性非周期流.md) |
 | 026 | Julia Sets in the Quaternions | Norton A | 1989 | Comput. & Graphics 13(2) | 四元数Julia集—高维分形几何与四维混沌动力学 | [paper_026_四元数Julia集.md](paper_026_四元数Julia集.md) |
 | 027 | Design and realization of discrete memristive hyperchaotic map with application in image encryption | Lai Q, Yang L, Liu Y | 2022 | Chaos, Solitons and Fractals 165 | 离散忆阻高斯超混沌映射设计与图像加密（隐藏吸引子+极端多稳态） | [paper_027_离散忆阻高斯超混沌映射图像加密.md](paper_027_离散忆阻高斯超混沌映射图像加密.md) |
+| 028 | Generating novel multi-scroll chaotic attractors via fractal transformation | Yan D, Ji'e M, Wang L, Duan S, Du X | 2022 | Nonlinear Dynamics 107 | 分形变换生成多涡卷混沌吸引子（多环/分离/嵌套/燕子形） | [paper_028_分形变换生成多涡卷混沌吸引子.md](paper_028_分形变换生成多涡卷混沌吸引子.md) |
 
 ---
 
@@ -345,19 +346,31 @@ Julia分形过程 (Gaston Julia, 1919)
               ├── 新型超混沌定义（涡卷集合）
               └── 应用于安全通信/加密
                     │
-                    ├── 抛物线/三角映射分形过程 ⭐ 015号论文 (Yan et al., 2023)
-        ├── 抛物线映射(pm)：$u=2p(1-p)-q^2, v=2q$ → 抛物线分布多涡卷
-        ├── 三角映射(tm)：$u=p+2p(1-p)-q^2, v=q+2q(1-2p)$ → 三角分布多涡卷
-        ├── 涡卷数量公式：$C = C_1 \times 2^n$
-        ├── 分离型多涡卷吸引子（完全/部分分离）
-        ├── 混合映射(pm+tm/tm+pm) → 幅度显著增大
-        ├── MCU硬件验证（STM32F407ZGT6 + AD5689）
-        ├── FIPS 140-2 + SP 800-22双重随机性测试全通过
-        └── S-box置乱 + 水波扩散图像加密
-              ├── SHA-256哈希扰动密钥（明文相关）
-              ├── 水波传播扩散（随机激励+波纹扩散）
-              ├── 信息熵≈7.9993，NPCR≈99.61%
-              └── 鲁棒性：密文丢失50%像素仍可解密
+                    ├── 分形变换生成多涡卷混沌吸引子 ⭐ 028号论文 (Yan et al., 2022) — 系列工作基础
+                    │     ├── 无平衡点4D种子系统（隐藏吸引子）
+                    │     ├── 改进Julia分形算法（基于Julia迭代映射）
+                    │     ├── 涡卷数量公式：$C = C_1 \times 2^n$
+                    │     ├── 多环吸引子（multi-ring attractors）
+                    │     ├── 分离涡卷吸引子（separated-scroll attractors）
+                    │     ├── 嵌套吸引子（nested attractors）
+                    │     ├── 首次发现燕子形吸引子（swallow-like attractors）
+                    │     ├── 三角变换 + 抛物线变换（新型非线性变换）
+                    │     ├── 谱熵(SE)复杂度分析：0.5560→0.95+
+                    │     └── STM32F407ZGT6硬件实现验证
+                    │
+                    └── 抛物线/三角映射分形过程 ⭐ 015号论文 (Yan et al., 2023)
+                              ├── 抛物线映射(pm)：$u=2p(1-p)-q^2, v=2q$ → 抛物线分布多涡卷
+                              ├── 三角映射(tm)：$u=p+2p(1-p)-q^2, v=q+2q(1-2p)$ → 三角分布多涡卷
+                              ├── 涡卷数量公式：$C = C_1 \times 2^n$
+                              ├── 分离型多涡卷吸引子（完全/部分分离）
+                              ├── 混合映射(pm+tm/tm+pm) → 幅度显著增大
+                              ├── MCU硬件验证（STM32F407ZGT6 + AD5689）
+                              ├── FIPS 140-2 + SP 800-22双重随机性测试全通过
+                              └── S-box置乱 + 水波扩散图像加密
+                                    ├── SHA-256哈希扰动密钥（明文相关）
+                                    ├── 水波传播扩散（随机激励+波纹扩散）
+                                    ├── 信息熵≈7.9993，NPCR≈99.61%
+                                    └── 鲁棒性：密文丢失50%像素仍可解密
         └── 四元数Julia集 ⭐ 026号论文 (Norton, 1989) — 高维扩展奠基性工作
               ├── 复平面Julia集嵌入四元数空间
               ├── 四元数多项式 $ax^2+b$（$a,b$复数）的动力学
@@ -552,5 +565,5 @@ Julia分形过程 (Gaston Julia, 1919)
 
 ---
 
-*最后更新：2026-05-26*
-*本次更新：新增论文027精读笔记 - Design and realization of discrete memristive hyperchaotic map with application in image encryption (Chaos, Solitons and Fractals 2022)，提出忆阻高斯超混沌映射(MGM)，实现无固定点隐藏超混沌吸引子和同质极端多稳态，通过STM32硬件验证和NIST测试，设计了基于MGM的图像加密算法*
+*最后更新：2026-05-27*
+*本次更新：新增论文028精读笔记 - Generating novel multi-scroll chaotic attractors via fractal transformation (Nonlinear Dynamics 2022)，提出基于改进Julia分形算法的多涡卷混沌吸引子生成方法，首次发现燕子形吸引子，实现多环/分离/嵌套等多种拓扑结构，通过谱熵(SE)复杂度分析和STM32硬件验证*
