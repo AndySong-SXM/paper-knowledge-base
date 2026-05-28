@@ -37,6 +37,7 @@
 | 026 | Julia Sets in the Quaternions | Norton A | 1989 | Comput. & Graphics 13(2) | 四元数Julia集—高维分形几何与四维混沌动力学 | [paper_026_四元数Julia集.md](paper_026_四元数Julia集.md) |
 | 027 | Design and realization of discrete memristive hyperchaotic map with application in image encryption | Lai Q, Yang L, Liu Y | 2022 | Chaos, Solitons and Fractals 165 | 离散忆阻高斯超混沌映射设计与图像加密（隐藏吸引子+极端多稳态） | [paper_027_离散忆阻高斯超混沌映射图像加密.md](paper_027_离散忆阻高斯超混沌映射图像加密.md) |
 | 028 | Generating novel multi-scroll chaotic attractors via fractal transformation | Yan D, Ji'e M, Wang L, Duan S, Du X | 2022 | Nonlinear Dynamics 107 | 分形变换生成多涡卷混沌吸引子（多环/分离/嵌套/燕子形） | [paper_028_分形变换生成多涡卷混沌吸引子.md](paper_028_分形变换生成多涡卷混沌吸引子.md) |
+| 029 | 基于FPGA的混沌神经网络同步实时实现 | 张建勋, 杨钊, 虞名海, 胡卫生, 义理林 | 2021 | 光通信研究 225 | FPGA实现神经网络混沌同步的实时加密通信（替代参数一致激光器同步） | [paper_029_FPGA混沌神经网络同步实时实现.md](paper_029_FPGA混沌神经网络同步实时实现.md) |
 
 ---
 
@@ -565,5 +566,5 @@ Julia分形过程 (Gaston Julia, 1919)
 
 ---
 
-*最后更新：2026-05-27*
-*本次更新：新增论文028精读笔记 - Generating novel multi-scroll chaotic attractors via fractal transformation (Nonlinear Dynamics 2022)，提出基于改进Julia分形算法的多涡卷混沌吸引子生成方法，首次发现燕子形吸引子，实现多环/分离/嵌套等多种拓扑结构，通过谱熵(SE)复杂度分析和STM32硬件验证*
+*最后更新：2026-05-28*
+*本次更新：新增论文029精读笔记 - 基于FPGA的混沌神经网络同步实时实现 (光通信研究 2021)，首次在FPGA上实现基于全连接神经网络(64-20-1)的混沌同步实时加密通信，用神经网络学习替代传统参数一致激光器同步方式，实现10Mbit/s NRZ信号实时加密解密，误码率6.4×10⁻⁴，FPGA资源使用率低(ALM 8%)，为点对多点实时混沌保密通信提供了可能*
