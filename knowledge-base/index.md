@@ -38,6 +38,7 @@
 | 027 | Design and realization of discrete memristive hyperchaotic map with application in image encryption | Lai Q, Yang L, Liu Y | 2022 | Chaos, Solitons and Fractals 165 | 离散忆阻高斯超混沌映射设计与图像加密（隐藏吸引子+极端多稳态） | [paper_027_离散忆阻高斯超混沌映射图像加密.md](paper_027_离散忆阻高斯超混沌映射图像加密.md) |
 | 028 | Generating novel multi-scroll chaotic attractors via fractal transformation | Yan D, Ji'e M, Wang L, Duan S, Du X | 2022 | Nonlinear Dynamics 107 | 分形变换生成多涡卷混沌吸引子（多环/分离/嵌套/燕子形） | [paper_028_分形变换生成多涡卷混沌吸引子.md](paper_028_分形变换生成多涡卷混沌吸引子.md) |
 | 029 | 基于FPGA的混沌神经网络同步实时实现 | 张建勋, 杨钊, 虞名海, 胡卫生, 义理林 | 2021 | 光通信研究 225 | FPGA实现神经网络混沌同步的实时加密通信（替代参数一致激光器同步） | [paper_029_FPGA混沌神经网络同步实时实现.md](paper_029_FPGA混沌神经网络同步实时实现.md) |
+| 030 | Discrete Gyrator Transforms: Computational Algorithms and Applications | Soo-Chang Pei, Shih-Gu Huang, Jian-Jiun Ding | 2015 | IEEE Trans. Signal Process. 63(16) | 离散Gyrator变换计算算法与应用（四种DGT方法+图像加密/水印） | [paper_030_离散Gyrator变换计算算法与应用.md](paper_030_离散Gyrator变换计算算法与应用.md) |
 
 ---
 
@@ -134,11 +135,22 @@ Chua理论预言 (1971) — 忆阻器作为第四种基本电路元件
   └── DL 攻击暴露安全性漏洞 (2019-2021)
         └── DL 辅助光学加密 (2020-2022)
               └── 安全性过度依赖网络模型 ← 核心问题
-                    └── 稀疏数据驱动框架 (Zhou et al., 2023)
-                          ├── 稀疏化操作恢复密钥安全性
-                          ├── 双网络架构（嵌入数据生成器 + 自适应解码器）
-                          ├── 无需重训练的密钥分配机制
-                          └── 可推广至多种光学密码系统
+                    ├── 稀疏数据驱动框架 (Zhou et al., 2023) ← 005号论文
+                    │     ├── 稀疏化操作恢复密钥安全性
+                    │     ├── 双网络架构（嵌入数据生成器 + 自适应解码器）
+                    │     ├── 无需重训练的密钥分配机制
+                    │     └── 可推广至多种光学密码系统
+                    └──
+        └── 变换域加密基础理论
+              └── Gyrator变换 (2006) — 2D非可分FRFT扩展
+                    └── 离散Gyrator变换DGT (Pei et al., 2015) ← 030号论文
+                          ├── DGT-LCC/DFT/CCC：基于2D LCT分解
+                          ├── DGT-DHGF：基于本征函数，完美可加性
+                          ├── 奇点避免技术（参数矩阵分解）
+                          ├── 复杂度：O(N²logN) ~ O(N³)
+                          ├── 应用：模式转换、采样重建
+                          ├── 数字水印（非可分变换更高安全性）
+                          └── 图像加密（角度α作为密钥）
 ```
 
 ### 时空混沌系统与图像加密 (Spatiotemporal Chaotic Systems)
@@ -566,5 +578,5 @@ Julia分形过程 (Gaston Julia, 1919)
 
 ---
 
-*最后更新：2026-05-28*
-*本次更新：新增论文029精读笔记 - 基于FPGA的混沌神经网络同步实时实现 (光通信研究 2021)，首次在FPGA上实现基于全连接神经网络(64-20-1)的混沌同步实时加密通信，用神经网络学习替代传统参数一致激光器同步方式，实现10Mbit/s NRZ信号实时加密解密，误码率6.4×10⁻⁴，FPGA资源使用率低(ALM 8%)，为点对多点实时混沌保密通信提供了可能*
+*最后更新：2026-05-29*
+*本次更新：新增论文030精读笔记 - Discrete Gyrator Transforms: Computational Algorithms and Applications (IEEE TSP 2015)，系统提出了四种离散Gyrator变换(DGT-LCC/DGT-DFT/DGT-CCC/DGT-DHGF)，其中DGT-DHGF基于本征函数实现了完美可加性，解决了Gyrator变换离散化的核心难题，并应用于模式转换、采样重建、数字水印和图像加密等领域*
