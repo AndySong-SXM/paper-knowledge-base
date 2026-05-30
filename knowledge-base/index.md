@@ -39,6 +39,7 @@
 | 028 | Generating novel multi-scroll chaotic attractors via fractal transformation | Yan D, Ji'e M, Wang L, Duan S, Du X | 2022 | Nonlinear Dynamics 107 | 分形变换生成多涡卷混沌吸引子（多环/分离/嵌套/燕子形） | [paper_028_分形变换生成多涡卷混沌吸引子.md](paper_028_分形变换生成多涡卷混沌吸引子.md) |
 | 029 | 基于FPGA的混沌神经网络同步实时实现 | 张建勋, 杨钊, 虞名海, 胡卫生, 义理林 | 2021 | 光通信研究 225 | FPGA实现神经网络混沌同步的实时加密通信（替代参数一致激光器同步） | [paper_029_FPGA混沌神经网络同步实时实现.md](paper_029_FPGA混沌神经网络同步实时实现.md) |
 | 030 | Discrete Gyrator Transforms: Computational Algorithms and Applications | Soo-Chang Pei, Shih-Gu Huang, Jian-Jiun Ding | 2015 | IEEE Trans. Signal Process. 63(16) | 离散Gyrator变换计算算法与应用（四种DGT方法+图像加密/水印） | [paper_030_离散Gyrator变换计算算法与应用.md](paper_030_离散Gyrator变换计算算法与应用.md) |
+| 031 | 细胞神经网络的动力学行为 | 王宏霞, 何晨 | 2003 | 物理学报 52(10) | 三阶CNN联接权参数调控与混沌产生（参数扫描+特征根分析） | [paper_031_细胞神经网络动力学行为.md](paper_031_细胞神经网络动力学行为.md) |
 
 ---
 
@@ -578,5 +579,5 @@ Julia分形过程 (Gaston Julia, 1919)
 
 ---
 
-*最后更新：2026-05-29*
-*本次更新：新增论文030精读笔记 - Discrete Gyrator Transforms: Computational Algorithms and Applications (IEEE TSP 2015)，系统提出了四种离散Gyrator变换(DGT-LCC/DGT-DFT/DGT-CCC/DGT-DHGF)，其中DGT-DHGF基于本征函数实现了完美可加性，解决了Gyrator变换离散化的核心难题，并应用于模式转换、采样重建、数字水印和图像加密等领域*
+*最后更新：2026-05-30*
+*本次更新：新增论文031精读笔记 - 细胞神经网络的动力学行为 (物理学报 2003)，研究了三阶CNN通过联接权参数α₁调控动力学行为的方法，发现线性子系统不稳定时参数调节可产生混沌吸引子、周期轨道、稳定平衡点等丰富动力学行为，混沌态和稳定态的参数区间较宽而极限环和高周期的参数区间较窄*
