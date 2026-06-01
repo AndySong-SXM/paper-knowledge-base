@@ -41,6 +41,7 @@
 | 030 | Discrete Gyrator Transforms: Computational Algorithms and Applications | Soo-Chang Pei, Shih-Gu Huang, Jian-Jiun Ding | 2015 | IEEE Trans. Signal Process. 63(16) | 离散Gyrator变换计算算法与应用（四种DGT方法+图像加密/水印） | [paper_030_离散Gyrator变换计算算法与应用.md](paper_030_离散Gyrator变换计算算法与应用.md) |
 | 031 | 细胞神经网络的动力学行为 | 王宏霞, 何晨 | 2003 | 物理学报 52(10) | 三阶CNN联接权参数调控与混沌产生（参数扫描+特征根分析） | [paper_031_细胞神经网络动力学行为.md](paper_031_细胞神经网络动力学行为.md) |
 | 032 | Multi-scroll expansion of 3D and 4D Jerk systems and its DSP implement | Zhang J, Li G, Pan H, Chen X | 2025 | Chinese Journal of Physics 94 | 3D和4D Jerk系统的多涡卷扩展及其DSP实现（符号函数控制） | [paper_032_3D4D_Jerk系统多涡卷扩展.md](paper_032_3D4D_Jerk系统多涡卷扩展.md) |
+| 033 | Dynamical analysis of controllable multi-double-scroll memristive chaotic systems for signal detection | Huang D, Lai Q, Erkan U, Toktas A | 2026 | Chaos, Solitons and Fractals 202 | 可控多双涡流忆阻混沌系统渐进式耦合构造及弱信号检测应用 | [paper_033_可控多双涡流忆阻混沌系统信号检测.md](paper_033_可控多双涡流忆阻混沌系统信号检测.md) |
 
 ---
 
@@ -581,5 +582,5 @@ Julia分形过程 (Gaston Julia, 1919)
 
 ---
 
-*最后更新：2026-05-31*
-*本次更新：新增论文032精读笔记 - 3D和4D Jerk系统的多涡卷扩展及其DSP实现 (Chinese Journal of Physics 2025)，提出了基于符号函数组合的简洁控制函数，实现了3D和4D Jerk系统的多涡卷扩展，包括单涡卷和双涡卷两种配置，最多实现72个涡卷，通过TMS320F28335 DSP硬件实现验证了工程应用潜力*
+*最后更新：2026-06-01*
+*本次更新：新增论文033精读笔记 - 可控多双涡流忆阻混沌系统用于信号检测的动态分析 (Chaos, Solitons and Fractals 202, 2026)，提出了通过渐进式耦合1-3个磁通控制忆阻器到jerk系统构造1D/2D/3D可控多双涡流吸引子的方法，首次将多涡卷混沌系统与同步理论结合用于低SNR（-47 dB）弱信号频率检测，通过Multisim仿真和STM32硬件实现验证了理论结果*
