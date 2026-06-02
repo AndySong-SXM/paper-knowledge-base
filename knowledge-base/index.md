@@ -42,6 +42,7 @@
 | 031 | 细胞神经网络的动力学行为 | 王宏霞, 何晨 | 2003 | 物理学报 52(10) | 三阶CNN联接权参数调控与混沌产生（参数扫描+特征根分析） | [paper_031_细胞神经网络动力学行为.md](paper_031_细胞神经网络动力学行为.md) |
 | 032 | Multi-scroll expansion of 3D and 4D Jerk systems and its DSP implement | Zhang J, Li G, Pan H, Chen X | 2025 | Chinese Journal of Physics 94 | 3D和4D Jerk系统的多涡卷扩展及其DSP实现（符号函数控制） | [paper_032_3D4D_Jerk系统多涡卷扩展.md](paper_032_3D4D_Jerk系统多涡卷扩展.md) |
 | 033 | Dynamical analysis of controllable multi-double-scroll memristive chaotic systems for signal detection | Huang D, Lai Q, Erkan U, Toktas A | 2026 | Chaos, Solitons and Fractals 202 | 可控多双涡流忆阻混沌系统渐进式耦合构造及弱信号检测应用 | [paper_033_可控多双涡流忆阻混沌系统信号检测.md](paper_033_可控多双涡流忆阻混沌系统信号检测.md) |
+| 034 | Shannon Entropy based Randomness Measurement and Test for Image Encryption | Wu Y, Noonan J P, Agaian S | 2018 | Information Sciences | 基于香农熵的图像加密随机性测量与测试（分块熵测试+Z检验+Berry-Esseen误差控制） | [paper_034_基于香农熵的图像加密随机性测量与测试.md](paper_034_基于香农熵的图像加密随机性测量与测试.md) |
 
 ---
 
@@ -582,5 +583,5 @@ Julia分形过程 (Gaston Julia, 1919)
 
 ---
 
-*最后更新：2026-06-01*
-*本次更新：新增论文033精读笔记 - 可控多双涡流忆阻混沌系统用于信号检测的动态分析 (Chaos, Solitons and Fractals 202, 2026)，提出了通过渐进式耦合1-3个磁通控制忆阻器到jerk系统构造1D/2D/3D可控多双涡流吸引子的方法，首次将多涡卷混沌系统与同步理论结合用于低SNR（-47 dB）弱信号频率检测，通过Multisim仿真和STM32硬件实现验证了理论结果*
+*最后更新：2026-06-02*
+*本次更新：新增论文034精读笔记 - Shannon Entropy based Randomness Measurement and Test for Image Encryption (Information Sciences, 2018)，提出了基于分块熵测试的图像加密随机性评估方法，通过计算K个非重叠图像块的Shannon熵均值并与理想加密图像的理论参考值比较，首次实现了图像加密质量的定量和定性（统计假设检验）双重评估；严格推导了理想加密图像下分块熵的理论均值和方差，建立了Z检验框架和Berry-Esseen误差上界；实验验证了二进制分组密码不适合图像数据，而图像专用密码（如Sudoku）能生成真正随机密文*
