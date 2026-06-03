@@ -43,6 +43,7 @@
 | 032 | Multi-scroll expansion of 3D and 4D Jerk systems and its DSP implement | Zhang J, Li G, Pan H, Chen X | 2025 | Chinese Journal of Physics 94 | 3D和4D Jerk系统的多涡卷扩展及其DSP实现（符号函数控制） | [paper_032_3D4D_Jerk系统多涡卷扩展.md](paper_032_3D4D_Jerk系统多涡卷扩展.md) |
 | 033 | Dynamical analysis of controllable multi-double-scroll memristive chaotic systems for signal detection | Huang D, Lai Q, Erkan U, Toktas A | 2026 | Chaos, Solitons and Fractals 202 | 可控多双涡流忆阻混沌系统渐进式耦合构造及弱信号检测应用 | [paper_033_可控多双涡流忆阻混沌系统信号检测.md](paper_033_可控多双涡流忆阻混沌系统信号检测.md) |
 | 034 | Shannon Entropy based Randomness Measurement and Test for Image Encryption | Wu Y, Noonan J P, Agaian S | 2018 | Information Sciences | 基于香农熵的图像加密随机性测量与测试（分块熵测试+Z检验+Berry-Esseen误差控制） | [paper_034_基于香农熵的图像加密随机性测量与测试.md](paper_034_基于香农熵的图像加密随机性测量与测试.md) |
+| 035 | Some simple chaotic flows | Sprott J C | 1994 | Physical Review E 50(2) | 最简混沌流的系统搜索与Sprott-A保守混沌系统发现 | [paper_035_Sprott简单混沌流.md](paper_035_Sprott简单混沌流.md) |
 
 ---
 
@@ -583,5 +584,5 @@ Julia分形过程 (Gaston Julia, 1919)
 
 ---
 
-*最后更新：2026-06-02*
-*本次更新：新增论文034精读笔记 - Shannon Entropy based Randomness Measurement and Test for Image Encryption (Information Sciences, 2018)，提出了基于分块熵测试的图像加密随机性评估方法，通过计算K个非重叠图像块的Shannon熵均值并与理想加密图像的理论参考值比较，首次实现了图像加密质量的定量和定性（统计假设检验）双重评估；严格推导了理想加密图像下分块熵的理论均值和方差，建立了Z检验框架和Berry-Esseen误差上界；实验验证了二进制分组密码不适合图像数据，而图像专用密码（如Sudoku）能生成真正随机密文*
+*最后更新：2026-06-03*
+*本次更新：新增论文035精读笔记 - Some simple chaotic flows (Physical Review E, 1994)，Sprott教授通过系统性数值搜索在30维系数空间中发现了19个最简三维混沌ODE系统，确立了混沌系统的代数复杂度下限（至少5项+2个非线性项或6项+1个非线性项），发现了经典的Sprott-A保守混沌系统（无临界点、体积守恒、时间反演不变），为保守混沌系统研究奠定了重要基础，直接启发了Cang等人(2020)的广义Sprott-A系统研究（知识库001号论文）*
