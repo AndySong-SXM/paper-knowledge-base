@@ -44,6 +44,7 @@
 | 033 | Dynamical analysis of controllable multi-double-scroll memristive chaotic systems for signal detection | Huang D, Lai Q, Erkan U, Toktas A | 2026 | Chaos, Solitons and Fractals 202 | 可控多双涡流忆阻混沌系统渐进式耦合构造及弱信号检测应用 | [paper_033_可控多双涡流忆阻混沌系统信号检测.md](paper_033_可控多双涡流忆阻混沌系统信号检测.md) |
 | 034 | Shannon Entropy based Randomness Measurement and Test for Image Encryption | Wu Y, Noonan J P, Agaian S | 2018 | Information Sciences | 基于香农熵的图像加密随机性测量与测试（分块熵测试+Z检验+Berry-Esseen误差控制） | [paper_034_基于香农熵的图像加密随机性测量与测试.md](paper_034_基于香农熵的图像加密随机性测量与测试.md) |
 | 035 | Some simple chaotic flows | Sprott J C | 1994 | Physical Review E 50(2) | 最简混沌流的系统搜索与Sprott-A保守混沌系统发现 | [paper_035_Sprott简单混沌流.md](paper_035_Sprott简单混沌流.md) |
+| 036 | Flexible cascade and parallel operations of discrete memristor | Yuan F, Xing G, Deng Y | 2023 | Chaos, Solitons and Fractals 166 | 离散忆阻器的柔性级联与并联操作框架（多DM组合构造超混沌映射） | [paper_036_离散忆阻器柔性级联与并联操作.md](paper_036_离散忆阻器柔性级联与并联操作.md) |
 
 ---
 
@@ -584,5 +585,5 @@ Julia分形过程 (Gaston Julia, 1919)
 
 ---
 
-*最后更新：2026-06-03*
-*本次更新：新增论文035精读笔记 - Some simple chaotic flows (Physical Review E, 1994)，Sprott教授通过系统性数值搜索在30维系数空间中发现了19个最简三维混沌ODE系统，确立了混沌系统的代数复杂度下限（至少5项+2个非线性项或6项+1个非线性项），发现了经典的Sprott-A保守混沌系统（无临界点、体积守恒、时间反演不变），为保守混沌系统研究奠定了重要基础，直接启发了Cang等人(2020)的广义Sprott-A系统研究（知识库001号论文）*
+*最后更新：2026-06-04*
+*本次更新：新增论文036精读笔记 - Flexible cascade and parallel operations of discrete memristor (Chaos, Solitons and Fractals, 2023)，Yuan等人首次系统化提出离散忆阻器(DM)的级联(Cascade)和并联(Parallel)操作框架，通过组合多个DM构造新的超混沌映射。核心创新包括：三种新型DM模型（QA-DM/QS-DM/ES-DM）、非线性级联操作（DM顺序影响系统行为）与线性并联操作（DM顺序无关）的互补设计、以及级联-并联复合操作。三个示例映射均展示超混沌行为（两个正LE），具有更大的参数空间和混沌区域，DSP硬件实现验证正确，NIST 15项测试全部通过。该工作从"设计专门DM映射"到"提供通用构造方法"实现了范式转变，与知识库003号（并行双忆阻器）、014号（N维非退化DM映射）形成方法互补*
