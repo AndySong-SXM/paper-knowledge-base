@@ -45,6 +45,7 @@
 | 034 | Shannon Entropy based Randomness Measurement and Test for Image Encryption | Wu Y, Noonan J P, Agaian S | 2018 | Information Sciences | 基于香农熵的图像加密随机性测量与测试（分块熵测试+Z检验+Berry-Esseen误差控制） | [paper_034_基于香农熵的图像加密随机性测量与测试.md](paper_034_基于香农熵的图像加密随机性测量与测试.md) |
 | 035 | Some simple chaotic flows | Sprott J C | 1994 | Physical Review E 50(2) | 最简混沌流的系统搜索与Sprott-A保守混沌系统发现 | [paper_035_Sprott简单混沌流.md](paper_035_Sprott简单混沌流.md) |
 | 036 | Flexible cascade and parallel operations of discrete memristor | Yuan F, Xing G, Deng Y | 2023 | Chaos, Solitons and Fractals 166 | 离散忆阻器的柔性级联与并联操作框架（多DM组合构造超混沌映射） | [paper_036_离散忆阻器柔性级联与并联操作.md](paper_036_离散忆阻器柔性级联与并联操作.md) |
+| 037 | Multi-medical image encryption by a new spatiotemporal chaos model and DNA new computing | Liu H, Teng L, Zhang Y, Si R, Liu P | 2024 | Expert Systems With Applications 235 | SAMCML时空混沌模型+像素模糊+新型DNA操作+3D-Fisher多医学图像加密 | [paper_037_SAMCML多医学图像DNA加密.md](paper_037_SAMCML多医学图像DNA加密.md) |
 
 ---
 
@@ -206,6 +207,15 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
         ├── 首个离散忆阻器混沌映射模拟电路（Psim）
         ├── DSP数字电路验证（TMS320）
         └── Knowm物理忆阻器器件验证
+  └── SAMCML (Liu et al., 2024) — Sin-Arcsin-Arnold多重动态随机非邻接耦合映射格子 ← 037号论文
+        ├── Arnold映射控制随机非邻接耦合（a=11, b=13）
+        ├── 动态自适应格子映射（Sin-Arcsin复合映射替代固定Logistic）
+        ├── 参数范围(0,+∞)，全格子混沌
+        ├── 像素模糊+SHA-512实现"一密一钥"
+        ├── 明文依赖的非对称DNA编解码+新型DNA操作矩阵
+        ├── 3D-Fisher跨平面置乱（支持不同尺寸多图像）
+        ├── 信息熵7.9993，NPCR≈99.62%，UACI≈33.46%
+        └── 全白/全黑特殊图像测试通过
 ```
 
 ### 分数阶忆阻Hopfield神经网络 (Fractional-Order Memristive HNN)
@@ -250,6 +260,7 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
 | 2020 | 多重动态耦合映射格子时空混沌系统 | Tao Y et al., JISA |
 | 2024 | 分数阶忆阻HNN超混沌多涡卷FPGA实现 | Kong X et al., Neural Networks |
 | 2024 | 非邻接动态耦合映射格子多人脸图像加密 | Du L et al., ESWA |
+| 2024 | SAMCML时空混沌+像素模糊+新型DNA操作多医学图像加密 | Liu H et al., ESWA |
 | 2024 | 离散忆阻器耦合正弦图格时空混沌 | He S et al., IEEE TCAS-I |
 | 2023 | 基于PWLCM-CML的图像加密算法（中间序列复用+双向扩散） | Fan S et al., Multimedia Tools Appl. |
 | 2022 | 新型全混沌耦合映射格子(TWMCML)及隐私图像加密 | Wang X, Liu P, IEEE TCAS-I |
@@ -585,5 +596,5 @@ Julia分形过程 (Gaston Julia, 1919)
 
 ---
 
-*最后更新：2026-06-04*
-*本次更新：新增论文036精读笔记 - Flexible cascade and parallel operations of discrete memristor (Chaos, Solitons and Fractals, 2023)，Yuan等人首次系统化提出离散忆阻器(DM)的级联(Cascade)和并联(Parallel)操作框架，通过组合多个DM构造新的超混沌映射。核心创新包括：三种新型DM模型（QA-DM/QS-DM/ES-DM）、非线性级联操作（DM顺序影响系统行为）与线性并联操作（DM顺序无关）的互补设计、以及级联-并联复合操作。三个示例映射均展示超混沌行为（两个正LE），具有更大的参数空间和混沌区域，DSP硬件实现验证正确，NIST 15项测试全部通过。该工作从"设计专门DM映射"到"提供通用构造方法"实现了范式转变，与知识库003号（并行双忆阻器）、014号（N维非退化DM映射）形成方法互补*
+*最后更新：2026-06-05*
+*本次更新：新增论文037精读笔记 - Multi-medical image encryption by a new spatiotemporal chaos model and DNA new computing (Expert Systems With Applications, 2024)，Liu等人提出SAMCML（Sin-Arcsin-Arnold Multi-Dynamic random nonadjacent Coupled Map Lattice）时空混沌模型，通过Arnold映射引入随机非邻接耦合、动态自适应格子映射和Sin-Arcsin复合映射三项增强实现全格子混沌。核心创新包括：像素模糊技术结合SHA-512实现"一密一钥"、明文依赖的非对称DNA编解码、新型DNA操作矩阵（突破经典DNA加/减/XOR限制）、3D-Fisher跨平面置乱支持不同尺寸多图像同时加密。信息熵7.9993、NPCR≈99.62%、UACI≈33.46%，全白/全黑特殊图像测试通过。该工作从时空混沌模型改进和DNA新计算两个维度为医学多图像加密提供了新方案，与知识库008号（MDCML）、010号（NCMLP）、024号（TWMCML）形成CML改进方法的系列对比*
