@@ -46,6 +46,7 @@
 | 035 | Some simple chaotic flows | Sprott J C | 1994 | Physical Review E 50(2) | 最简混沌流的系统搜索与Sprott-A保守混沌系统发现 | [paper_035_Sprott简单混沌流.md](paper_035_Sprott简单混沌流.md) |
 | 036 | Flexible cascade and parallel operations of discrete memristor | Yuan F, Xing G, Deng Y | 2023 | Chaos, Solitons and Fractals 166 | 离散忆阻器的柔性级联与并联操作框架（多DM组合构造超混沌映射） | [paper_036_离散忆阻器柔性级联与并联操作.md](paper_036_离散忆阻器柔性级联与并联操作.md) |
 | 037 | Multi-medical image encryption by a new spatiotemporal chaos model and DNA new computing | Liu H, Teng L, Zhang Y, Si R, Liu P | 2024 | Expert Systems With Applications 235 | SAMCML时空混沌模型+像素模糊+新型DNA操作+3D-Fisher多医学图像加密 | [paper_037_SAMCML多医学图像DNA加密.md](paper_037_SAMCML多医学图像DNA加密.md) |
+| 038 | A Parallel Color Image Encryption Algorithm Based on a 2-D Logistic-Rulkov Neuron Map | Gao S, Zhang Z, Iu HHC, Ding S, Mou J, Erkan U, Toktas A, Li Q, Wang C, Cao Y | 2025 | IEEE Internet of Things Journal 12(11) | 二维Logistic-Rulkov神经元映射(2D-LRNM)并行彩色图像加密 | [paper_038_二维Logistic-Rulkov神经元映射并行图像加密.md](paper_038_二维Logistic-Rulkov神经元映射并行图像加密.md) |
 
 ---
 
@@ -596,5 +597,5 @@ Julia分形过程 (Gaston Julia, 1919)
 
 ---
 
-*最后更新：2026-06-05*
-*本次更新：新增论文037精读笔记 - Multi-medical image encryption by a new spatiotemporal chaos model and DNA new computing (Expert Systems With Applications, 2024)，Liu等人提出SAMCML（Sin-Arcsin-Arnold Multi-Dynamic random nonadjacent Coupled Map Lattice）时空混沌模型，通过Arnold映射引入随机非邻接耦合、动态自适应格子映射和Sin-Arcsin复合映射三项增强实现全格子混沌。核心创新包括：像素模糊技术结合SHA-512实现"一密一钥"、明文依赖的非对称DNA编解码、新型DNA操作矩阵（突破经典DNA加/减/XOR限制）、3D-Fisher跨平面置乱支持不同尺寸多图像同时加密。信息熵7.9993、NPCR≈99.62%、UACI≈33.46%，全白/全黑特殊图像测试通过。该工作从时空混沌模型改进和DNA新计算两个维度为医学多图像加密提供了新方案，与知识库008号（MDCML）、010号（NCMLP）、024号（TWMCML）形成CML改进方法的系列对比*
+*最后更新：2026-06-06*
+*本次更新：新增论文038精读笔记 - A Parallel Color Image Encryption Algorithm Based on a 2-D Logistic-Rulkov Neuron Map (IEEE Internet of Things Journal, 2025)，Gao等人提出二维Logistic-Rulkov神经元映射(2D-LRNM)，将Logistic映射的简洁混沌特性与Rulkov神经元映射的多时间尺度动力学融合，通过sin函数包裹确保有界性。核心创新包括：跨通道信息交互的并行加密架构（通道级+块级并行，计算时间减少83.3%）、从中间列向两侧扩展的双向链式扩散策略、三次差异化KGM调用生成独立密钥流。安全性指标：信息熵7.9993+、相关系数≈0.001、NPCR>99.60%、UACI≈33.46%。TMS320F28335 DSP硬件验证。该工作从并行计算效率优化的角度为IoT场景下的图像加密提供了新方案，与知识库006号（参数帕斯卡矩阵）、023号（PWLCM-CML）、024号（TWMCML）、037号（SAMCML）形成混沌系统设计与加密效率优化的系列对比*
