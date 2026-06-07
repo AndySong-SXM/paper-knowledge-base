@@ -47,6 +47,7 @@
 | 036 | Flexible cascade and parallel operations of discrete memristor | Yuan F, Xing G, Deng Y | 2023 | Chaos, Solitons and Fractals 166 | 离散忆阻器的柔性级联与并联操作框架（多DM组合构造超混沌映射） | [paper_036_离散忆阻器柔性级联与并联操作.md](paper_036_离散忆阻器柔性级联与并联操作.md) |
 | 037 | Multi-medical image encryption by a new spatiotemporal chaos model and DNA new computing | Liu H, Teng L, Zhang Y, Si R, Liu P | 2024 | Expert Systems With Applications 235 | SAMCML时空混沌模型+像素模糊+新型DNA操作+3D-Fisher多医学图像加密 | [paper_037_SAMCML多医学图像DNA加密.md](paper_037_SAMCML多医学图像DNA加密.md) |
 | 038 | A Parallel Color Image Encryption Algorithm Based on a 2-D Logistic-Rulkov Neuron Map | Gao S, Zhang Z, Iu HHC, Ding S, Mou J, Erkan U, Toktas A, Li Q, Wang C, Cao Y | 2025 | IEEE Internet of Things Journal 12(11) | 二维Logistic-Rulkov神经元映射(2D-LRNM)并行彩色图像加密 | [paper_038_二维Logistic-Rulkov神经元映射并行图像加密.md](paper_038_二维Logistic-Rulkov神经元映射并行图像加密.md) |
+| 039 | Multi-scroll and multi-wing chaotic attractor generated with Julia process fractal | Bouallegue K, Chaari A, Toumi A | 2011 | Chaos, Solitons and Fractals 44 | Julia分形过程生成多涡卷多翼混沌吸引子（级联机制） | [paper_039_Julia过程分形生成多涡卷多翼混沌吸引子.md](paper_039_Julia过程分形生成多涡卷多翼混沌吸引子.md) |
 
 ---
 
@@ -597,5 +598,5 @@ Julia分形过程 (Gaston Julia, 1919)
 
 ---
 
-*最后更新：2026-06-06*
-*本次更新：新增论文038精读笔记 - A Parallel Color Image Encryption Algorithm Based on a 2-D Logistic-Rulkov Neuron Map (IEEE Internet of Things Journal, 2025)，Gao等人提出二维Logistic-Rulkov神经元映射(2D-LRNM)，将Logistic映射的简洁混沌特性与Rulkov神经元映射的多时间尺度动力学融合，通过sin函数包裹确保有界性。核心创新包括：跨通道信息交互的并行加密架构（通道级+块级并行，计算时间减少83.3%）、从中间列向两侧扩展的双向链式扩散策略、三次差异化KGM调用生成独立密钥流。安全性指标：信息熵7.9993+、相关系数≈0.001、NPCR>99.60%、UACI≈33.46%。TMS320F28335 DSP硬件验证。该工作从并行计算效率优化的角度为IoT场景下的图像加密提供了新方案，与知识库006号（参数帕斯卡矩阵）、023号（PWLCM-CML）、024号（TWMCML）、037号（SAMCML）形成混沌系统设计与加密效率优化的系列对比*
+*最后更新：2026-06-07*
+*本次更新：新增论文039精读笔记 - Multi-scroll and multi-wing chaotic attractor generated with Julia process fractal (Chaos, Solitons and Fractals, 2011)，Bouallegue等人首次将Julia分形过程作为开关函数与Lorenz系统组合，通过级联机制实现涡卷/翼数量按$2^n$指数增长。核心方法包括：Julia过程+单Lorenz系统生成多涡卷、Julia过程+主从Lorenz系统、Julia过程+双耦合Lorenz系统生成多翼（最多32翼）、Julia过程+Qi四翼系统。该工作是Bouallegue分形多涡卷混沌系统系列研究的奠基论文（早于019号Bouallegue 2015），为后续Yan et al. 2022（028号）和Yan et al. 2023（015号）的改进Julia分形算法提供了方法论基础。不足之处：缺乏Lyapunov指数计算、分岔分析等理论深度，无硬件验证和加密应用评估*
