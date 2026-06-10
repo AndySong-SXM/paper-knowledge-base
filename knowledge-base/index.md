@@ -50,6 +50,7 @@
 | 039 | Multi-scroll and multi-wing chaotic attractor generated with Julia process fractal | Bouallegue K, Chaari A, Toumi A | 2011 | Chaos, Solitons and Fractals 44 | Julia分形过程生成多涡卷多翼混沌吸引子（级联机制） | [paper_039_Julia过程分形生成多涡卷多翼混沌吸引子.md](paper_039_Julia过程分形生成多涡卷多翼混沌吸引子.md) |
 | 040 | Visually secure medical image encryption algorithm based on improved YOLOv11 and replacement strategy for region of interest | Zhu X-Y, Hu L-L, Gong L-H | 2026 | Nonlinear Dynamics 114:103 | 改进YOLOv11+ROI替换策略的视觉安全医学图像加密（DFF+MSDA+LaMa+5D-MHS） | [paper_040_YOLOv11_ROI视觉安全医学图像加密.md](paper_040_YOLOv11_ROI视觉安全医学图像加密.md) |
 | 041 | Precise and scalable analogue matrix equation solving using resistive random-access memory chips | Zuo P, Wang Q, Luo Y, Xie R, Wang S, Cheng Z, Bao L, Wang Z, Cai Y, Huang R, Sun Z | 2025 | Nature Electronics | 基于RRAM芯片的精确可扩展模拟矩阵方程求解（LP-INV+HP-MVM迭代精化+BlockAMC） | [paper_041_RRAM高精度模拟矩阵方程求解.md](paper_041_RRAM高精度模拟矩阵方程求解.md) |
+| 042 | Transversal homoclinic points of the Hénon map | Kirchgraber U, Stoffer D | 2006 | Annali di Matematica 185 | Hénon映射横向同宿点的shadowing技术证明（支持Devaney-Nitecki猜想） | [paper_042_Hénon映射横向同宿点.md](paper_042_Hénon映射横向同宿点.md) |
 
 ---
 
@@ -600,8 +601,10 @@ Julia分形过程 (Gaston Julia, 1919)
 
 ---
 
-*最后更新：2026-06-09
-*本次更新：新增论文041精读笔记 - Precise and scalable analogue matrix equation solving using resistive random-access memory chips (Nature Electronics, 2025)，北京大学孙仲团队提出了一种全模拟域的高精度矩阵方程求解方案。核心创新包括：(1) LP-INV（低精度模拟矩阵求逆）+ HP-MVM（高精度位切片矩阵-向量乘法）的迭代精化框架，完全在模拟域实现；(2) 3位RRAM芯片通过位切片实现24位定点精度；(3) BlockAMC算法实现16×16矩阵求逆的硬件验证；(4) 40nm CMOS工厂流片芯片验证。应用验证：128×8大规模MIMO、256-QAM调制下仅需3轮迭代即匹配FP32数字处理器性能。理论预测可实现1000×吞吐量和100×能效提升。该论文为忆阻计算从实验室走向实际应用提供了重要里程碑，与知识库中021号(Strukov 2008忆阻器物理实现)、033号(Huang 2026忆阻混沌信号检测)等论文形成互补研究脉络*
+*最后更新：2026-06-10
+*本次更新：新增论文042精读笔记 - Transversal homoclinic points of the Hénon map (Annali di Matematica, 2006)，Kirchgraber和Stoffer利用shadowing（跟踪）技术证明了Hénon映射在较大参数范围内存在横向同宿点。核心创新包括：(1) 将shadowing技术从计算机辅助工具提升为解析证明工具，首次展示了其在获得纯解析结果方面的能力；(2) 巧妙利用Hénon映射的特殊代数结构，将二维shadowing问题简化为一维线性算子K的逆估计；(3) 解析证明保面积Hénon映射（b=-1）在a≥0.265625时存在横向同宿点；(4) 结合计算机辅助方法（区间算术+参数延拓）将结果推广到a≥-0.866360，显著推进了Devaney-Nitecki猜想（a>-1）。该论文为混沌系统的严格数学证明提供了新的方法论工具，与知识库中025号(Lorenz 1963混沌发现)、020号(Ge&Lee 1997细胞映射全局分析)、012号(de Souza 2004冲击系统LE计算)等论文共同构成了动力系统严格分析的方法论体系*
+
+*上次更新：2026-06-09 - 新增论文041精读笔记 - Precise and scalable analogue matrix equation solving using resistive random-access memory chips (Nature Electronics, 2025)，北京大学孙仲团队提出了一种全模拟域的高精度矩阵方程求解方案。核心创新包括：(1) LP-INV（低精度模拟矩阵求逆）+ HP-MVM（高精度位切片矩阵-向量乘法）的迭代精化框架，完全在模拟域实现；(2) 3位RRAM芯片通过位切片实现24位定点精度；(3) BlockAMC算法实现16×16矩阵求逆的硬件验证；(4) 40nm CMOS工厂流片芯片验证。应用验证：128×8大规模MIMO、256-QAM调制下仅需3轮迭代即匹配FP32数字处理器性能。理论预测可实现1000×吞吐量和100×能效提升。该论文为忆阻计算从实验室走向实际应用提供了重要里程碑，与知识库中021号(Strukov 2008忆阻器物理实现)、033号(Huang 2026忆阻混沌信号检测)等论文形成互补研究脉络*
 
 *上次更新：2026-06-08 - 新增论文040精读笔记 - Visually secure medical image encryption algorithm based on improved YOLOv11 and replacement strategy for region of interest (Nonlinear Dynamics, 2026)，Zhu等人提出了一种三层架构的视觉安全医学图像加密方案：(1)改进YOLOv11集成DFF动态特征融合和MSDA多尺度膨胀注意力机制，提升病变ROI检测精度；(2)MLBPE多层比特平面加密结合5D忆阻超混沌系统实现高强度ROI加密；(3)LaMa图像修复模型生成自然伪ROI，通过矩阵编码将加密ROI嵌入伪明文图像，实现视觉有意义的密文。该论文跨学科融合了深度学习目标检测、图像修复和混沌加密三大领域，是医学图像隐私保护的新方向。不足之处：混沌系统直接引用他人工作、LaMa模型依赖预训练、未测试彩色图像、缺乏抗裁剪/噪声鲁棒性评估*
 
