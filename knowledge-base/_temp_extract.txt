@@ -1,0 +1,2399 @@
+--- PAGE 1 ---
+NonlinearDyn
+https://doi.org/10.1007/s11071-021-06875-5
+ORIGINAL PAPER
+A fractional-order ship power system with extreme
+multistability
+HaoyuZhang · KehuiSun · ShaoboHe
+Received:13May2021/Accepted:26August2021
+©TheAuthor(s),underexclusivelicencetoSpringerNatureB.V.2021
+Abstract In this paper, by introducing Caputo 1 Introduction
+fractional-order definition into a ship power system
+with two parallel generators, a fractional-order ship Chaosisanirregularandcomplexmotionbehaviorin
+power system with extreme multistability is con- a deterministic system, and it is one of the research
+structed. The decomposition of trigonometric func- hotspots in nonlinear field. Chaos is ubiquitous in
+tion product terms is optimized based on the Ado- nature [1–4]. For example, American meteorologist
+mian decomposition method (ADM). Dynamics of Lorenz obtained the famous Lorenz system based on
+thefractional-ordershippowersystemisanalyzedby the atmospheric circulation model [1], and American
+phasediagrams,bifurcationdiagrams,Lyapunovexpo- mathematical biologist May found the Logistic map
+nents(LEs)andSEcomplexity.Theresultsshowthatit based on the population equation of ecology [2]. In
+has rich dynamical characteristics, including variable recent years, chaos has been applied in many fields,
+phasespacetrajectory,coexistingattractorsandtypical suchascontrol,encryption,powersystems,neuralnet-
+bifurcations. Moreover, some interesting phenomena works,etc[5–9].
+are observed, such as angular instability, multi-scroll Fractionalcalculusistheextensionofclassicalcal-
+chaotic attractor and the attractor offset based on the culus. Fractional operators are able to include mem-
+initial values. The influencing factors of multi-scroll ory and filter effects into ordinary and partial dif-
+numberareexploredandextrememultistabilityofthe ferential equations. Due to this, fractional differen-
+systemisproved.Finally,thenumericalsimulationand tial equations have been widely used in the develop-
+theoreticalanalysisareverifiedbydigitalcircuitreal- ment of many modern problems in engineering prac-
+ization.Theresearchresultslaythefoundationforthe tices and applied sciences [10–12]. Moreover, for a
+applicationofthefractional-ordershippowersystem. physical system, the fractional calculus modeling is
+moreaccurate,andthefractional-ordernonlinearsys-
+Keywords Chaos·Fractionalcalculus·Shippower temscanrevealricherdynamicalcharacteristicscom-
+system · Multi-scroll chaotic attractor · Extreme paredwiththeinteger-ordersystems[13–15].Among
+multistability thedefinitionsoffractional-ordercalculus,therecog-
+nized ones are Grunwald–Letnikov (GL) definition,
+Riemann–Liouville (RL) definition and Caputo def-
+inition [16]. Particularly, the Caputo definition has
+B
+H.Zhang·K.Sun ( ) ·S.He
+a clearer physical explanation. It is beneficial to the
+SchoolofPhysicsandElectronics,CentralSouth
+solution of actual systems and has practical engi-
+University,Changsha410083,China
+e-mail:kehui@csu.edu.cn
+123
+
+--- PAGE 2 ---
+H.Zhangetal.
+neering application value. The more commonly used instance, Li et al. presented a discrete memristor and
+algorithmsforsolvingfractional-orderchaoticsystem constructedageneraltwo-dimensionalmemristivemap
+aretheAdams–Bashforth–Moulton(ABM)algorithm modelbycouplingthediscretememristorwithanexist-
+[17]andtheAdomiandecompositionmethod(ADM) ingdiscretemap[29].Linetal.investigatedthechaotic
+[18]. In terms of time complexity, space complexity dynamicsinathree-neuron-basedHopfieldneuralnet-
+andsolutionspeed,theAdomiandecompositionalgo- work(HNN)withstimulationofelectromagneticradi-
+rithm is better. At present, there are many literatures ation[30].Baoetal.introducedperiodicfunctionsinto
+usingAdomiandecompositionalgorithmtoinvestigate the2-Dsinemapanddiscoveredinitials-boostedcoex-
+fractional-orderchaoticsystems.Forexample,Chenet isting chaos [31]. Wang et al. constructed a charge-
+al.analyzedthefractional-orderchaoticsystemswith controlled memristive chaotic system using the tiny
+lineequilibrium[19].Pengetal.conductedanumerical disturbancemethod[32].Thenewsystemsmentioned
+analysis of the simplest fractional-order hyperchaotic above have extreme multistability. The multi-scroll
+system[20].Fazzinoetal.usedtheADMalgorithmto chaoticsystemmakesthephasespacetrajectorymore
+solvethefractional-orderHopfieldneuralnetwork[21]. complicatedbyaddingmemristororcontroltotheorig-
+Theseresearchesinvolvethesolutionprocessingofsgn inalsystem.Forexample,Xiaetal.builtanewmulti-
+functionandtanhfunction.However,thereisnoliter- scrollhyperchaoticsystembyintroducingmemristors
+atureonsolvingthecompoundtermsoftrigonometric intothe three-dimensional Jerksystem[33].Heetal.
+functionssuchassinxcosx.Here,themethodforsolv- introducedastepfunctiontoobtainann-dimensional
+ingfractional-orderchaoticsystemwithtrigonometric multi-scrollpulsechaoticsystem[34].Aietal.useda
+functionsispresented. compoundcontrolmethodtoconstructamulti-wing–
+The ship power system has the characteristics multi-scroll grid compound chaotic system [35]. In
+of strong nonlinearity, strong coupling and complex 2016, Lietal.proposed thatthrough theintroduction
+dynamicalbehaviors[22].Theangularinstabilityisthe ofasingleconstant,thesystemattractorcanshift[36].
+unstablestateoftheshippowersystemduringopera- Themethodsdiscussedaboveallneedtoaddmemris-
+tion. It causes chaos oscillation and threatens the sta- tor,controlorconstanttotheoriginalchaoticsystem.
+bleoperationofthepowersystem[23].Astherunning However,thefractional-ordershippowersystempro-
+time increases, the chaotic oscillation becomes more posed in this paper does not add memristor, control
+uncontrollable,andeventuallyleadstothecollapseof or constant. The new system shows some interesting
+the power system. By introducing chaos theory into phenomenasuchasextrememultistability,multi-scroll
+thepowersystem,Zhouetal.studiedtheinfluenceof attractorandattractorshifts.Ithasaprofoundimpact
+parametersonsystemstability[24].Mostofthestudies onsubsequentresearch.
+arebasedoninteger-orderpowersystems.Forexample, Comparedwiththeanalogcircuitsimplementation
+Wang et al. found the dynamical behaviors of a clas- [37–39], digital circuit DSP (digital signal processor)
+sical single-machine infinite-bus power system [25]. hastheadvantagesofgoodstability,repeatabilityand
+Ma et al. established a four-dimensional power sys- large-scaleintegration,especiallyitsprogrammability
+temmodel[26].Withthewidespreaduseoffractional- andeasyimplementation.Recently,ithasbecomemore
+ordermodels,manyresearchershaverealizedthatthe popular in the field of realization of chaotic systems
+fractional-ordermodelsdescribephysicalphenomena [40–44].Asfarasweknow,thereisnoresearchonthe
+more clearly. For example, Panda et al. analyzed the digital circuit implementation of the fractional-order
+dynamicsofthefractional-ordersinglemachineinfin- shippowersystem.Soitisofpracticalsignificanceto
+itypowersystem(SMIB)[27].Yanetal.analyzedthe investigatetheDSPimplementationoffractional-order
+dual-machine interconnected power system based on power system. The proposed ship system is designed
+the conformable fractional definition [28]. However, onthesoftwareandhardwareplatform,anditisimple-
+the power system has not been solved by the ADM mentedontheDSPplatform.
+algorithm. The main work of this paper is to introduce the
+Extreme multistability means that the system has fractional-order calculus operator into the ship power
+infinite coexisting attractors. Most chaotic systems system, and investigate the dynamical characteristics
+with extreme multistability are obtained by adding ofthenewsystem.Therestofthispaperisorganized
+memristors, periodic functions or disturbances. For asfollows.InSect. 2,thefractional-ordershippower
+123
+
+--- PAGE 3 ---
+Afractional-ordershippowersystemwithextrememultistability
+system is numerically solved. In Sect. 3, the dynam- E 1 1 x d1 x R R x x d2 E 2 2
+ical characteristics of the new system are analyzed.
+Andinterestingphenomenasuchasangularinstability,
+extrememultistability,multi-scrollattractorandoffset
+System load
+arediscovered.InSect. 4,thedigitalcircuitisrealized
+P, Q
+ontheDSPplatform.Finally,Sect. 5summarizesthe
+resultsandindicatesfuturedirections. Fig.1 Twogeneratorsparallelmodel
+algorithm,thenonlineartermsofEq.(2)canbedecom-
+2 Numericalsolutionofthefractional-ordership posedto
+⎧
+powersystem
+⎪⎨Ai = 1[ di N(νi(λ))]
+j i! dλi j λ=0
+(cid:9)i , (7)
+2.1 DescriptionofAdomiandecompositionalgorithm ⎪⎩νi(λ)= (λ)kxk
+j j
+k=0
+TheCaputofractional-orderdifferentialisdefinedby in which i = 0,1,2,· · ·,∞; j = 1,2,· · ·,n. The
+(cid:2) (cid:3)
+1 t f(m)(τ)dτ ,m−1<q <m nonlineartermcanbeexpressedas
+D t q f(t)= Γ dm (m− f( q t ) ), 0 q ( = t−τ m )q+1−m ,(1) (cid:7)∞
+dtm Nx = Ai(x0,x1,···,xi). (8)
+where D
+q
+represents the q order Caputo fractional
+i=0
+t
+derivativeoperator,q >0,andmisthesmallestinteger So,thenumericalsolutionofEq.(2)isobtainedas
+notlessthanq.Foragivenfractional-orderdifferential (cid:7)∞ (cid:7)∞ (cid:7)∞
+equation, D q x(t)= f(x(t))canbeexpressedas x = xi = J q Lxi + J q Ai + J q g
+t0 t0 t0 t0
+⎧ i=0 i=0 i=0
+⎨D q x(t)= Lx(t)+Nx(t)+g(t)
+⎩ m x ( t k ∈ 0 )(t N 0 + , ) m = − b k 1 ,k < = q 0 ≤ ,1 m ,···,m−1, (2) + m(cid:7) k= − 0 1 b k (t − k! t 0 )k , (9)
+where x(t) = [x (t),x (t),···x (t)]T are state vari- wherexi iscalculatedby
+1 2 n ⎧
+r
+t
+t
+a
+h
+h
+e
+b
+s e
+e
+l
+p
+e
+a
+s
+e
+s
+y
+u
+.
+c
+s
+t t
+L
+o
+t
+iv
+e
+n
+m
+e
+a
+o l
+n
+m y
+d
+s
+. o
+t
+g
+a
+N
+u
+t
+( s
+e
+t)
+r
+s
+v
+e
+y =
+a
+p
+s
+r
+r
+t
+i
+[
+e
+e
+a
+g
+s
+m
+b
+e
+1
+l
+,
+n
+,
+e.
+t
+g a 2 n
+A
+li
+, d
+n
+p
+·
+e
+p
+b ·
+a
+l
+k ·
+r
+y
+,
+i
+i
+a
+g
+n
+s
+n
+n
+g
+t
+d
+] h T
+i
+e
+n
+n
+a
+t
+o
+i
+e
+r n
+n
+e
+g
+i
+l
+r
+t
+i
+c i
+a
+n
+a o
+t
+e
+l
+e
+n
+a
+s v
+r
+o
+t a a
+n
+t
+l
+e
+n u
+b
+r
+t e
+m
+s
+o
+o
+t
+i
+s
+h
+n f
+, ⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎨
+x x
+x
+0 1
+2
+=
+=
+= J
+J
+J
+t
+t q
+q
+q
+0
+0 g L
+L
+x
+x
++ 0
+1
+m
+k
++
++
+(cid:9)
+=
+−
+0
+1
+J
+J
+t
+b
+q
+q
+0
+k
+A
+A (
+1
+0 t−
+(
+( k
+x
+x t ! 0
+1
+0 )
+)
+k )
+s
+x
+id
+=
+es
+J
+o
+t q 0
+f
+L
+E
+x
+q.
++
+(2
+J
+)
+t
+,
+q 0
+w
+N
+h
+x
+ic
++
+hi
+J
+s
+t q 0
+d
+g
+er
++
+iv
+m
+e
+(cid:7)
+d
+−1
+as
+b k (t − k! t 0 )k , (3)
+⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎩
+. .
+. .
+.
+xi = J t
+t
+q 0
+0
+Lxi−1+
+t0
+J t q 0 Ai−1(x0,x1,···,xi−1)
+. (10)
+k=0 .
+whereJ q representstheqorderRiemann−−Liouville
+t0
+fractional-order integral operator. Its basic properties
+2.2 Solutionofthefractional-ordershippowersystem
+areasfollows
+basedonADM
+Γ(γ +1)
+J q(t −t )γ = (t −t )γ+q, (4)
+t0 0 Γ(γ +1+q) 0 Themodeloftheshippowersystemwithtwoparallel
+C generatorsisshowninFig.1[45].
+J q C = (t −t )q, (5)
+t0 Γ(q+1) 0 InFig.1, E
+1
+(cid:6) δ
+1
+and E
+2
+(cid:6) δ
+2
+aretheelectricpoten-
+J q Jrx(t)= J q+r x(t), (6) tial of the two generators, respectively. x d1 and x d2
+t0 t0 t0
+are the synchronous reactance of the two generators,
+where t ∈ [t ,t ], q ≥ 0, r ≥ 0, γ ≥ 0, and C is respectively.r and x are the line resistance and reac-
+0 1
+aconstant.AccordingtotheAdomiandecomposition tance, respectively. Considering that the wires of the
+123
+
+--- PAGE 4 ---
+H.Zhangetal.
+shippowersystemisshort,r andx canbeignored. P The linear term, nonlinear term and constant term in
+and Q representthesystemload. thesystemaredescribedby
+⎛ ⎞ ⎛ ⎞
+Theshippowersystemwithtwoparallelgenerators
+L y
+x1
+isdefinedby ⎝
+L
+⎠=⎝−ay ⎠,
+x2
+(cid:10)
+dδ =ω ⎛L x3⎞ ⎛ 0 ⎞
+H dt d d ω t = P m − P e sinδ−Dω , (11) ⎝ N N x1 ⎠=⎝−sinx +b 0 sinxcosz ⎠, (17)
+x2
+where P , P andDaremechanicalpowerinput,gen-
+⎛N x3⎞ ⎛ ⎞ 0
+m e
+g1 0
+eratorelectromagneticpoweranddampingcoefficient, ⎝
+g2
+⎠=⎝
+c
+⎠.
+respectively.Thestatevariablesδ andω aretheoper-
+g3 μ
+atingangleandtheangularvelocityoftherotor. H is
+themomentofinertia. AccordingtoEq.(7),itisverycomplicatedtodecom-
+In general, there is electromagnetic interference in posethenonlineartermbsinxcosz.Therefore,bsinx
+theshippowersystem.Electromagneticinterferenceis cosz is converted to b[sin(x +z)+sin(x −z)], and
+2
+expressedas thenonlineartermisdecomposedto
+⎧
+p
+r
+w
+S
+Δ
+e
+o
+y
+h
+w
+P
+w
+s
+e
+e
+t
+r
+r
+e
+e
+i
+e
+t
+=
+r
+m
+t
+,
+e
+a
+Δ
+n
+Δ
+(
+n
+1
+P
+d
+a
+P
+1
+s
+β
+)
+·
+·
+w
+i
+P
+P
+s
+i
+e
+e
+t
+t
+h
+h
+c
+i
+e
+o
+s
+e
+f
+s
+l
+r
+e
+(
+t
+e
+h
+β
+c
+q
+e
+t
+t
+r
+u
+)
+o
+a
+e
+,
+m
+m
+nc
+a
+p
+y
+g
+li
+n
+o
+t
+e
+u
+f
+t
+d
+t
+i
+h
+c
+e
+e
+i
+o
+d
+n
+f
+i
+t
+s
+e
+t
+t
+r
+u
+h
+fe
+r
+e
+b
+re
+a
+d
+n
+n
+is
+c
+c
+t
+e
+e
+u
+p
+r
+c
+b
+a
+o
+a
+n
+w
+(
+n
+1
+e
+b
+c
+2
+r
+e
+e
+)
+.
+⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎨ A
+A
+A
+0
+1
+2
+=
+=
+=
+−
+−
+−
+×
++
++
+x
+x
+s
+1
+2
+(
+(
+c
+in
+x
+x
+o
+c
+c
+1
+s
+o
+x
+o
+(
+s
+s
+−
+−
+x
++
+x
+x
+0
+z
+0
+z
+0
++
+b 2
+1
++
++
+[
+)
+)
+s
+z
+c
+c
+i
+0
+b
+2
+2
+1
+o
+n
+o
+)
+[
+x
+s
+s
+(
+(
+(
+(
+x
+1
+−
+2
+x
+x
+x
+0
+s
+1
+0
+i
++
+2
+1
+n
++
+−
+−
+(x
+x
+z
+z
+z
+z
+1
+0
+0
+1
+0
+)
++
++
+)
+)
+)
++
+]
+c
+−
+z
+o
+b
+2
+s
+1
+s
+[
+i
+)
+1
+(
+(
+n
+2
+x
+x
+(
+(
+x
+0
+2
+s
+x
+i
+0
++
++
+n
+−
+(
+−
+x
+z
+z
+0
+0
+2
+z
+z
+)
+)
++
+0
+)
+)
+2
+]
+z
+0
+)
+2 2 0 0 2 1 1
+(cid:10) ×sin(x −z )] .
+T
+t
+o
+=
+H
+d
+d
+f
+δ
+t
+a
+d d
+c
+=
+t
+ω t
+i(cid:11)li
+ω
+=
+t
+P
+H
+a
+e
+t
+P
+e
+,
+m
+x
+th
+(
+−
+e
+t)
+P
+p
+=
+r
+e
+o
+(1
+ce
+δ
++
+s
+(
+s
+t
+Δ
+)
+o
+,
+P
+f
+y
+s
+(
+c
+t
+o
+o
+)
+l
+s
+v
+(
+i
+=
+β
+n
+t
+g
+)
+(cid:11)
+)
+t
+s
+h
+i
+P
+H
+e
+n
+e
+δ
+ω
+pr
+−
+(
+o
+t
+b
+)
+D
+,
+le
+ω
+s
+m
+o
+.(
+,
+1
+t
+l
+h
+3
+e
+e
+)
+t
+⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎩
+A3 =− +
+×
+×
+−
+x 3
+(
+c
+(
+b 2
+x
+x
+o
+c [
+1
+2 s
+( o
+(
+x s
+−
++
+x
+3
+0
+x
+0
++
+z
+0
+z
++
+1
+2
++
+)
+)
+z
+(
+z
+3
+s
+0
+x
+x
+0
+i
+)
+n
+2
+1
+)
+c
+(
+x
+−
++
+o
+x
+2 s
+0
+s (
+z
+(
+i x
++
+x
+2
+n 0
+)
+3
+x
+z
+s
++
+−
+0
+0
+in
+)
++ z
+z
+(
+−
+0
+x
+3
+)
+)
+0
+1 6 −
+1
+6 c
+x
+−
+o
+(
+1 3
+x
+s
+(
+z
+c
+( 1
+x
+0
+o
+x
+1
++
+)
+s
+0
++ x
+−
+z
+0
+1
+z
+)
+z
+1
+3
+0
+)
+)
+dimensionlessmodeloftheshippowersystemisrewrit- − 1(x −z )3cos(x −z )]
+6 1 1 0 0
+tenas (18)
+(cid:10)
+x˙ = y , (14) Accordingtotheinitialconditions,thefirsttermis
+y˙ =−sinx −ay+bsinxcos(μt)+c
+⎧
+(cid:11) (cid:11) ⎪⎨x0 = x(t 0 )
+wh B er a e se a d = on D the P H e C ,b ap = uto Δ f P ra , c c ti = ona P P l m e -o , r μ de = r d β iffe P H r e e . ntial ⎪⎩ z y 0 0 = = z y ( ( t t 0 0 ) ) + + J J t q t 0 q 0 μ c= =z y ( ( t t 0 0 ) ) + + Γ Γ ( ( q q μ c + + 1 1 ) ) ( ( t t − − t t 0 0 ) ) q q.
+definition,thefractional-orderequationofthesystem (19)
+isdefinedby
+(cid:10) Letc0 = x0,c0 = y0,c0 = z0.AccordingtoEq.(10)
+D q x = y 1 2 3
+D t q y =−sinx −ay+bsinxcos(μt)+c . (15) andthepropertiesoffractionalcalculus,thefollowing
+t formulaisobtainedas
+⎧
+S
+an
+ys
+a
+t
+u
+e
+t
+m
+on
+(
+o
+1
+m
+5)
+o
+i
+u
+s
+s
+a
+s
+n
+y
+o
+s
+n
+te
+-
+m
+au
+,
+to
+an
+n
+d
+om
+it
+o
+c
+u
+a
+s
+n
+s
+b
+y
+e
+st
+d
+e
+e
+m
+s
+.
+c
+R
+rib
+ew
+ed
+ri
+a
+te
+s
+itas ⎪⎪⎪⎨ x
+y
+1
+1
+=
+=
+c
+(−
+2
+0
+Γ
+(
+s
+t
+(
+−
+i
+q
+n
+t
++
+0
+(
+)
+c
+1
+q
+)
+0)−ac0+bsin(c0)cos(c0)+c)
+1 2 1 3 .
+⎧
+⎨D q x = y
+⎪⎪⎪⎩ ×
+Γ
+(t
+(
+−
+q
+t
++
+0 )
+1
+q
+)
+⎩ D t t q y =−sinx −ay+bsinxcosz+c. (16) z1 =μ Γ (t ( − q t + 0 ) 1 q )
+D q z =μ (20)
+t
+123
+
+--- PAGE 5 ---
+Afractional-ordershippowersystemwithextrememultistability
+Assign the coefficient to the corresponding variable, systemparametersa = 0.4,c = 0.23,μ = 1andthe
+andtheyareexpressedby initialvalue(0.1,0.01,1).Figure2showstheattractor
+⎧ phase diagrams with different b. From the phase dia-
+⎨c1 =c0 gram,itisclearthatthesystemissensitivetosystem
+1 2
+c1 =−sin(c0)−ac0+bsin(c0)cos(c0)+c. parameters, and the topology varies with the parame-
+⎩ 2 1 2 1 3
+c1 =μ terschanges.
+3
+(21)
+In the same way, the other three coefficients of x are 2.3 Time-varyingequilibriumpointandstability
+derivedas
+⎧ Theequilibriumpointofsystem(15)canbeobtained
+⎪⎪⎨ c
+1
+2 =c
+2
+1
+bysolvingthefollowingequation
+c2 =−ac1−c1cosc0+ b[(c1+c1)cos(c0+c0)
+⎪⎪⎩ 2 +(c 2
+1
+1−c 1
+3
+1)cos( 1 c
+1
+0− 2 c
+3
+0) 1 ]+c 3 1 3 , (cid:10)
+y =0
+c2 =μ , (26)
+3 −sinx −ay+bsinxcos(μt)+c=0
+(22)
+⎧ theequilibriumpointofsystem(15)isexpressedas
+⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎨
+c
+c
+1
+2
+3
+3
+=
+=
+[
+c
+−
+(
+2
+2
+c
+a
+2
+c
++
+2
+2−
+c2
+c
+)
+1
+2
+co
+co
+s(
+s
+c
+c
+0
+1
+0
++
++
+c
+2
+1
+0
+(
+)
+c
+−
+1
+1)2
+1
+Γ
+Γ
+(c
+(
+2
+1
+2
+(q
+q
++
++
++
+1
+1
+c
+)
+)
+1
+s
+)
+i
+2
+n
+Γ
+c
+(
+1
+0
+2q
++
++1
+b
+2
+)
+E=(x
+e
+,0), (27)
+1 3 1 3 2 1 3 Γ2(q+1), wherex issolvedby
+⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎩ s
+−
+in
+c
+(
+3 1
+c
+)
+1
+0
+2
++
+Γ Γ ( 2
+c
+2 (
+3
+0
+q q
+)
++ +
++
+1 1 ) ) s
+(
+i
+c
+n
+1
+2
+(
+−
+c 1 0
+c
+−
+3
+2)
+c
+c
+3 0
+o
+)
+s
+]+
+(c
+c
+1
+0−c
+3
+0)−
+2
+1(c
+1
+1
+f(x e )=
+e
+−sinx e +bsinx e cos(μt)+c=0. (28)
+c3 =μ
+3
+It can be found that due to the existence time t, the
+(23)
+valueofx istime-variedandmulti-valued.Therefore,
+e
+⎧ theequilibriumpointsofsystem(15)areevolvedwith
+⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎨
+c
+c
+1
+2
+4
+4
+=
+=
++
++
+c
+−
+2
+3
+a
+c
+1
+6
+c
+3
+0
+(
+2
+3
+)
+c
+1
+−
+1
+−
+)3
+c
+(
+Γ
+Γ
+c
+1
+3
+1
+1
+(
+3
+c
+3
+(
+o
++
+q
+q
+s
++
++
+c
+c
+1
+1
+3
+1
+1
+0
+)
+)
+)
+c
++
+(
+o
+c
+s
+1
+2
+c
+c
+1
+1
++
+1
+c
+0
+1
+2
++
+c
+Γ
+3
+2)
+(
+b
+2
+q
+Γ
+[
+Γ
++
+(
+(
+(
+1
+c
+q
+3
+)
+Γ
+1
++
+3
+q
+Γ
+(
++
+1
++
+(
+3
+)
+2
+1
+q
+Γ
+q
+)
+c
++
+(
++
+3
+3
+2
+1
+1
+q
+)
+)
+)
++
+c
+s
+o
+1
+i
+)
+s
+n
+(
+s
+c
+c
+in
+1
+0
+1
+0
+t
+o
+b
+J
+h
+c
+i
+e
+a
+c
+=
+n
+u
+v
+r
+m
+a
+(cid:16)
+r
+r
+e
+a
+0
+i
+n
+a
+tr
+c
+ti
+i
+e
+o
+x
+n
+o
+a
+s
+f
+t
+o
+c
+E
+o
+f
+m
+i
+t
+s
+h
+p
+e
+w
+le
+r
+e
+x
+i
+x
+tt
+t
+d
+e
+e
+y
+n
+rn
+n
+a
+a
+a
+s
+l
+m
+s
+i
+t
+c
+im
+be
+u
+1
+h
+lu
+a
+s
+v
+,
+(cid:17)
+io
+l
+,
+e
+rs
+a
+.
+d
+T
+in
+h
+g
+e
+t
+J
+o
+a
+(2
+c
+th
+9
+o
+e
+)
+-
+(c0+c0)− 1(c1+c1)3Γ(3q+1) cos(c0+c0) . E −cosx e +bcosx e cos(μt)−a
+⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎪⎩
+Γ
++
+(
+1
+×
+q
+(
+Γ
++
+c
+Γ
+Γ
+1
+(
+1
+3
+3
+)
+(
+3
+q
+−
+Γ
+3
+(
+3
++
+q
+q
+(2
++
++
+c
+1
+q
+)
+3
+3
+1
+1
++
+)
+)
+)
+1
+6
+c
+c
+)
+o
+o
+s
+s
+s
+i
+1
+(
+(
+n
+c
+c
+(
+1
+0
+1
+0
+c
+−
+1
+0
+−
+3
+−
+c
+c
+3
+0
+3
+0
+c
+)
+Γ
+)
+3
+0
+]
+−
+3
+)
++
+(
+−
+q
+(
++
+c
+c
+1
+1
+6
+1
+1
+)
+(
+−
+c
+1
+1
+c
+−
+3
+1)(
+c
+1
+c
+3
+1
+1
+2
+)3
+−
+3
+c
+3
+2)
+a
+f
+n
+(
+d
+λ)
+th
+=
+ec
+λ
+h
+2
+a
++
+rac
+a
+te
+λ
+ri
++
+sti
+c
+c
+o
+e
+s
+q
+x
+u
+e
+a
+−
+tio
+b
+n
+c
+i
+o
+s
+s
+e
+x
+x
+e
+p
+c
+re
+o
+s
+s
+s
+(
+e
+μ
+d
+t)
+as
+=0.
+(30)
+c4 =μ
+3
+(24)
+TherootsofEq.(29)areobtainedas
+(cid:18)
+Therefore,thesolutionofthesystemisobtainedas
+−a± a2−4(cosx −bcosx cos(μt))
+x˜
+j
+(t)=c0
+j
++c1
+jΓ
+(t
+(
+−
+q+
+t 0 )
+1
+q
+)
++c2
+jΓ
+(t
+(
+−
+2q
+t 0
++
+)2
+1
+q
+)
++c3
+jΓ
+(t
+(
+−
+3q
+t 0
++
+)3
+1
+q
+)
+λ 1,2 = 2 e e .
+(31)
+(t−t )4q
++c4 0 (25)
+jΓ(4q+1)
+The eigenvalues of all cases are listed as shown in
+Basedontheaboveapproximatesolution,fixedsimu- Table 1, and the types of equilibrium points are ana-
+lation step h = 0.01, the system order q = 0.95, the lyzed.
+123
+
+--- PAGE 6 ---
+H.Zhangetal.
+Fig.2 Attractorphasediagramswithdifferentb.ab=1.8,bb=1.9,cb=4.8
+Table1 Stabilityanalysisoftheequilibriumpoints
+Valueofa ValueofΔ1 Eigenvalues Typesofequilibriumpoint
+a=0 Δ<0 λ 1,2areapairofpurevirtualroots Criticallystablefocuspoint
+Δ>0 λ 1,2arerealrootswithdifferentsigns Unstablesaddlepoint
+a>0 Δ<0 λ 1,2areconjugatecomplexnumberswithnegativerealpart Stablepoint
+Δ>0 λ 1,2areapositiverealrootandanegativerealroot Unstablesaddlepoint
+λ 1,2aretwonegativerealroots Stablepoint
+a<0 Δ<0 λ 1,2areconjugatecomplexnumberswithpositiverealpart Unstablepoint
+Δ>0 λ 1,2areapositiverealrootandanegativerealroot Unstablesaddlepoint
+λ 1,2aretwopositiverealroots Unstablepoint
+1Δ=a2−4(cosxe −bcosxecos(μt))
+Fig.3 Dynamicalanalysis
+resultswithqvarying.a
+Bifurcationdiagram,b
+Lyapunovexponents
+Fig.4 Dynamicalanalysis
+resultswithavarying.a
+Bifurcationdiagram,b
+Lyapunovexponents
+123
+
+--- PAGE 7 ---
+Afractional-ordershippowersystemwithextrememultistability
+Fig.5 Thephasediagramswithdifferentvaluesofa.aa = 0.32,ba = 0.33,ca = 0.34,da = 0.37,ea = 0.4,f a = 0.42,g
+a=0.43,ha=0.45,ia=0.54
+3 Dynamicalanalysis Let the order q vary from 0.6 to 1 with step size of
+0.001. The bifurcation diagram and Lyapunov expo-
+BasedonADMalgorithm,thesolutionofthefractional- nentsareshowninFig.3.Theyshowthesystementers
+ordershippowersystemisobtained.Dynamicsofthe chaotic state through the period-doubling bifurcation
+systemisinvestigated by means of phase, bifurcation withtheincreaseinorderq,andtherearesomeperi-
+diagram,Lyapunovexponentsandcomplexity. odic windows at the range q ∈ [0.855,1]. Compared
+withtheinteger-ordersystem,thefractional-ordersys-
+tempresentsavarietyofstatesunderdifferentqvalues.
+3.1 Dynamicalanalysiswiththeorderq
+Toexploretheinfluenceoforderq onthesystem,the 3.2 Dynamicalanalysiswiththeparameters
+bifurcationdiagramandLyapunovexponentsareana-
+lyzed.Fixedthesystemparametersa = 0.4,b = 1.8, Fixed initial value as (0.1, 0.01, 1), parameters q =
+c = 0.23, μ=1 and the initial value (0.1, 0.01, 1). 0.95, b = 1.8, c = 0.23, μ = 1 and varying param-
+123
+
+--- PAGE 8 ---
+H.Zhangetal.
+eter a from 0.3 to 0.55 with step size of 0.0005. The of chaotic attractor scrolls increases with the simula-
+bifurcation diagram is shown in Fig. 4a. It shows the tiontime.Fortheshippowersystem,oncetheangular
+bifurcation diagram fluctuates sharply at the range instabilityofthesystemoccurs,itcannotbereversed.
+a ∈[0.3,0.3345].Thennarrowtheordinaterangeand And it will become more and more serious, eventu-
+observethedynamicsattherangea ∈[0.3345,0.55]. allycausingthepowersystemtocollapse.Forchaotic
+At this range, the system degenerates from chaos to system,thephenomenonofmulti-scrollattractorsgen-
+period through reverse period-doubling bifurcation. erated over simulation time is interesting. Generally,
+The Lyapunov exponents as shown in Fig. 4b consist multi-scrollattractorsaregeneratedbytransformation,
+well with the bifurcation diagram. With the decrease control and recombination methods. So this aspect is
+in the value of a, the maximum Lyapunov exponent worthstudyingfurther.
+becomelarger,whichmeansthesystembecomesmore
+complex. In addition, the maximum Lyapunov expo-
+nent bounces sharply at the range a ∈ [0.3,0.3345]. 3.4 Theextrememultistabilityofthesystem
+Figure5showsthephasediagramswithdifferentval-
+ues of a. In Fig. 5a and b, the system occurs angle Therearetwostatesintheoperationoftheshippower
+instability at the range a ∈ [0.3,0.3345]. This phe- system, which are stable state and angular instability.
+nomenoniscausedbyelectromagneticpowerinterfer- Sotwodifferentsetsofparametersarechosentorep-
+ence,whichcausesshippowersystemstocollapse.And resentthetwostates.Settinga =0.4asthestablestate
+itcausesthefluctuationofthebifurcationdiagramand parameter,anda = 0.33asangularinstabilityparam-
+Lyapunov exponents. In Fig. 5c , d and e, the system eter. The rest of the parameters are set as q = 0.95,
+showsdifferentattractors,whichindicatethatparame- b = 1.8,c = 0.23,μ = 1,initialvalue(0.1,0.01,1)
+tera hassignificantimpactonsystemcharacteristics. andthesimulationtimeis1000s.Thevariablex(0)is
+Figure5f,g,hand(i)showthatthesystemdegenerates usedtoreplacethefirstitemoftheinitialvalue,andcal-
+fromchaostoperiodicstatethroughthereverseperiod- culatethebifurcationdiagramofthesystemwithx(0)
+doublingbifurcationroute.Fixedinitialvalueas(0.1, varying.Inthesameway,thevariable y(0)isusedto
+0.01, 1), parameters q = 0.95, a = 0.4, c = 0.23, replacetheseconditemoftheinitialvalue,andthevari-
+μ = 1andvaryingparameterbfrom1.6to1.95with ablez(0)isusedtoreplacethethirditemoftheinitial
+stepsizeof0.0005.ThebifurcationdiagramandLya- value.Figures9and10areobtained.
+punovexponentsareshowninFig.6.Inthesameway, Figures9and10showthattheinitialconditionsin
+thevariableparameterissetasc,andfixedq = 0.95, thestablestatehavelittleimpactonthesystem,butthe
+a =0.4,b=1.8,μ=1,theinitialvalue(0.1,0.01,1). initialconditionsunderangularinstabilityhaveagreat
+Varyingparametercfrom0.1to0.35withstepsizeof impact on the system. To analyze it in more detail,
+0.0005isobserved.ThebifurcationdiagramandLya- the Figs. 9a and 10a are analyzed. In Fig. 9a, there
+punovexponentsareshowninFig.7.Similartoparam- aretwotypesofbifurcations,sameasthatinFig.9c.
+etera,thesystemisalsosensitivetoparametersband Theparametersindifferentbifurcationpathsarecho-
+c.Tinychange willoccurangleinstability,leadingto sen, and their phase diagrams are plotted in Fig. 11.
+thecollapseoftheshippowersystem. Their Lyapunov exponents are (0.0383, 0, –0.5528)
+and (0.0759, 0, –0.5904), respectively, so the initial
+conditionsdidnotaffectthestateofthesystem.Then,
+3.3 Theangularinstabilityofthesystem varyingx(0)from−5to5withstepsizeof0.1toobtain
+100phasediagramsisshowninFig.12a.Itshowsthat
+Theaboveanalysisshowsthatatinychangeintheval- whenx(0)changes,thesystempresentsthetwoattrac-
+ues of parameters a, b and c may cause the angular torsasshowninFig.11,andshiftsonthex axis.
+instabilityofthesystem.Tofurtherexploretheangu- In Fig. 10a, the state becomes more complicated.
+lar instability, fixed q = 0.95, a = 0.33, b = 1.8, Inthesameway,Fig.12bisobtained.Itshowsmany
+c = 0.23, μ = 1 and the initial value (0.1, 0.01, 1). multi-scrollchaoticattractors,andappropriateparame-
+Setthesimulationtimeas1000s,3000s,5000s,respec- tersarechosentoobtainthechaoticattractorsasshown
+tively.Thephasediagramsandtimeseriesareshownin in Fig. 13. When angular instability occurs, the ini-
+Fig.8.Whentheangularinstabilityoccurs,thenumber tial conditions also affect the number of scrolls. Fig-
+123
+
+--- PAGE 9 ---
+Afractional-ordershippowersystemwithextrememultistability
+Fig.6 Dynamicalanalysis
+resultswithbvarying.a
+Bifurcationdiagram,b
+Lyapunovexponents
+Fig.7 Dynamicalanalysis
+resultswithcvarying.a
+Bifurcationdiagram,b
+Lyapunovexponents
+Fig.8 Phasediagramsandtimeserieswithsimulationtimevarying.aThesimulationtimeis1000s,bThesimulationtimeis3000s,
+andcThesimulationtimeis5000s
+123
+
+--- PAGE 10 ---
+H.Zhangetal.
+Fig.9 Stablestate.aBifurcationdiagramwithx(0)varying,bBifurcationdiagramwithy(0)varying.cBifurcationdiagramwithz(0)
+varying
+Fig.10 Angularinstability.aBifurcationdiagramwithx(0)varying,bBifurcationdiagramwithy(0)varying.cBifurcationdiagram
+withz(0)varying
+Fig.11 Phasediagrams.a
+x(0)=0,bx(0)=0.1
+Fig.12 Coexisting
+attractorsaPhasediagrams
+withx(0)varyinginstable
+state,bPhasediagramswith
+x(0)varyingunderangular
+instability
+123
+
+--- PAGE 11 ---
+Afractional-ordershippowersystemwithextrememultistability
+Fig.13 Multiplecoexistingattractors.ax(0)=−1,bx(0)=0,cx(0)=0.7
+Fig.14 Theoffsetof
+attractorwithdifferent
+initialvalues.a
+Single-scrollattractor,b
+Double-scrollattractor
+Fig.15 Spectralentropy
+complexitybasedchaos
+diagramsinthex(0)−y(0)
+plane.aa=0.4,b
+a=0.33
+ure13showsthreetypesofchaoticattractoramonginfi- the variation of complexity, while the system is run-
+nitetypesofchaoticattractors.Inaddition,thechaotic ning normally, the angular instability occurs. Fixed
+attractor occurs offset as the initial conditions vary. q = 0.95, b = 1.8, c = 0.23, μ = 1 and the initial
+Thus,thesystemhasextrememultistability.Figure14 value (x(0), y(0), 1), setting a = 0.4, 0.33, respec-
+shows the offset of the single-scroll chaotic attractor tively. Complex chaos diagrams under double initial
+andthedouble-scrollchaoticattractor. transformationareobtainedinFig.15.Thewhiterepre-
+sentsdivergence,yellowrepresentsperiodicstate,and
+darkrepresentschaoticstate.FromFig.15a,thecom-
+plexity of the system is not high and there is a clear
+3.5 Complexityanalysis
+boundary between chaotic state and periodic state. In
+Fig.15b,thecomplexityofthesystemincreasessignif-
+In this section, spectral entropy complexity measure
+icantly,andvariousstatesareintertwined.Inthiscase,
+algorithm is chosen for analysis. In order to explore
+123
+
+--- PAGE 12 ---
+H.Zhangetal.
+Communication
+Interface(MAX3232) Computer Begin Push i t t e h r e a t r i e o s n u lt of
+DSP
+(TMS320F283
+35) DSP Initialization DA/PC?
+D/A Oscilloscope D/A PC
+Conversion(DAC8552)
+Accept serial port
+data(q,h and Data Processing 1 Data Processing 2
+parameters )
+Fig.16 Thehardwareblockdiagramofthefractional-ordership
+powersystemimplementedbasedonDSP Output to the D/A Output to the computer
+Calculate
+g1,g2,g3,g4,G1,G2,G3, G4
+Iteration results out of the
+Iterative Computation stack
+thesystembecomesmoreunpredictable,andsmalldis-
+turbancefromtheoutsidemayhaveahugeimpact.The N Finish?
+aboveresultsandanalysisshowthatwhentheangular Substitute Initial Value
+Y
+instability occurs, the system is more sensitive to the End
+choiceofinitialvalue.Itisharmfultotheoperationof
+theshippowersystem. Fig. 17 The software flowchart of the fractional-order ship
+powersystemimplementedbasedonDSP
+ent,theimagescapturedbytheoscilloscopemayhave
+slighterrors.Therefore,ignoringtheinfluenceofobjec-
+4 Digitalcircuitdesignandimplementationbased
+tive factors, the experimental results are basically the
+onDSP
+sameasFig.2.Itverifiesthefeasibilityofthefractional-
+ordershippowersystemontheDSPplatform.
+To implement the fractional-order ship power sys-
+tem on DSP platform, the modular design method is
+adopted.Thedesignedsystemblockdiagramisshown
+inFig.16.
+To simplify the calculation, some parameters are
+5 Conclusions
+definedas
+⎧ ⎧ In this paper, based on the ADM algorithm, the
+⎪⎪⎪⎪⎪⎪⎨ g
+g
+1
+2
+=
+=
+G
+G
+(
+(
+h q
+2 h q
+q +
+2q +
+1)
+1) ,
+⎪⎪⎪⎪⎪⎪⎨
+G
+G 1
+2
+=
+=
+G
+G
+G (
+(
+2 2
+q
+(q q
+G +
++ +
+( 1 4
+1 1
+) q G
+) )
++ (3 1 q ) +1) (.32)
+f
+F c
+r
+h r
+a
+o a
+c
+n m
+ti
+g
+o
+e
+n
+t s h
+a
+, e
+l-
+th
+o
+b e
+r
+i
+d
+y fu
+er
+r s c h
+s
+a o
+h
+t w i
+i
+o
+p
+n t
+p
+h
+o
+d a
+w
+t ia
+e
+t g h
+r
+r e a
+s
+m
+y
+sy
+s
+s
+t
+s
+e
+t b
+m
+e a m s
+w
+ed h
+a
+a
+s
+s o
+i
+n
+n
+a
+v
+p c
+e
+a l
+s
+e r
+t
+a
+i
+a
+g
+m r
+a
+e d
+te
+t i e
+d
+s r -
+.
+⎪⎪⎪⎪⎪⎪⎩ g
+g
+3 =
+=
+G(3 h
+h
+q 3
+4
+q
+q
++1) ⎪⎪⎪⎪⎪⎪⎩ G
+G
+3 =
+=
+G G ( 3 3 (q q
+G
++ +
+(3
+1 1
+q
+) )
++1)
+t
+v
+i
+i
+n
+d
+c
+e
+t
+s
+io
+a
+n
+b
+b
+a
+e
+s
+t
+i
+w
+s
+e
+f
+e
+o
+n
+r
+c
+th
+h
+e
+ao
+c
+s
+ho
+a
+i
+n
+c
+d
+e
+a
+o
+n
+f
+g
+p
+u
+a
+la
+ra
+r
+m
+in
+e
+s
+t
+t
+e
+a
+r
+b
+s
+il
+a
+i
+n
+ty
+d
+.I
+a
+t
+vo
+p
+i
+r
+d
+o
+s
+-
+4 G(4q+1) 4 G(q+1)G(2q+1) theoccurrenceofangularinstabilityinacertainextent.
+Furthermore, without adding control and memristor,
+Initerativecalculation,handqaredetermined,andg ,
+1
+thesystemexhibitsextrememultistability,multi-scroll
+g ,g ,g ,G ,G ,G ,G areconstant.Thecomputer
+2 3 4 1 2 3 4
+chaoticattractorandoffsetcharacteristic.Itprovidesa
+doesnotrecalculateeveryiteration,sinceitreducesthe
+newwayfortheconstructionofchaoticsystemsinthe
+amountofDSPcalculation.
+future.Finally,thesystemisimplementedontheDSP
+Thesoftwareofthefractional-ordershippowersys-
+platform,anditlaysthefoundationfortheapplication
+tem based on DSP platform is designed by module
+of the system. In the future, our work will focus on
+designmethod,anditsflowchartisshowninFig.17.
+thecontrolandapplicationofthefractional-ordership
+The system parameters, initial values and iteration
+powersystem.
+stepsarethesameasthoseinFig.2.Throughtheoscil-
+loscope, the attractor phase diagrams are obtained as
+Acknowledgements This work was supported by the Natu-
+shown in Fig. 18. Because the MATLAB simulation
+ral Science Foundation of China (Nos. 61901530, 62071496,
+and DSP implementation accuracy areslightly differ- 62061008),theNaturalScienceFoundationofHunanProvince
+123
+
+--- PAGE 13 ---
+Afractional-ordershippowersystemwithextrememultistability
+Fig.18 Phasediagramson
+theoscilloscope.ab=1.8,
+bb=1.9,cb=4.8,d
+Angularinstability
+(No.2020JJ5767),andtheResearchandInnovationProjectof 5. Pni,T.,Csutak,B.,Szederknyi,G.,Rst,G.:Nonlinearmodel
+GraduateofCentralSouthUniversity(No.2021zzts0512). predictivecontrolwithlogicconstraintsforCOVID-19man-
+agement.Nonlin.Dyn.102,1965–1986(2020)
+Declaration 6. Xu,Q.Y.,Sun,K.H.,He,S.B.,Zhu,C.X.:Aneffectiveimage
+encryptionalgorithmbasedoncompressivesensingand2D-
+Conflictofinterest Theauthorsdeclarethattheyhavenocon- SLIM.Opt.LasersEng.134,106178(2020)
+flictofinterest. 7. Zhou, L.Q., Chen, F.Q.: Subharmonic bifurcations and
+chaoticdynamicsforaclassofshippowersystem.J.Com-
+Dataavailability Thedatathatsupportthefindingsofthisstudy put.Nonlin.Dyn.13,031011(2018)
+are available from the corresponding author upon reasonable 8. Bao,B.C.,Chen,C.,Bao,H.,Zhang,X.,Xu,Q.,Chen,M.:
+request. DynamicaleffectsofneuronactivationgradientonHopfield
+neural network: numerical analyses and hardware experi-
+ments.Int.J.Bifurc.Chaos29,1930010(2019)
+References 9. Zhang,S.,Zheng,J.H.,Wang,X.P.,Zeng,Z.G.,He,S.B.:
+Initial offset boosting coexisting attractors in memristive
+multi-double-scrollHopfieldneuralnetwork.Nonlin.Dyn.
+1. Lorenz,E.N.:Deterministicnonperiodicflow.J.Atmos.Sci.
+102,2821–2841(2020)
+20,130–141(1963)
+10. Naik,P.A.,Zu,J.,Owolabi,K.M.:Globaldynamicsofafrac-
+2. May,R.M.:Simplemathematicalmodelswithverycompli-
+tional order model for the transmission of HIV epidemic
+cateddynamics.Nature261,459–467(1976)
+with optimal control. Chaos Solitons Fract. 138, 109826
+3. Ruelle,D.,Takens,F.:Onthenatureofturbulence.Commun.
+(2020)
+Math.Phys.20,167–192(1971)
+11. Xu,Y.,Yu,J.T.,Li,W.X.,Feng,J.Q.:Globalasymptoticsta-
+4. Hénon, M.: A two-dimensional mapping with a strange
+bilityoffractional-ordercompetitiveneuralnetworkswith
+attractor.Commun.Math.Phys.50,69–77(1976)
+123
+
+--- PAGE 14 ---
+H.Zhangetal.
+multiple time-varying-delay links. Appl. Math. Comput. 30. Lin,H.R.,Wang,C.H.,Tan,Y.M.:Hiddenextrememulti-
+389,125498(2021) stabilitywithhyperchaosandtransientchaosinaHopfield
+12. Khan,A.,Abdeljawad,T.,Gomez-Aguilar,J.F.,Khan,H.: neuralnetworkaffectedbyelectromagneticradiation.Non-
+Dynamicalstudyoffractionalordermutualismparasitism lin.Dyn.99,2369–2386(2020)
+foodwebmodule.ChaosSolitons&Fractals134,109685 31. Bao, H., Hua, Z.Y., Wang, N., Zhu, L., Chen, M., Bao,
+(2020) B.C.: Initials-Boosted coexisting chaos in a 2D sine map
+13. Rossikhin,Y.A.,Shitikova,M.V.:Applicationsoffractional anditshardwareimplementation.IEEETrans.Ind.Inform.
+calculustodynamicproblemsoflinearandnonlinearheredi- 17,1132–1140(2021)
+tarymechanicsofsolids.Appl.Mech.Rev.50,15–67(1997) 32. Wang,L.,Zhang,S.,Zeng,Y.C.,Li,Z.J.:Generatinghidden
+14. Povstenko, Y.: Signaling problem for time-fractional extrememultistabilityinmemristivechaoticoscillatorvia
+diffusion-waveequationinahalf-spaceinthecaseofangu- micro-perturbation.Electron.Lett.54,808–810(2018)
+larsymmetry.Nonlin.Dyn.59,593–605(2010) 33. Xia,X.,Zeng,Y.,Li,Z.:Coexistingmultiscrollhyperchaotic
+15. Chow,T.S.:Fractionaldynamicsofinterfacesbetweensoft- attractorsgeneratedfromanovelmemristivejerksystem.
+nanoparticlesandroughsubstrates.Phys.Lett.A342,148– Pramana91,82(2018)
+155(2005) 34. He,S.B.,Sun,K.H.,Wang,H.H.,Ai,X.X.,Xu,Y.X.:Design
+16. Carpinteri,A.,Mainardi,F.:FractalsandFractionalCalculus of n-dimensional multi-scroll jerk chaotic system and its
+inContinuumMechanics.Springer,Berlin(1997) performances.J.Appl.Anal.Comput.6,1180–1194(2016)
+17. Diethelm,K.,Ford,N.J.,Freed,A.D.:Apredictor-corrector 35. Ai,W.,Sun,K.H.,Fu,Y.L.:Designofmultiwing-multiscroll
+approachforthenumericalsolutionoffractionaldifferential gridcompoundchaoticsystemanditscircuitimplementa-
+equations.Nonlin.Dyn.29,3–22(2002) tion.Int.J.ModernPhys.C29,1850049(2018)
+18. Caponetto, R., Fazzino, S.: An application of adomian 36. Li, C.B., Sprott, J.C.: Variable-boostable chaotic flows.
+decompositionforanalysisoffractional-orderchaoticsys- Optik127,10389–10398(2016)
+tems.Int.J.Bifurc.Chaos23,1350050(2013) 37. Wang,M.J.:Anovelnon-autonomouschaoticsystemwith
+19. Chen, H., Lei, T.F., Lu, S., Dai, W.P., Qiu, L.J., Zhong, infinite 2-D lattice of attractors and bursting oscillations.
+L.: Dynamics and complexity analysis of fractional-order IEEETrans.CircuitsSyst.II:ExpressBriefs68,1023–1027
+chaotic systems with line equilibrium based on adomian (2021)
+decomposition.Complexity2020,5710765(2020) 38. Gu, S.Q., Du, B.X., Wan, Y.J.: A new four-Dimensional
+20. Peng, D., Sun, K.H., He, S.B., Zhang, L.M., Alamodi, non-hamiltonian conservative hyperchaotic system. Int. J.
+A.O.A.:Numericalanalysisofasimplestfractional-order Bifurc.Chaos30,2050242(2020)
+hyperchaoticsystem.Theor.Appl.Mech.Lett.9,220–228 39. Chen,M.,Feng,Y.,Bao,H.,Bao,B.C.,Xu,Q.:Statevariable
+(2019) mappingmethodforstudyinginitial-dependentdynamicsin
+21. Fazzino,S.,Caponetto,R.,Patané,L.:AnewmodelofHop- memristivehyper-jerksystemwithlineequilibrium.Chaos,
+field network with fractional-order neurons for parameter Solitons&Fractals115,313–324(2018)
+estimation.Nonlin.Dyn.104,2671–2685(2021) 40. Wang, H.H., Sun, K.H., He, S.B.: Dynamic analysis and
+22. Chiang,H.D.,Liu,C.W.:Chaosinasimplepowersystem. implementationofadigitalsignalprocessorofafractional-
+IEEETrans.PowerSyst.8,1407–1417(1993) orderLorenz-StenflosystembasedontheAdomiandecom-
+23. Ajjarapu,V.,Lee,B.:Bifurcationtheoryanditsapplication positionmethod.PhysicaScripta90,015206(2015)
+tononlineardynamicalphenomenainanelectricalpower 41. Wu, X.M., Tan, W.J., Wang, H.H.: Initial value determi-
+system.IEEETrans.PowerSyst.7,312–319(1992) nationofChuasystemwithhiddenattractorsanditsDSP
+24. Zhou,X.S.,Liu,X.F.,Ma,Y.J.:Researchsummaryofchaos implementation.Complexity2020,7638243(2020)
+inpowersystems.Appl.Mech.Mater.182–183,1796–1799 42. Xiao,Y.,Sun,K.H.,Yu,M.Y.,Xu,X.M.:Dynamicsofanew
+(2012) multi-cavityhyperchaoticmapanditsDSPimplementation.
+25. Wang,X.D.,Lu,Z.Y.,Song,C.Q.:Chaoticthresholdfora Int.J.Bifurc.Chaos29,1950194(2019)
+classofpowersystemmodel.ShockVibr.2019,1–7(2019) 43. Gu, S.Q., Peng, Q., Leng, X., Du, B.X.: A novel non-
+26. Ma,H.Y.,Min,F.H.,Huang,G.,Dou,Y.P.:Chaosandbifur- equilibriummemristor-basedsystemwithmulti-wingattrac-
+cationbehaviorinafundamentalpowersystemwithelec- tors and multiple transient transitions. Chaos 31, 033105
+tromagneticdisturbanceandloaddisturbance.AIPAdv.9, (2021)
+045017(2019) 44. Yang,F.F.,Mou,J.,Ma,C.G.,Cao,Y.H.:Dynamicanalysis
+27. Panda,S.K.,Dewangan,P.K.,Lal,D.K.:Eliminationof ofanimproperfractional-orderlaserchaoticsystemandits
+chaosinbothintegerandfractionalOrdersingle-machine- imageencryptionapplication.Opt.LasersEng.129,106031
+infinite-BuspowersystemusingLyapunovbasedcontroller. (2020)
+IEEE International Conference on System, Computation, 45. Zhu,Z.Y.,Liu,W.T.,Liang,S.Q.:Chaosanalysisforship
+AutomationandNetworking(ICSCAN)(2019) powersystem.J.JiangsuUniv.Sci.Technol.(NaturalSci-
+28. Yan,B.,He,S.B.:Dynamicsandcomplexityanalysisofthe enceEdition)24,164–168(2010)
+conformable fractional-order two-machine interconnected
+power system. Math. Methods Appl. Sci. 44, 2439–2454
+(2019) Publisher’sNote SpringerNatureremainsneutralwithregard
+29. Li,H.Z.,Hua,Z.Y.,Bao,H.,Zhu,L.,Chen,M.,Bao,B.C.: tojurisdictionalclaimsinpublishedmapsandinstitutionalaffil-
+Two-Dimensionalmemristivehyperchaoticmapsandappli- iations.
+cationinsecurecommunication.IEEETrans.Ind.Electron.
+68,9931–9940(2021)
+123
+
