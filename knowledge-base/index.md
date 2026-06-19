@@ -59,6 +59,7 @@
 | 048 | Multi-image Reorganization Encryption Based on S-L-F Cascade Chaos and Bit Scrambling | Song X, Xu D, Li G, Xu W | 2021 | Journal of Web Engineering 20(4) | S-L-F级联混沌与比特置乱多图像重组加密（Sine-Sine+Logistic+Fibonacci级联） | [paper_048_SLF级联混沌多图像重组加密.md](paper_048_SLF级联混沌多图像重组加密.md) |
 | 049 | Spatiotemporal Intermittency in Coupled Map Lattices | Kaneko K | 1985 | Progress of Theoretical Physics 74(5) | CML时空间歇性奠基—burst/层流双传播机制与元胞自动机联系 | [paper_049_耦合映射格子时空间歇性.md](paper_049_耦合映射格子时空间歇性.md) |
 | 050 | The Rise and Potential of Large Language Model Based Agents: A Survey | Xi Z, Chen W, Guo X, et al. | 2023 | arXiv:2308.11432 | LLM智能体综述—Brain+Perception+Action三模块框架与Agent社会 | [paper_050_大型语言模型智能体的兴起与潜力.md](paper_050_大型语言模型智能体的兴起与潜力.md) |
+| 051 | Dynamics and synchronization of the complex simplified Lorenz system | Jin M, Sun K, Wang H | 2021 | Nonlinear Dynamics | 复杂简化Lorenz系统—复数域扩展、非平凡圆形平衡点、极端多稳态、自适应广义函数投影同步 | [paper_051_复杂简化Lorenz系统动力学与同步.md](paper_051_复杂简化Lorenz系统动力学与同步.md) |
 
 ---
 
