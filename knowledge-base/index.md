@@ -61,6 +61,7 @@
 | 050 | The Rise and Potential of Large Language Model Based Agents: A Survey | Xi Z, Chen W, Guo X, et al. | 2023 | arXiv:2308.11432 | LLM智能体综述—Brain+Perception+Action三模块框架与Agent社会 | [paper_050_大型语言模型智能体的兴起与潜力.md](paper_050_大型语言模型智能体的兴起与潜力.md) |
 | 051 | Dynamics and synchronization of the complex simplified Lorenz system | Jin M, Sun K, Wang H | 2021 | Nonlinear Dynamics | 复杂简化Lorenz系统—复数域扩展、非平凡圆形平衡点、极端多稳态、自适应广义函数投影同步 | [paper_051_复杂简化Lorenz系统动力学与同步.md](paper_051_复杂简化Lorenz系统动力学与同步.md) |
 | 052 | Dynamical analysis and implementation of novel discrete memristive chaotic maps with hidden attractors | Liu X, Sun K, Wang H | 2024 | Eur. Phys. J. Plus 139:27 | 取模运算通用框架离散忆阻混沌映射+隐藏吸引子（无固定点、高LE、抗有限精度、DSP实现） | [paper_052_取模忆阻混沌映射隐藏吸引子.md](paper_052_取模忆阻混沌映射隐藏吸引子.md) |
+| 053 | A New Chaotic Jerk System with Double-Hump Nonlinearity | Biswas D | 2020 | J. Circuits Syst. Comput. 29(14) | 双驼峰非线性新型混沌Jerk系统（Hopf分岔解析条件+运放电路+DAQ实验验证） | [paper_053_双驼峰非线性混沌Jerk系统.md](paper_053_双驼峰非线性混沌Jerk系统.md) |
 
 ---
 
