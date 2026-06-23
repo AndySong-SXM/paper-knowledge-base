@@ -62,6 +62,7 @@
 | 051 | Dynamics and synchronization of the complex simplified Lorenz system | Jin M, Sun K, Wang H | 2021 | Nonlinear Dynamics | 复杂简化Lorenz系统—复数域扩展、非平凡圆形平衡点、极端多稳态、自适应广义函数投影同步 | [paper_051_复杂简化Lorenz系统动力学与同步.md](paper_051_复杂简化Lorenz系统动力学与同步.md) |
 | 052 | Dynamical analysis and implementation of novel discrete memristive chaotic maps with hidden attractors | Liu X, Sun K, Wang H | 2024 | Eur. Phys. J. Plus 139:27 | 取模运算通用框架离散忆阻混沌映射+隐藏吸引子（无固定点、高LE、抗有限精度、DSP实现） | [paper_052_取模忆阻混沌映射隐藏吸引子.md](paper_052_取模忆阻混沌映射隐藏吸引子.md) |
 | 053 | A New Chaotic Jerk System with Double-Hump Nonlinearity | Biswas D | 2020 | J. Circuits Syst. Comput. 29(14) | 双驼峰非线性新型混沌Jerk系统（Hopf分岔解析条件+运放电路+DAQ实验验证） | [paper_053_双驼峰非线性混沌Jerk系统.md](paper_053_双驼峰非线性混沌Jerk系统.md) |
+| 054 | 信息熵和HQ准则在最大Lyapunov指数计算中的应用 | 王基, 杨琪斌, 刘树勇, 位秀雷 | 2017 | 振动与冲击 36(1) | 信息熵联合优化相空间重构参数+HQ准则自动确定邻近点个数改进小数据量法 | [paper_054_信息熵HQ准则Lyapunov指数计算.md](paper_054_信息熵HQ准则Lyapunov指数计算.md) |
 
 ---
 
