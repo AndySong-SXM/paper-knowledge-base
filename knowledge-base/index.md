@@ -64,6 +64,7 @@
 | 053 | A New Chaotic Jerk System with Double-Hump Nonlinearity | Biswas D | 2020 | J. Circuits Syst. Comput. 29(14) | 双驼峰非线性新型混沌Jerk系统（Hopf分岔解析条件+运放电路+DAQ实验验证） | [paper_053_双驼峰非线性混沌Jerk系统.md](paper_053_双驼峰非线性混沌Jerk系统.md) |
 | 054 | 信息熵和HQ准则在最大Lyapunov指数计算中的应用 | 王基, 杨琪斌, 刘树勇, 位秀雷 | 2017 | 振动与冲击 36(1) | 信息熵联合优化相空间重构参数+HQ准则自动确定邻近点个数改进小数据量法 | [paper_054_信息熵HQ准则Lyapunov指数计算.md](paper_054_信息熵HQ准则Lyapunov指数计算.md) |
 | 055 | Design and Implementation of Grid-Wing Hidden Chaotic Attractors With Only Stable Equilibria | Yang Y, Huang L, Kuznetsov N V, Lai Q | 2023 | IEEE Trans. Circuits Syst. I 70(12) | 网格翼隐藏混沌吸引子设计与实现（偏移开关+稳定平衡点+FPGA验证） | [paper_055_网格翼隐藏混沌吸引子设计与实现.md](paper_055_网格翼隐藏混沌吸引子设计与实现.md) |
+| 056 | Dynamics of Stochastically Blinking Systems. Part I: Finite Time Properties | Hasler M, Belykh V, Belykh I | 2013 | SIAM J. Appl. Dyn. Syst. 12(2) | 随机眨眼系统有限时间特性—平均化理论显式概率界限 | [paper_056_随机眨眼系统动力学有限时间特性.md](paper_056_随机眨眼系统动力学有限时间特性.md) |
 
 ---
 
