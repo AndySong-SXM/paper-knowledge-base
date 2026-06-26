@@ -66,6 +66,7 @@
 | 055 | Design and Implementation of Grid-Wing Hidden Chaotic Attractors With Only Stable Equilibria | Yang Y, Huang L, Kuznetsov N V, Lai Q | 2023 | IEEE Trans. Circuits Syst. I 70(12) | 网格翼隐藏混沌吸引子设计与实现（偏移开关+稳定平衡点+FPGA验证） | [paper_055_网格翼隐藏混沌吸引子设计与实现.md](paper_055_网格翼隐藏混沌吸引子设计与实现.md) |
 | 056 | Dynamics of Stochastically Blinking Systems. Part I: Finite Time Properties | Hasler M, Belykh V, Belykh I | 2013 | SIAM J. Appl. Dyn. Syst. 12(2) | 随机眨眼系统有限时间特性—平均化理论显式概率界限 | [paper_056_随机眨眼系统动力学有限时间特性.md](paper_056_随机眨眼系统动力学有限时间特性.md) |
 | 057 | 融合改进Tent混沌和模拟退火的灰狼算法 | 毛清华, 杨林, 王艳亮 | 2021 | 数学的实践与认识 51(5) | 改进Tent混沌映射+螺旋函数+模拟退火+高斯扰动+算术杂交五种策略综合改进GWO | [paper_057_改进Tent混沌模拟退火灰狼算法.md](paper_057_改进Tent混沌模拟退火灰狼算法.md) |
+| 058 | Image compression-hiding algorithm based on compressive sensing and integer wavelet transformation | Ye G, Du S, Huang X | 2023 | Applied Mathematical Modelling 124 | 压缩感知+IWT图像压缩隐藏算法（TransM+GetM+2DCS+RSA+十进制分解嵌入） | [paper_058_压缩感知IWT图像压缩隐藏算法.md](paper_058_压缩感知IWT图像压缩隐藏算法.md) |
 
 ---
 
