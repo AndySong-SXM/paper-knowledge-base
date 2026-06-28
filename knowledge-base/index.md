@@ -68,6 +68,7 @@
 | 057 | 融合改进Tent混沌和模拟退火的灰狼算法 | 毛清华, 杨林, 王艳亮 | 2021 | 数学的实践与认识 51(5) | 改进Tent混沌映射+螺旋函数+模拟退火+高斯扰动+算术杂交五种策略综合改进GWO | [paper_057_改进Tent混沌模拟退火灰狼算法.md](paper_057_改进Tent混沌模拟退火灰狼算法.md) |
 | 058 | Image compression-hiding algorithm based on compressive sensing and integer wavelet transformation | Ye G, Du S, Huang X | 2023 | Applied Mathematical Modelling 124 | 压缩感知+IWT图像压缩隐藏算法（TransM+GetM+2DCS+RSA+十进制分解嵌入） | [paper_058_压缩感知IWT图像压缩隐藏算法.md](paper_058_压缩感知IWT图像压缩隐藏算法.md) |
 | 059 | Example of robust chaos in a smooth map | Andrecut M, Ali M K | 2001 | Europhysics Letters 54(3) | 光滑一维映射鲁棒混沌反例（推翻Banerjee-Yorke-Grebogi猜想） | [paper_059_平滑映射鲁棒混沌反例.md](paper_059_平滑映射鲁棒混沌反例.md) |
+| 060 | Memristive Hénon Map with Hidden Neimark–Sacker Bifurcations | Rong K, Bao H, Li H, Hua Z, Bao B | 2022 | Nonlinear Dynamics 108 | 忆阻Hénon映射隐藏Neimark-Sacker分岔（维度约化方法+双路径通向混沌+多稳态+STM32F407硬件实现） | [paper_060_忆阻Hénon映射隐藏Neimark-Sacker分岔.md](paper_060_忆阻Hénon映射隐藏Neimark-Sacker分岔.md) |
 
 ---
 
@@ -618,8 +619,10 @@ Julia分形过程 (Gaston Julia, 1919)
 
 ---
 
-*最后更新：2026-06-17
-*本次更新：新增论文049精读笔记 - Spatiotemporal Intermittency in Coupled Map Lattices (Progress of Theoretical Physics 74(5), 1985)，东京大学Kaneko Kunihiko的CML奠基性论文。核心贡献：(1)首次系统研究耦合映射格子(CML)中的时空间歇性现象，发现burst和层流区域在时空中形成具有自相似性的几何结构；(2)建立CML与Wolfram元胞自动机(Class 3)之间的深刻联系，通过二态约化方法展示两者的图案相似性；(3)揭示层流团簇传播速度$v_r$和burst传播速度$v_s$的双传播机制，burst传播时间满足临界标度律$\tau_s \propto (\varepsilon - \varepsilon_c)^{-\gamma}$，$\gamma \approx 0.6 \sim 0.9$；(4)计算Lyapunov谱发现双峰结构，分别对应层流运动($\lambda \approx -0.32$)和burst运动($\lambda \approx 0.40$)；(5)提出"平均场映射"概念，为耦合混沌的"平均场理论"奠定基础。正Lyapunov指数数量满足$N_{LE^+} \propto (\varepsilon - \varepsilon_c)^\beta$，$\beta \approx 1/3 \sim 1/2$。不足之处：仅研究一维最近邻耦合，缺乏严格数学证明，平均场理论框架不完整。该论文与知识库中008号(Tao MDCML动态耦合)、010号(Du NCMLP非邻接耦合)、011号(He DMSML离散忆阻器耦合)、023号(Fan PWLCM-CML)、024号(Wang TWMCML)、037号(Liu SAMCML)共同构成CML从理论奠基到工程应用的完整研究谱系——本文的独特价值在于其开创性和理论深度，为后续所有CML研究奠定了方法论基础*
+*最后更新：2026-06-28
+*本次更新：新增论文060精读笔记 - Memristive Hénon Map with Hidden Neimark–Sacker Bifurcations (Nonlinear Dynamics 108, 2022)，常州大学Rong K、Bao H等人在Bao BC教授指导下完成的研究。核心贡献：(1)将离散忆阻器耦合到经典Hénon映射构建3D忆阻Hénon映射，严格证明无不动点（所有动力学行为均为隐藏）；(2)首次提出维度约化转换方法，将忆阻器内状态转化为累积求和形式，定义忆阻器相关参数M，有效揭示隐藏Neimark–Sacker分岔；(3)发现映射同时具有倍周期和准周期两种通向混沌的路径（经典Hénon映射仅有倍周期）；(4)在特定参数下发现双稳态和三稳态共存吸引子；(5)STM32F407+DAC8563硬件实现验证。在参数(-0.9, 0.25, 0.51)下实现超混沌（2个正LE）。不足之处：缺乏图像加密等应用验证、未进行NIST随机性测试、多稳态分析不够系统、噪声鲁棒性未讨论。该论文与知识库中003号(Bao并行双忆阻器)、014号(Huang N维忆阻映射)、027号(Lai忆阻高斯映射)、016号(Zhang S双忆阻器初始增强)形成离散忆阻映射从构造方法→分岔理论→多稳态分析→硬件实现的完整研究链条——本文的独特价值在于首次提出维度约化方法解决无不动点系统的隐藏分岔分析难题*
+
+*上次更新：2026-06-17 - 新增论文049精读笔记 - Spatiotemporal Intermittency in Coupled Map Lattices (Progress of Theoretical Physics 74(5), 1985)，东京大学Kaneko Kunihiko的CML奠基性论文。核心贡献：(1)首次系统研究耦合映射格子(CML)中的时空间歇性现象，发现burst和层流区域在时空中形成具有自相似性的几何结构；(2)建立CML与Wolfram元胞自动机(Class 3)之间的深刻联系，通过二态约化方法展示两者的图案相似性；(3)揭示层流团簇传播速度$v_r$和burst传播速度$v_s$的双传播机制，burst传播时间满足临界标度律$\tau_s \propto (\varepsilon - \varepsilon_c)^{-\gamma}$，$\gamma \approx 0.6 \sim 0.9$；(4)计算Lyapunov谱发现双峰结构，分别对应层流运动($\lambda \approx -0.32$)和burst运动($\lambda \approx 0.40$)；(5)提出"平均场映射"概念，为耦合混沌的"平均场理论"奠定基础。正Lyapunov指数数量满足$N_{LE^+} \propto (\varepsilon - \varepsilon_c)^\beta$，$\beta \approx 1/3 \sim 1/2$。不足之处：仅研究一维最近邻耦合，缺乏严格数学证明，平均场理论框架不完整。该论文与知识库中008号(Tao MDCML动态耦合)、010号(Du NCMLP非邻接耦合)、011号(He DMSML离散忆阻器耦合)、023号(Fan PWLCM-CML)、024号(Wang TWMCML)、037号(Liu SAMCML)共同构成CML从理论奠基到工程应用的完整研究谱系——本文的独特价值在于其开创性和理论深度，为后续所有CML研究奠定了方法论基础*
 
 *上次更新：2026-06-16 - 新增论文048精读笔记 - Multi-image Reorganization Encryption Based on S-L-F Cascade Chaos and Bit Scrambling (Journal of Web Engineering 20(4), 2021)，桂林电子科技大学Song Xiaoming等人在李国东教授指导下完成的研究。核心贡献是提出了一种基于Sine-Sine映射、Logistic混沌和广义三阶Fibonacci级联的复合混沌系统(S-L-F)，参数范围扩展至[0,4]，谱熵可达0.95；设计了可加密任意数量、不同尺寸、不同类型图像的多图像重组加密方案，采用SHA-256明文相关密钥实现"一密一钥"。安全性指标达到理想水平：NPCR=0.9961，UACI=0.3345，信息熵>7.999。不足之处：缺乏Lyapunov指数等混沌理论分析、密钥空间量化、已知明文/选择明文攻击测试、噪声/裁剪鲁棒性评估、以及硬件实现验证。该论文与知识库中023号(Fan CML-PWLCM级联加密)、024号(Wang TWMCML全混沌耦合)、037号(Liu SAMCML时空混沌DNA加密)、010号(Du NCMLP多人脸加密)共同构成多图像混沌加密的研究谱系——本文方法的独特价值在于其多图像通用重组能力和简洁的级联混沌设计*
 
