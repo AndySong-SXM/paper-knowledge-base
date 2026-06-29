@@ -69,6 +69,7 @@
 | 058 | Image compression-hiding algorithm based on compressive sensing and integer wavelet transformation | Ye G, Du S, Huang X | 2023 | Applied Mathematical Modelling 124 | 压缩感知+IWT图像压缩隐藏算法（TransM+GetM+2DCS+RSA+十进制分解嵌入） | [paper_058_压缩感知IWT图像压缩隐藏算法.md](paper_058_压缩感知IWT图像压缩隐藏算法.md) |
 | 059 | Example of robust chaos in a smooth map | Andrecut M, Ali M K | 2001 | Europhysics Letters 54(3) | 光滑一维映射鲁棒混沌反例（推翻Banerjee-Yorke-Grebogi猜想） | [paper_059_平滑映射鲁棒混沌反例.md](paper_059_平滑映射鲁棒混沌反例.md) |
 | 060 | Memristive Hénon Map with Hidden Neimark–Sacker Bifurcations | Rong K, Bao H, Li H, Hua Z, Bao B | 2022 | Nonlinear Dynamics 108 | 忆阻Hénon映射隐藏Neimark-Sacker分岔（维度约化方法+双路径通向混沌+多稳态+STM32F407硬件实现） | [paper_060_忆阻Hénon映射隐藏Neimark-Sacker分岔.md](paper_060_忆阻Hénon映射隐藏Neimark-Sacker分岔.md) |
+| 061 | Parametric Analysis and Fractal-like Basins of Attraction by Modified Interpolated Cell Mapping | Ge Z-M, Tsen P-C, Lee S-C | 2002 | Journal of Sound and Vibration 253(3) | MICM扩展：大区域定位+参数分析+分形盆正不变集判定（10倍效率提升） | [paper_061_改进插值细胞映射参数分析与分形吸引盆.md](paper_061_改进插值细胞映射参数分析与分形吸引盆.md) |
 
 ---
 
