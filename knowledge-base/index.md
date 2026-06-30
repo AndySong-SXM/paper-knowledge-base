@@ -70,10 +70,22 @@
 | 059 | Example of robust chaos in a smooth map | Andrecut M, Ali M K | 2001 | Europhysics Letters 54(3) | 光滑一维映射鲁棒混沌反例（推翻Banerjee-Yorke-Grebogi猜想） | [paper_059_平滑映射鲁棒混沌反例.md](paper_059_平滑映射鲁棒混沌反例.md) |
 | 060 | Memristive Hénon Map with Hidden Neimark–Sacker Bifurcations | Rong K, Bao H, Li H, Hua Z, Bao B | 2022 | Nonlinear Dynamics 108 | 忆阻Hénon映射隐藏Neimark-Sacker分岔（维度约化方法+双路径通向混沌+多稳态+STM32F407硬件实现） | [paper_060_忆阻Hénon映射隐藏Neimark-Sacker分岔.md](paper_060_忆阻Hénon映射隐藏Neimark-Sacker分岔.md) |
 | 061 | Parametric Analysis and Fractal-like Basins of Attraction by Modified Interpolated Cell Mapping | Ge Z-M, Tsen P-C, Lee S-C | 2002 | Journal of Sound and Vibration 253(3) | MICM扩展：大区域定位+参数分析+分形盆正不变集判定（10倍效率提升） | [paper_061_改进插值细胞映射参数分析与分形吸引盆.md](paper_061_改进插值细胞映射参数分析与分形吸引盆.md) |
+| 062 | Communication Theory of Secrecy Systems | Shannon C E | 1949 | Bell System Technical Journal 28 | 现代密码学奠基：完美保密、疑义度、唯一解距离、扩散与混淆、TFS架构 | [paper_062_Shannon保密系统通信理论.md](paper_062_Shannon保密系统通信理论.md) |
 
 ---
 
 ## 🔬 研究方向脉络
+
+### 密码学理论基础 (Foundations of Cryptography)
+
+```
+Shannon保密系统通信理论 (1949) — 现代密码学奠基 ⭐ 062号论文
+  ├── 完美保密与一次一密
+  ├── 疑义度与唯一解距离
+  ├── 扩散与混淆（现代分组密码设计基石）
+  ├── TFS架构（简单密码+混合变换+简单密码）
+  └── 混合变换理论（混沌系统天然适合）
+```
 
 ### 保守混沌系统 (Conservative Chaotic Systems)
 
@@ -267,6 +279,7 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
 
 | 时期 | 发展方向 | 代表工作 |
 |------|---------|---------|
+| 1949 | 密码学理论奠基 | Shannon — 保密系统的通信理论（完美保密、扩散与混淆） |
 | 1963 | 混沌理论奠基 | Lorenz系统 — 确定性非周期流 |
 | 1985 | Nosé-Hoover 恒温器 | Nosé-Hoover 振荡器 |
 | 1994 | 简单保守混沌流 | Sprott-A 系统 |
