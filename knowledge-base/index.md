@@ -71,6 +71,7 @@
 | 060 | Memristive Hénon Map with Hidden Neimark–Sacker Bifurcations | Rong K, Bao H, Li H, Hua Z, Bao B | 2022 | Nonlinear Dynamics 108 | 忆阻Hénon映射隐藏Neimark-Sacker分岔（维度约化方法+双路径通向混沌+多稳态+STM32F407硬件实现） | [paper_060_忆阻Hénon映射隐藏Neimark-Sacker分岔.md](paper_060_忆阻Hénon映射隐藏Neimark-Sacker分岔.md) |
 | 061 | Parametric Analysis and Fractal-like Basins of Attraction by Modified Interpolated Cell Mapping | Ge Z-M, Tsen P-C, Lee S-C | 2002 | Journal of Sound and Vibration 253(3) | MICM扩展：大区域定位+参数分析+分形盆正不变集判定（10倍效率提升） | [paper_061_改进插值细胞映射参数分析与分形吸引盆.md](paper_061_改进插值细胞映射参数分析与分形吸引盆.md) |
 | 062 | Communication Theory of Secrecy Systems | Shannon C E | 1949 | Bell System Technical Journal 28 | 现代密码学奠基：完美保密、疑义度、唯一解距离、扩散与混淆、TFS架构 | [paper_062_Shannon保密系统通信理论.md](paper_062_Shannon保密系统通信理论.md) |
+| 063 | Local exponential divergence plot and optimal embedding of a chaotic time series | Gao J, Zheng Z | 1993 | Physics Letters A 181(2) | 局部指数发散图：统一确定最优嵌入维数、延迟时间和最大Lyapunov指数 | [paper_063_局部指数发散图最优嵌入.md](paper_063_局部指数发散图最优嵌入.md) |
 
 ---
 
