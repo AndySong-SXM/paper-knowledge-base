@@ -73,6 +73,7 @@
 | 062 | Communication Theory of Secrecy Systems | Shannon C E | 1949 | Bell System Technical Journal 28 | 现代密码学奠基：完美保密、疑义度、唯一解距离、扩散与混淆、TFS架构 | [paper_062_Shannon保密系统通信理论.md](paper_062_Shannon保密系统通信理论.md) |
 | 063 | Local exponential divergence plot and optimal embedding of a chaotic time series | Gao J, Zheng Z | 1993 | Physics Letters A 181(2) | 局部指数发散图：统一确定最优嵌入维数、延迟时间和最大Lyapunov指数 | [paper_063_局部指数发散图最优嵌入.md](paper_063_局部指数发散图最优嵌入.md) |
 | 064 | 动态猫变换和混沌映射的图像加密算法 | Han X, Li G | 2020 | 计算机工程与设计 41(3) | 分块置乱+动态多轮Arnold Cat Map+四混沌双扩散（Henon-Logistic/Henon/Tent/Logistic协同） | [paper_064_动态猫变换混沌映射图像加密.md](paper_064_动态猫变换混沌映射图像加密.md) |
+| 065 | 基于优化耦合映像格子的比特级图像加密方法 | Shen Q, Liu W B, Zhu Y J, Lin Y | 2020 | 测控技术 39(8) | OLM消除周期窗+OCML稳定全混沌+CS分级测量比特级加密（WSN图像加密） | [paper_065_优化耦合映像格子比特级图像加密.md](paper_065_优化耦合映像格子比特级图像加密.md) |
 
 ---
 
@@ -230,6 +231,13 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
   │     ├── 边缘检测+隐私区域差异化加密
   │     ├── 三维比特级耦合XOR置乱
   │     └── NPCR≈99.61%，UACI≈33.46%
+  ├── OCML (Shen et al., 2020) — OLM优化耦合映射格子 ← 065号论文
+  │     ├── OLM = sin((f+500)·π·x·(1-x))·cos((f+500)·π·x·(1-x)) + 0.5
+  │     ├── 消除周期窗：f∈[0.1,0.9]全区间混沌
+  │     ├── KS熵密度和幅面验证全格子混沌
+  │     ├── 结合CS压缩感知实现比特级加密
+  │     ├── 测量与比特分解合二为一（效率提升）
+  │     └── 密钥空间>2^192，信息熵≈7.9965
   └── MCML (Wang, 2019) — 相邻+非相邻耦合，固定参数
         └── MDCML (Tao et al., 2020) — 动态耦合参数 ← 008号论文
               ├── 动态耦合参数消除混沌缺陷
