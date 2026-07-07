@@ -76,6 +76,7 @@
 | 065 | 基于优化耦合映像格子的比特级图像加密方法 | Shen Q, Liu W B, Zhu Y J, Lin Y | 2020 | 测控技术 39(8) | OLM消除周期窗+OCML稳定全混沌+CS分级测量比特级加密（WSN图像加密） | [paper_065_优化耦合映像格子比特级图像加密.md](paper_065_优化耦合映像格子比特级图像加密.md) |
 | 066 | Fractional quantum Julia set | Wang Y | 2023 | Applied Mathematics and Computation 453 | 分数阶q-差分算子构建量子Julia集；记忆参数α影响外观，尺度参数q决定存在性；三种噪声（系统/记忆/尺度）差异化响应 | [paper_066_分数阶量子Julia集.md](paper_066_分数阶量子Julia集.md) |
 | 067 | Chaos in a novel Wien bridge-based RC chaotic oscillator: dynamic analysis with application to image encryption | Ramadoss J, Kengne J, Telem ANK, Tsafack N, Rajagopal K | 2022 | Analog Integr. Circ. Sig. Process. 112 | 反并联二极管对称非线性Wien桥RC混沌振荡器；气泡/反气泡分岔（反单调性）；Hahn正交矩+Knuth置换图像加密 | [paper_067_Wien桥RC混沌振荡器图像加密.md](paper_067_Wien桥RC混沌振荡器图像加密.md) |
+| 068 | New Fractal Sets Coined from Fractional Maps | Wang Y, Liu S, Li H | 2021 | Fractals 29(8) 2150270 | 三种分数阶算子（微分/差分/GL）生成新Julia集和Mandelbrot集；分数阶化判据+核函数分析+变阶数记忆 | [paper_068_分数阶映射生成新分形集.md](paper_068_分数阶映射生成新分形集.md) |
 
 ---
 
@@ -111,6 +112,21 @@ Lorenz系统 (1963) — 混沌理论奠基 ⭐ 025号论文
               ├── 镜像对称多稳定性
               ├── 状态转移现象
               └── Multisim + DSP 硬件实现
+```
+
+### 分数阶分形集 (Fractional Fractal Sets)
+
+```
+传统分形集 (Mandelbrot, 1983) — Julia集和Mandelbrot集
+  ├── 高维推广：四元数Julia集 (Norton, 1989) — 026号论文
+  ├── 量子推广：分数阶量子Julia集 (Wang, 2023) — 066号论文
+  └── ★ 分数阶推广：三种分数阶算子生成新分形集 (Wang et al., 2021) — 068号论文
+        ├── 分数阶微分映射 (Map 3.3) — 幂律记忆核 (n^{α-1})，Julia集保持连通
+        ├── 分数阶差分映射 (Map 3.5) — 下降阶乘律记忆，海马谷萌发毛发
+        ├── GL分数阶映射 (Map 3.6) — 截断记忆，最强抗阶数干扰
+        ├── 变阶数映射 (α_n = |sin(n)|) — 时变记忆，Julia集解体
+        ├── 分数阶化判据：(i)根植于真正分数阶算子 (ii)记忆参数有效改变结构 (iii)α=1退化经典
+        └── 核函数分析：近期记忆差异是分形集行为不同的根本原因
 ```
 
 ### 忆阻器发现与离散忆阻器混沌系统 (Memristor Discovery & Discrete Memristor Chaotic Systems)
@@ -299,6 +315,7 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
 | 2017 | 广义 Hamilton 系统框架 | Cang et al., IJBC |
 | 2018 | 非保守系统中的保守混沌 | Cang et al., IJBC |
 | 2020 | 多簇保守混沌流拓扑 | Cang et al., CSF |
+| 2021 | 分数阶映射生成新分形集 | Wang Y et al., Fractals — 三种分数阶算子生成Julia/Mandelbrot集 |
 | 2021 | 离散忆阻器超混沌映射 | Bao et al., IEEE TCAS-I |
 | 2022 | 并行双忆阻器极端多稳态 | Bao et al., CSF (本文) |
 | 2024 | 分数阶多翼混沌系统多稳定性 | Liu T et al., Mobile Netw. Appl. |
