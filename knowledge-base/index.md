@@ -75,6 +75,7 @@
 | 064 | 动态猫变换和混沌映射的图像加密算法 | Han X, Li G | 2020 | 计算机工程与设计 41(3) | 分块置乱+动态多轮Arnold Cat Map+四混沌双扩散（Henon-Logistic/Henon/Tent/Logistic协同） | [paper_064_动态猫变换混沌映射图像加密.md](paper_064_动态猫变换混沌映射图像加密.md) |
 | 065 | 基于优化耦合映像格子的比特级图像加密方法 | Shen Q, Liu W B, Zhu Y J, Lin Y | 2020 | 测控技术 39(8) | OLM消除周期窗+OCML稳定全混沌+CS分级测量比特级加密（WSN图像加密） | [paper_065_优化耦合映像格子比特级图像加密.md](paper_065_优化耦合映像格子比特级图像加密.md) |
 | 066 | Fractional quantum Julia set | Wang Y | 2023 | Applied Mathematics and Computation 453 | 分数阶q-差分算子构建量子Julia集；记忆参数α影响外观，尺度参数q决定存在性；三种噪声（系统/记忆/尺度）差异化响应 | [paper_066_分数阶量子Julia集.md](paper_066_分数阶量子Julia集.md) |
+| 067 | Chaos in a novel Wien bridge-based RC chaotic oscillator: dynamic analysis with application to image encryption | Ramadoss J, Kengne J, Telem ANK, Tsafack N, Rajagopal K | 2022 | Analog Integr. Circ. Sig. Process. 112 | 反并联二极管对称非线性Wien桥RC混沌振荡器；气泡/反气泡分岔（反单调性）；Hahn正交矩+Knuth置换图像加密 | [paper_067_Wien桥RC混沌振荡器图像加密.md](paper_067_Wien桥RC混沌振荡器图像加密.md) |
 
 ---
 
