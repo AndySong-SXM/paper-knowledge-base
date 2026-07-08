@@ -77,6 +77,7 @@
 | 066 | Fractional quantum Julia set | Wang Y | 2023 | Applied Mathematics and Computation 453 | 分数阶q-差分算子构建量子Julia集；记忆参数α影响外观，尺度参数q决定存在性；三种噪声（系统/记忆/尺度）差异化响应 | [paper_066_分数阶量子Julia集.md](paper_066_分数阶量子Julia集.md) |
 | 067 | Chaos in a novel Wien bridge-based RC chaotic oscillator: dynamic analysis with application to image encryption | Ramadoss J, Kengne J, Telem ANK, Tsafack N, Rajagopal K | 2022 | Analog Integr. Circ. Sig. Process. 112 | 反并联二极管对称非线性Wien桥RC混沌振荡器；气泡/反气泡分岔（反单调性）；Hahn正交矩+Knuth置换图像加密 | [paper_067_Wien桥RC混沌振荡器图像加密.md](paper_067_Wien桥RC混沌振荡器图像加密.md) |
 | 068 | New Fractal Sets Coined from Fractional Maps | Wang Y, Liu S, Li H | 2021 | Fractals 29(8) 2150270 | 三种分数阶算子（微分/差分/GL）生成新Julia集和Mandelbrot集；分数阶化判据+核函数分析+变阶数记忆 | [paper_068_分数阶映射生成新分形集.md](paper_068_分数阶映射生成新分形集.md) |
+| 069 | Dynamical analysis of a new 3D chaotic system: non-equilibrium point, conservative, rotationally hidden attractor | Zhao B, Ye X | 2024 | Physica Scripta 99 035241 | 基于Sprott-B改造的无平衡点保守混沌系统；旋转矩阵生成旋转隐藏吸引子；e^{-z^2}指数非线性增强；DSP硬件实现 | [paper_069_无平衡点保守旋转隐藏吸引子3D混沌系统.md](paper_069_无平衡点保守旋转隐藏吸引子3D混沌系统.md) |
 
 ---
 
@@ -662,8 +663,8 @@ Julia分形过程 (Gaston Julia, 1919)
 
 ---
 
-*最后更新：2026-06-28
-*本次更新：新增论文060精读笔记 - Memristive Hénon Map with Hidden Neimark–Sacker Bifurcations (Nonlinear Dynamics 108, 2022)，常州大学Rong K、Bao H等人在Bao BC教授指导下完成的研究。核心贡献：(1)将离散忆阻器耦合到经典Hénon映射构建3D忆阻Hénon映射，严格证明无不动点（所有动力学行为均为隐藏）；(2)首次提出维度约化转换方法，将忆阻器内状态转化为累积求和形式，定义忆阻器相关参数M，有效揭示隐藏Neimark–Sacker分岔；(3)发现映射同时具有倍周期和准周期两种通向混沌的路径（经典Hénon映射仅有倍周期）；(4)在特定参数下发现双稳态和三稳态共存吸引子；(5)STM32F407+DAC8563硬件实现验证。在参数(-0.9, 0.25, 0.51)下实现超混沌（2个正LE）。不足之处：缺乏图像加密等应用验证、未进行NIST随机性测试、多稳态分析不够系统、噪声鲁棒性未讨论。该论文与知识库中003号(Bao并行双忆阻器)、014号(Huang N维忆阻映射)、027号(Lai忆阻高斯映射)、016号(Zhang S双忆阻器初始增强)形成离散忆阻映射从构造方法→分岔理论→多稳态分析→硬件实现的完整研究链条——本文的独特价值在于首次提出维度约化方法解决无不动点系统的隐藏分岔分析难题*
+*最后更新：2026-07-08
+*本次更新：新增论文069精读笔记 - Dynamical analysis of a new 3D chaotic system: non-equilibrium point, conservative, rotationally hidden attractor (Physica Scripta 99, 2024)，辽宁科技大学Zhao Boyu和Ye Xiaolin基于Sprott-B系统改造，引入e^{-z^2}指数项构造了一个新型无平衡点保守三维混沌系统。核心贡献：(1)系统证明无平衡点（方程组无解）、保守性（∑LE≈0）和永恒点集P=(0,0,c)；(2)首次利用旋转矩阵R对原始系统方程进行变换，在x-y、x-z、y-z三个方向上生成不同旋转角度（0,π/3,2π/3,π/4,π/2,3π/4）的旋转隐藏吸引子；(3)四种分析工具（2D LE、2D动力学图、SE谱熵、C₀复杂度）交叉验证；(4)TMS320F28335 DSP硬件实现。不足之处：缺乏应用验证（图像加密/PRNG/NIST）、参数分析不充分、多稳态未探索、旋转方法缺乏物理解释深度。该论文与知识库中035号(Sprott 1994)、025号(Lorenz 1963)、055号(Yang 2023)、045号(Zhang 2021)形成从经典混沌→保守混沌→隐藏混沌→无平衡点保守混沌的完整研究链条——本文的独特价值在于首次将旋转矩阵引入无平衡点混沌系统动力学分析，实现了吸引子的可控旋转，且通讯作者Ye Xiaolin的博士论文(043号)已收录，形成"理论分析—工程应用"闭环*
 
 *上次更新：2026-06-17 - 新增论文049精读笔记 - Spatiotemporal Intermittency in Coupled Map Lattices (Progress of Theoretical Physics 74(5), 1985)，东京大学Kaneko Kunihiko的CML奠基性论文。核心贡献：(1)首次系统研究耦合映射格子(CML)中的时空间歇性现象，发现burst和层流区域在时空中形成具有自相似性的几何结构；(2)建立CML与Wolfram元胞自动机(Class 3)之间的深刻联系，通过二态约化方法展示两者的图案相似性；(3)揭示层流团簇传播速度$v_r$和burst传播速度$v_s$的双传播机制，burst传播时间满足临界标度律$\tau_s \propto (\varepsilon - \varepsilon_c)^{-\gamma}$，$\gamma \approx 0.6 \sim 0.9$；(4)计算Lyapunov谱发现双峰结构，分别对应层流运动($\lambda \approx -0.32$)和burst运动($\lambda \approx 0.40$)；(5)提出"平均场映射"概念，为耦合混沌的"平均场理论"奠定基础。正Lyapunov指数数量满足$N_{LE^+} \propto (\varepsilon - \varepsilon_c)^\beta$，$\beta \approx 1/3 \sim 1/2$。不足之处：仅研究一维最近邻耦合，缺乏严格数学证明，平均场理论框架不完整。该论文与知识库中008号(Tao MDCML动态耦合)、010号(Du NCMLP非邻接耦合)、011号(He DMSML离散忆阻器耦合)、023号(Fan PWLCM-CML)、024号(Wang TWMCML)、037号(Liu SAMCML)共同构成CML从理论奠基到工程应用的完整研究谱系——本文的独特价值在于其开创性和理论深度，为后续所有CML研究奠定了方法论基础*
 
