@@ -78,6 +78,7 @@
 | 067 | Chaos in a novel Wien bridge-based RC chaotic oscillator: dynamic analysis with application to image encryption | Ramadoss J, Kengne J, Telem ANK, Tsafack N, Rajagopal K | 2022 | Analog Integr. Circ. Sig. Process. 112 | 反并联二极管对称非线性Wien桥RC混沌振荡器；气泡/反气泡分岔（反单调性）；Hahn正交矩+Knuth置换图像加密 | [paper_067_Wien桥RC混沌振荡器图像加密.md](paper_067_Wien桥RC混沌振荡器图像加密.md) |
 | 068 | New Fractal Sets Coined from Fractional Maps | Wang Y, Liu S, Li H | 2021 | Fractals 29(8) 2150270 | 三种分数阶算子（微分/差分/GL）生成新Julia集和Mandelbrot集；分数阶化判据+核函数分析+变阶数记忆 | [paper_068_分数阶映射生成新分形集.md](paper_068_分数阶映射生成新分形集.md) |
 | 069 | Dynamical analysis of a new 3D chaotic system: non-equilibrium point, conservative, rotationally hidden attractor | Zhao B, Ye X | 2024 | Physica Scripta 99 035241 | 基于Sprott-B改造的无平衡点保守混沌系统；旋转矩阵生成旋转隐藏吸引子；e^{-z^2}指数非线性增强；DSP硬件实现 | [paper_069_无平衡点保守旋转隐藏吸引子3D混沌系统.md](paper_069_无平衡点保守旋转隐藏吸引子3D混沌系统.md) |
+| 070 | A new one-dimensional chaotic system with applications in image encryption | Wang X, Li Y, Jin J | 2020 | Chaos, Solitons and Fractals 139 | 新型I1DS一维混沌系统（Logistic+Sin+取模融合，参数范围无限）；动态比特移位重组+同步置乱扩散(SSDO)图像加密 | [paper_070_I1DS一维混沌系统图像加密.md](paper_070_I1DS一维混沌系统图像加密.md) |
 
 ---
 
