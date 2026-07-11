@@ -80,6 +80,7 @@
 | 069 | Dynamical analysis of a new 3D chaotic system: non-equilibrium point, conservative, rotationally hidden attractor | Zhao B, Ye X | 2024 | Physica Scripta 99 035241 | 基于Sprott-B改造的无平衡点保守混沌系统；旋转矩阵生成旋转隐藏吸引子；e^{-z^2}指数非线性增强；DSP硬件实现 | [paper_069_无平衡点保守旋转隐藏吸引子3D混沌系统.md](paper_069_无平衡点保守旋转隐藏吸引子3D混沌系统.md) |
 | 070 | A new one-dimensional chaotic system with applications in image encryption | Wang X, Li Y, Jin J | 2020 | Chaos, Solitons and Fractals 139 | 新型I1DS一维混沌系统（Logistic+Sin+取模融合，参数范围无限）；动态比特移位重组+同步置乱扩散(SSDO)图像加密 | [paper_070_I1DS一维混沌系统图像加密.md](paper_070_I1DS一维混沌系统图像加密.md) |
 | 071 | Initial-switched boosting bifurcations in 2D hyperchaotic map | Bao B C, Li H Z, Zhu L, Zhang X, Chen M | 2020 | Chaos 30, 033107 | 首次在离散映射中实现初始切换提升分岔；正弦三角函数+常数控制器极简2D超混沌映射；微控制器硬件验证 | [paper_071_二维超混沌映射初始切换提升分岔.md](paper_071_二维超混沌映射初始切换提升分岔.md) |
+| 072 | 基于格的可证明安全口令认证密钥交换协议研究 | 尹安琪 | 2022 | 战略支援部队信息工程大学博士论文 | 格上SPHF与PAKE协议（两方/三方/两服务器/多服务器）；五大SPHF创新（IND-CCA2安全/两方/精确/分布式）；标准模型可证明安全 | [paper_072_格上可证明安全PAKE协议研究.md](paper_072_格上可证明安全PAKE协议研究.md) |
 
 ---
 
