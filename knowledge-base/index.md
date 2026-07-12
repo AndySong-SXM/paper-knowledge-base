@@ -81,6 +81,7 @@
 | 070 | A new one-dimensional chaotic system with applications in image encryption | Wang X, Li Y, Jin J | 2020 | Chaos, Solitons and Fractals 139 | 新型I1DS一维混沌系统（Logistic+Sin+取模融合，参数范围无限）；动态比特移位重组+同步置乱扩散(SSDO)图像加密 | [paper_070_I1DS一维混沌系统图像加密.md](paper_070_I1DS一维混沌系统图像加密.md) |
 | 071 | Initial-switched boosting bifurcations in 2D hyperchaotic map | Bao B C, Li H Z, Zhu L, Zhang X, Chen M | 2020 | Chaos 30, 033107 | 首次在离散映射中实现初始切换提升分岔；正弦三角函数+常数控制器极简2D超混沌映射；微控制器硬件验证 | [paper_071_二维超混沌映射初始切换提升分岔.md](paper_071_二维超混沌映射初始切换提升分岔.md) |
 | 072 | 基于格的可证明安全口令认证密钥交换协议研究 | 尹安琪 | 2022 | 战略支援部队信息工程大学博士论文 | 格上SPHF与PAKE协议（两方/三方/两服务器/多服务器）；五大SPHF创新（IND-CCA2安全/两方/精确/分布式）；标准模型可证明安全 | [paper_072_格上可证明安全PAKE协议研究.md](paper_072_格上可证明安全PAKE协议研究.md) |
+| 073 | Analysis and circuit implementation of a non-equilibrium fractional-order chaotic system with hidden multistability and special offset-boosting | Yan S, Wang E, Wang Q | 2023 | Chaos 33, 033107 | 5D分数阶无平衡点混沌系统；三方向偏置增强+吸引子形状演化；隐藏多稳态；间歇混沌；FPGA实现 | [paper_073_非平衡分数阶混沌系统隐含多稳态与特殊偏置增强.md](paper_073_非平衡分数阶混沌系统隐含多稳态与特殊偏置增强.md) |
 
 ---
 
@@ -111,11 +112,19 @@ Lorenz系统 (1963) — 混沌理论奠基 ⭐ 025号论文
 
 ```
 传统分数阶定义 (R-L, Caputo, G-L)
-  └── Conformable Fractional Derivative (CFD)
-        └── 多翼混沌系统 (Liu et al., 2024) — 多稳定性分析与电路实现
-              ├── 镜像对称多稳定性
-              ├── 状态转移现象
-              └── Multisim + DSP 硬件实现
+  ├── Conformable Fractional Derivative (CFD)
+  │     └── 多翼混沌系统 (Liu et al., 2024) — 多稳定性分析与电路实现
+  │           ├── 镜像对称多稳定性
+  │           ├── 状态转移现象
+  │           └── Multisim + DSP 硬件实现
+  └── Caputo分数阶 (Caputo Definition)
+        └── ★ 无平衡点5D分数阶混沌系统 (Yan et al., 2023) — 073号论文
+              ├── 基于Sprott系统扩展（符号函数+5维耦合）
+              ├── 隐藏吸引子（无任何平衡点）
+              ├── 三方向偏置增强（x, w, u同时偏移+形状演化）
+              ├── 隐藏多稳态（对称/非对称周期共存+混沌共存）
+              ├── 间歇混沌（固定参数下混沌↔周期自动切换）
+              └── FPGA硬件实现验证
 ```
 
 ### 分数阶分形集 (Fractional Fractal Sets)
