@@ -83,6 +83,7 @@
 | 072 | 基于格的可证明安全口令认证密钥交换协议研究 | 尹安琪 | 2022 | 战略支援部队信息工程大学博士论文 | 格上SPHF与PAKE协议（两方/三方/两服务器/多服务器）；五大SPHF创新（IND-CCA2安全/两方/精确/分布式）；标准模型可证明安全 | [paper_072_格上可证明安全PAKE协议研究.md](paper_072_格上可证明安全PAKE协议研究.md) |
 | 073 | Analysis and circuit implementation of a non-equilibrium fractional-order chaotic system with hidden multistability and special offset-boosting | Yan S, Wang E, Wang Q | 2023 | Chaos 33, 033107 | 5D分数阶无平衡点混沌系统；三方向偏置增强+吸引子形状演化；隐藏多稳态；间歇混沌；FPGA实现 | [paper_073_非平衡分数阶混沌系统隐含多稳态与特殊偏置增强.md](paper_073_非平衡分数阶混沌系统隐含多稳态与特殊偏置增强.md) |
 | 074 | gyrator变换域的高鲁棒多图像加密算法 (Multiple Image Encryption of High Robustness in Gyrator Transform Domain) | 王丰, 邵珠宏, 王云飞, 姚启钧, 刘西林 | 2020 | 中国图象图形学报 25(7) | Gyrator变换+MRSVD多图像加密；复数→实数重组；SVD正交系数矩阵；PSNR>300dB | [paper_074_gyrator变换域高鲁棒多图像加密.md](paper_074_gyrator变换域高鲁棒多图像加密.md) |
+| 075 | Nonlinear dynamics and circuit implementation for a new Lorenz-like attractor | Li X F, Chu Y D, Zhang J G, Chang Y X | 2009 | Chaos, Solitons and Fractals 41 | 6项极简Lorenz型混沌系统；Hopf分岔解析；EWB电路实现；单参数b控制Lorenz/Chen/Lü分类 | [paper_075_新Lorenz型混沌吸引子非线性动力学与电路实现.md](paper_075_新Lorenz型混沌吸引子非线性动力学与电路实现.md) |
 
 ---
 ## 🔬 研究方向脉络
