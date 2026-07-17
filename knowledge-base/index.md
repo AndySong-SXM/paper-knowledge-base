@@ -85,6 +85,7 @@
 | 074 | gyrator变换域的高鲁棒多图像加密算法 (Multiple Image Encryption of High Robustness in Gyrator Transform Domain) | 王丰, 邵珠宏, 王云飞, 姚启钧, 刘西林 | 2020 | 中国图象图形学报 25(7) | Gyrator变换+MRSVD多图像加密；复数→实数重组；SVD正交系数矩阵；PSNR>300dB | [paper_074_gyrator变换域高鲁棒多图像加密.md](paper_074_gyrator变换域高鲁棒多图像加密.md) |
 | 075 | Nonlinear dynamics and circuit implementation for a new Lorenz-like attractor | Li X F, Chu Y D, Zhang J G, Chang Y X | 2009 | Chaos, Solitons and Fractals 41 | 6项极简Lorenz型混沌系统；Hopf分岔解析；EWB电路实现；单参数b控制Lorenz/Chen/Lü分类 | [paper_075_新Lorenz型混沌吸引子非线性动力学与电路实现.md](paper_075_新Lorenz型混沌吸引子非线性动力学与电路实现.md) |
 | 076 | Generation of Multi-Scroll Chaotic Attractors from Fractal and Multi-Fractal Processes | Bouallegue K | 2011 | IWCFTA 2011 pp.398-402 | Julia分形过程+多分形过程并行框架生成多涡卷混沌吸引子（会议短文/早期的勘探索） | [paper_076_分形多分形过程生成多涡卷混沌吸引子.md](paper_076_分形多分形过程生成多涡卷混沌吸引子.md) |
+| 077 | 抗量子攻击的物联网安全认证方案研究 | 储美玲, 吴蒙(导师) | 2022 | 南京邮电大学硕士论文 | R-LWE抗量子设备认证+QIBE网络层认证+ACSPA并行调度（格+QKD+4/3近似算法） | [paper_077_R-LWE抗量子物联网安全认证方案.md](paper_077_R-LWE抗量子物联网安全认证方案.md) |
 
 ---
 ## 🔬 研究方向脉络
