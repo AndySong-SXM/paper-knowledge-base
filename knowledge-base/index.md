@@ -86,8 +86,10 @@
 | 075 | Nonlinear dynamics and circuit implementation for a new Lorenz-like attractor | Li X F, Chu Y D, Zhang J G, Chang Y X | 2009 | Chaos, Solitons and Fractals 41 | 6项极简Lorenz型混沌系统；Hopf分岔解析；EWB电路实现；单参数b控制Lorenz/Chen/Lü分类 | [paper_075_新Lorenz型混沌吸引子非线性动力学与电路实现.md](paper_075_新Lorenz型混沌吸引子非线性动力学与电路实现.md) |
 | 076 | Generation of Multi-Scroll Chaotic Attractors from Fractal and Multi-Fractal Processes | Bouallegue K | 2011 | IWCFTA 2011 pp.398-402 | Julia分形过程+多分形过程并行框架生成多涡卷混沌吸引子（会议短文/早期的勘探索） | [paper_076_分形多分形过程生成多涡卷混沌吸引子.md](paper_076_分形多分形过程生成多涡卷混沌吸引子.md) |
 | 077 | 抗量子攻击的物联网安全认证方案研究 | 储美玲, 吴蒙(导师) | 2022 | 南京邮电大学硕士论文 | R-LWE抗量子设备认证+QIBE网络层认证+ACSPA并行调度（格+QKD+4/3近似算法） | [paper_077_R-LWE抗量子物联网安全认证方案.md](paper_077_R-LWE抗量子物联网安全认证方案.md) |
+| 078 | 相空间重构延迟时间与嵌入维数的选择 | 修春波, 刘向东, 张宇河 | 2003 | 北京理工大学学报 23(2) | 广义嵌入窗长+补关联函数+$c(\tau)=0.707$判据统一确定$\tau_d$和$m$ | [paper_078_相空间重构延迟时间与嵌入维数的选择.md](paper_078_相空间重构延迟时间与嵌入维数的选择.md) |
 
 ---
+
 ## 🔬 研究方向脉络
 
 ### 密码学理论基础 (Foundations of Cryptography)
