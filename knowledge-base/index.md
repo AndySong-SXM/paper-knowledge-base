@@ -87,6 +87,7 @@
 | 076 | Generation of Multi-Scroll Chaotic Attractors from Fractal and Multi-Fractal Processes | Bouallegue K | 2011 | IWCFTA 2011 pp.398-402 | Julia分形过程+多分形过程并行框架生成多涡卷混沌吸引子（会议短文/早期的勘探索） | [paper_076_分形多分形过程生成多涡卷混沌吸引子.md](paper_076_分形多分形过程生成多涡卷混沌吸引子.md) |
 | 077 | 抗量子攻击的物联网安全认证方案研究 | 储美玲, 吴蒙(导师) | 2022 | 南京邮电大学硕士论文 | R-LWE抗量子设备认证+QIBE网络层认证+ACSPA并行调度（格+QKD+4/3近似算法） | [paper_077_R-LWE抗量子物联网安全认证方案.md](paper_077_R-LWE抗量子物联网安全认证方案.md) |
 | 078 | 相空间重构延迟时间与嵌入维数的选择 | 修春波, 刘向东, 张宇河 | 2003 | 北京理工大学学报 23(2) | 广义嵌入窗长+补关联函数+$c(\tau)=0.707$判据统一确定$\tau_d$和$m$ | [paper_078_相空间重构延迟时间与嵌入维数的选择.md](paper_078_相空间重构延迟时间与嵌入维数的选择.md) |
+| 079 | Effortless estimation of basins of attraction | Datseris G, Wagemakers A | 2022 | Chaos 32, 023104 | 基于FSM+Poincaré回复定理的全自动吸引盆估计方法（DynamicalSystems.jl实现） | [paper_079_吸引盆轻松估计FSM算法.md](paper_079_吸引盆轻松估计FSM算法.md) |
 
 ---
 
@@ -337,6 +338,7 @@ CML (Kaneko, 1989) — 经典耦合映射格子，固定耦合，仅相邻格子
 | 2021 | 离散忆阻器超混沌映射 | Bao et al., IEEE TCAS-I |
 | 2022 | 并行双忆阻器极端多稳态 | Bao et al., CSF (本文) |
 | 2024 | 分数阶多翼混沌系统多稳定性 | Liu T et al., Mobile Netw. Appl. |
+| 2022 | 基于FSM的全自动吸引盆估计 | Datseris & Wagemakers, Chaos |
 | 2022 | 并行双忆阻器极端多稳态 | Bao H et al., CSF |
 | 2022 | 参数帕斯卡矩阵n维混沌系统 | Zhang Y et al., IEEE TII |
 | 2024 | 离散忆阻器+忆感器5-D超混沌映射 | Liu X et al., IEEE TIE |
@@ -680,8 +682,10 @@ Julia分形过程 (Gaston Julia, 1919)
 
 ---
 
-*最后更新：2026-07-08
-*本次更新：新增论文069精读笔记 - Dynamical analysis of a new 3D chaotic system: non-equilibrium point, conservative, rotationally hidden attractor (Physica Scripta 99, 2024)，辽宁科技大学Zhao Boyu和Ye Xiaolin基于Sprott-B系统改造，引入e^{-z^2}指数项构造了一个新型无平衡点保守三维混沌系统。核心贡献：(1)系统证明无平衡点（方程组无解）、保守性（∑LE≈0）和永恒点集P=(0,0,c)；(2)首次利用旋转矩阵R对原始系统方程进行变换，在x-y、x-z、y-z三个方向上生成不同旋转角度（0,π/3,2π/3,π/4,π/2,3π/4）的旋转隐藏吸引子；(3)四种分析工具（2D LE、2D动力学图、SE谱熵、C₀复杂度）交叉验证；(4)TMS320F28335 DSP硬件实现。不足之处：缺乏应用验证（图像加密/PRNG/NIST）、参数分析不充分、多稳态未探索、旋转方法缺乏物理解释深度。该论文与知识库中035号(Sprott 1994)、025号(Lorenz 1963)、055号(Yang 2023)、045号(Zhang 2021)形成从经典混沌→保守混沌→隐藏混沌→无平衡点保守混沌的完整研究链条——本文的独特价值在于首次将旋转矩阵引入无平衡点混沌系统动力学分析，实现了吸引子的可控旋转，且通讯作者Ye Xiaolin的博士论文(043号)已收录，形成"理论分析—工程应用"闭环*
+*最后更新：2026-07-19
+*本次更新：新增论文079精读笔记 - Effortless estimation of basins of attraction (Chaos 32, 023104, 2022)，George Datseris和Alexandre Wagemakers提出基于有限状态机(FSM)和Poincaré回复定理的全自动吸引盆估计方法。核心贡献：(1)无需先验知识的吸引子自动识别——在离散化状态空间网格上通过轨迹回复检测发现吸引子，5种FSM状态(att_search/att_found/att_hit/bas_hit/lost)统一管理全部匹配过程；(2)普适性极强——适用于离散/连续系统、Poincaré映射、频闪映射、高维投影；(3)9种场景验证——含6D Lorenz96EBM和~26吸引子的4D耦合Logistic映射；(4)实现于DynamicalSystems.jl，约10行代码即可使用，性能超越暴力法。不足之处：高维内存瓶颈(~ρ^D)、不可并行化、极端多稳态下可能漏吸吸引子。该论文与知识库中020号(Ge&Lee 1997改进插值细胞映射)和061号(Ge et al. 2002 MICM参数分析)形成状态空间网格方法的演进脉络——本文的独特价值在于其"零先验知识"的普适性框架和FSM的系统化形式化方法*
+
+*上次更新：2026-07-08 - 新增论文069精读笔记 - Dynamical analysis of a new 3D chaotic system: non-equilibrium point, conservative, rotationally hidden attractor (Physica Scripta 99, 2024)，辽宁科技大学Zhao Boyu和Ye Xiaolin基于Sprott-B系统改造，引入e^{-z^2}指数项构造了一个新型无平衡点保守三维混沌系统。核心贡献：(1)系统证明无平衡点（方程组无解）、保守性（∑LE≈0）和永恒点集P=(0,0,c)；(2)首次利用旋转矩阵R对原始系统方程进行变换，在x-y、x-z、y-z三个方向上生成不同旋转角度（0,π/3,2π/3,π/4,π/2,3π/4）的旋转隐藏吸引子；(3)四种分析工具（2D LE、2D动力学图、SE谱熵、C₀复杂度）交叉验证；(4)TMS320F28335 DSP硬件实现。不足之处：缺乏应用验证（图像加密/PRNG/NIST）、参数分析不充分、多稳态未探索、旋转方法缺乏物理解释深度。该论文与知识库中035号(Sprott 1994)、025号(Lorenz 1963)、055号(Yang 2023)、045号(Zhang 2021)形成从经典混沌→保守混沌→隐藏混沌→无平衡点保守混沌的完整研究链条——本文的独特价值在于首次将旋转矩阵引入无平衡点混沌系统动力学分析，实现了吸引子的可控旋转，且通讯作者Ye Xiaolin的博士论文(043号)已收录，形成"理论分析—工程应用"闭环*
 
 *上次更新：2026-06-17 - 新增论文049精读笔记 - Spatiotemporal Intermittency in Coupled Map Lattices (Progress of Theoretical Physics 74(5), 1985)，东京大学Kaneko Kunihiko的CML奠基性论文。核心贡献：(1)首次系统研究耦合映射格子(CML)中的时空间歇性现象，发现burst和层流区域在时空中形成具有自相似性的几何结构；(2)建立CML与Wolfram元胞自动机(Class 3)之间的深刻联系，通过二态约化方法展示两者的图案相似性；(3)揭示层流团簇传播速度$v_r$和burst传播速度$v_s$的双传播机制，burst传播时间满足临界标度律$\tau_s \propto (\varepsilon - \varepsilon_c)^{-\gamma}$，$\gamma \approx 0.6 \sim 0.9$；(4)计算Lyapunov谱发现双峰结构，分别对应层流运动($\lambda \approx -0.32$)和burst运动($\lambda \approx 0.40$)；(5)提出"平均场映射"概念，为耦合混沌的"平均场理论"奠定基础。正Lyapunov指数数量满足$N_{LE^+} \propto (\varepsilon - \varepsilon_c)^\beta$，$\beta \approx 1/3 \sim 1/2$。不足之处：仅研究一维最近邻耦合，缺乏严格数学证明，平均场理论框架不完整。该论文与知识库中008号(Tao MDCML动态耦合)、010号(Du NCMLP非邻接耦合)、011号(He DMSML离散忆阻器耦合)、023号(Fan PWLCM-CML)、024号(Wang TWMCML)、037号(Liu SAMCML)共同构成CML从理论奠基到工程应用的完整研究谱系——本文的独特价值在于其开创性和理论深度，为后续所有CML研究奠定了方法论基础*
 
