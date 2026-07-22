@@ -90,6 +90,7 @@
 | 079 | Effortless estimation of basins of attraction | Datseris G, Wagemakers A | 2022 | Chaos 32, 023104 | 基于FSM+Poincaré回复定理的全自动吸引盆估计方法（DynamicalSystems.jl实现） | [paper_079_吸引盆轻松估计FSM算法.md](paper_079_吸引盆轻松估计FSM算法.md) |
 | 080 | 基于细胞神经网络超混沌特性的图像加密新算法 | 任晓霞, 廖晓峰, 熊永红 | 2011 | 计算机应用 31(6) | 6维CNN超混沌+明文关联密钥+位置置乱+像素值替代双重加密 | [paper_080_CNN超混沌图像加密新算法.md](paper_080_CNN超混沌图像加密新算法.md) |
 | 081 | Efficient Image Encryption Algorithm Based on ECC and Dynamic S-box | Murtaza G, Hayat U | 2025 | J. Inf. Secur. Appl. 90, 104004 | 椭圆曲线PRNG+动态S-box（NL=106）+SHA-256明文绑定三阶段图像加密 | [paper_081_ECC动态S盒高效图像加密.md](paper_081_ECC动态S盒高效图像加密.md) |
+| 082 | 基于DNA编码与正弦混沌映射的气象图加密技术研究 | 布海力切木·阿吾冬, 李国东 | 2016 | 计算机科学 43(11A) | 正弦混沌+DNA编码+RGB分层并行气象图像加密（层间去相关性最优） | [paper_082_DNA编码正弦混沌气象图加密.md](paper_082_DNA编码正弦混沌气象图加密.md) |
 
 ---
 ## 🔬 研究方向脉络
