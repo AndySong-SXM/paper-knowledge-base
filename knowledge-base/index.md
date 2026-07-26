@@ -93,6 +93,7 @@
 | 082 | 基于DNA编码与正弦混沌映射的气象图加密技术研究 | 布海力切木·阿吾冬, 李国东 | 2016 | 计算机科学 43(11A) | 正弦混沌+DNA编码+RGB分层并行气象图像加密（层间去相关性最优） | [paper_082_DNA编码正弦混沌气象图加密.md](paper_082_DNA编码正弦混沌气象图加密.md) |
 | 083 | Algorithmic Specified Complexity in the Game of Life | Ewert W, Dembski W, Marks II R J | 2015 | IEEE Trans. SMC: Systems 45(4) | ASC算法指定复杂性度量；KCS条件复杂度+Shannon信息差；生命游戏中区分设计模式与随机模式 | [paper_083_算法指定复杂性与生命游戏.md](paper_083_算法指定复杂性与生命游戏.md) |
 | 084 | Cryptography from Pseudorandom Quantum States | Ananth P, Qian L, Yuen H | 2022 | CRYPTO 2022 | 伪随机量子态→PRFS→承诺/安全计算（无需单向函数）；后选择+Lévy引理构造；修正经典密码学基本信念 | [paper_084_伪随机量子态密码学.md](paper_084_伪随机量子态密码学.md) |
+| 085 | Differentiation of SRB States | Ruelle D | 1997 | Commun. Math. Phys. 187 | SRB态对动力系统扰动的可微性理论；显式导数公式（线性响应）；时变与非一致双曲推广；非平衡统计力学数学基础 | [paper_085_SRB态微分与响应理论.md](paper_085_SRB态微分与响应理论.md) |
 
 
 ---
@@ -687,8 +688,10 @@ Julia分形过程 (Gaston Julia, 1919)
 
 ---
 
-*最后更新：2026-07-19
-*本次更新：新增论文079精读笔记 - Effortless estimation of basins of attraction (Chaos 32, 023104, 2022)，George Datseris和Alexandre Wagemakers提出基于有限状态机(FSM)和Poincaré回复定理的全自动吸引盆估计方法。核心贡献：(1)无需先验知识的吸引子自动识别——在离散化状态空间网格上通过轨迹回复检测发现吸引子，5种FSM状态(att_search/att_found/att_hit/bas_hit/lost)统一管理全部匹配过程；(2)普适性极强——适用于离散/连续系统、Poincaré映射、频闪映射、高维投影；(3)9种场景验证——含6D Lorenz96EBM和~26吸引子的4D耦合Logistic映射；(4)实现于DynamicalSystems.jl，约10行代码即可使用，性能超越暴力法。不足之处：高维内存瓶颈(~ρ^D)、不可并行化、极端多稳态下可能漏吸吸引子。该论文与知识库中020号(Ge&Lee 1997改进插值细胞映射)和061号(Ge et al. 2002 MICM参数分析)形成状态空间网格方法的演进脉络——本文的独特价值在于其"零先验知识"的普适性框架和FSM的系统化形式化方法*
+*最后更新：2026-07-26
+*本次更新：新增论文085精读笔记 - Differentiation of SRB States (Commun. Math. Phys. 187, 1997)，David Ruelle在IHES完成的开创性工作。核心贡献：(1) 严格证明了在具有局部乘积结构的双曲集上，映射 f → ρ_f（SRB态）是 C^{r-2} 可微的；(2) 显式给出了导数公式 δρ_f(Φ) = Σ ρ_f⟨grad(Φ∘f^n), X⟩（吸引子情形），其中 X = δf∘f^{-1}；(3) 将框架推广到有界时变扰动序列，给出时变SRB态的四种等价刻画；(4) 给出非一致双曲情形下的形式导数公式。方法论上，该文将结构稳定性理论（隐函数定理+Banach流形）与热力学形式主义（压力函数C^ω性+均衡态）无缝融合，为混乱线性响应理论建立了数学基础。意义：是非平衡统计力学中Onsager互易关系和涨落-耗散定理的严格数学支柱。不足之处：需要C^3正则性假设、非一致双曲部分仅为形式推导、缺乏具体系统数值示例。该论文与知识库中025号(Lorenz 1963混沌发现)、035号(Sprott简单混沌流)、042号(Kirchgraber Hénon同宿点)、049号(Kaneko CML)共同构成从混沌发现→定性分析→定量分析→统计性质的理论深化脉络——本文的独特价值在于首次建立了"SRB测度如何响应系统微扰"这一非平衡统计力学核心问题的严格数学理论*
+
+*上次更新：2026-07-19 - 新增论文079精读笔记 - Effortless estimation of basins of attraction (Chaos 32, 023104, 2022)，George Datseris和Alexandre Wagemakers提出基于有限状态机(FSM)和Poincaré回复定理的全自动吸引盆估计方法。核心贡献：(1)无需先验知识的吸引子自动识别——在离散化状态空间网格上通过轨迹回复检测发现吸引子，5种FSM状态(att_search/att_found/att_hit/bas_hit/lost)统一管理全部匹配过程；(2)普适性极强——适用于离散/连续系统、Poincaré映射、频闪映射、高维投影；(3)9种场景验证——含6D Lorenz96EBM和~26吸引子的4D耦合Logistic映射；(4)实现于DynamicalSystems.jl，约10行代码即可使用，性能超越暴力法。不足之处：高维内存瓶颈(~ρ^D)、不可并行化、极端多稳态下可能漏吸吸引子。该论文与知识库中020号(Ge&Lee 1997改进插值细胞映射)和061号(Ge et al. 2002 MICM参数分析)形成状态空间网格方法的演进脉络——本文的独特价值在于其"零先验知识"的普适性框架和FSM的系统化形式化方法*
 
 *上次更新：2026-07-08 - 新增论文069精读笔记 - Dynamical analysis of a new 3D chaotic system: non-equilibrium point, conservative, rotationally hidden attractor (Physica Scripta 99, 2024)，辽宁科技大学Zhao Boyu和Ye Xiaolin基于Sprott-B系统改造，引入e^{-z^2}指数项构造了一个新型无平衡点保守三维混沌系统。核心贡献：(1)系统证明无平衡点（方程组无解）、保守性（∑LE≈0）和永恒点集P=(0,0,c)；(2)首次利用旋转矩阵R对原始系统方程进行变换，在x-y、x-z、y-z三个方向上生成不同旋转角度（0,π/3,2π/3,π/4,π/2,3π/4）的旋转隐藏吸引子；(3)四种分析工具（2D LE、2D动力学图、SE谱熵、C₀复杂度）交叉验证；(4)TMS320F28335 DSP硬件实现。不足之处：缺乏应用验证（图像加密/PRNG/NIST）、参数分析不充分、多稳态未探索、旋转方法缺乏物理解释深度。该论文与知识库中035号(Sprott 1994)、025号(Lorenz 1963)、055号(Yang 2023)、045号(Zhang 2021)形成从经典混沌→保守混沌→隐藏混沌→无平衡点保守混沌的完整研究链条——本文的独特价值在于首次将旋转矩阵引入无平衡点混沌系统动力学分析，实现了吸引子的可控旋转，且通讯作者Ye Xiaolin的博士论文(043号)已收录，形成"理论分析—工程应用"闭环*
 
