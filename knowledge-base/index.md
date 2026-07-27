@@ -94,6 +94,7 @@
 | 083 | Algorithmic Specified Complexity in the Game of Life | Ewert W, Dembski W, Marks II R J | 2015 | IEEE Trans. SMC: Systems 45(4) | ASC算法指定复杂性度量；KCS条件复杂度+Shannon信息差；生命游戏中区分设计模式与随机模式 | [paper_083_算法指定复杂性与生命游戏.md](paper_083_算法指定复杂性与生命游戏.md) |
 | 084 | Cryptography from Pseudorandom Quantum States | Ananth P, Qian L, Yuen H | 2022 | CRYPTO 2022 | 伪随机量子态→PRFS→承诺/安全计算（无需单向函数）；后选择+Lévy引理构造；修正经典密码学基本信念 | [paper_084_伪随机量子态密码学.md](paper_084_伪随机量子态密码学.md) |
 | 085 | Differentiation of SRB States | Ruelle D | 1997 | Commun. Math. Phys. 187 | SRB态对动力系统扰动的可微性理论；显式导数公式（线性响应）；时变与非一致双曲推广；非平衡统计力学数学基础 | [paper_085_SRB态微分与响应理论.md](paper_085_SRB态微分与响应理论.md) |
+| 086 | 一种无限折叠混沌映射及其量化序列 | 邱跃洪, 何晨, 诸鸿文 | 2002 | 上海交通大学学报 36(12) | 偶对称无限折叠一维混沌映射；LE解析公式($\ln a-2\ln b+2+2\ln 2$)；二值量化序列i.i.d.性质；频数检验+序偶检验 | [paper_086_无限折叠混沌映射及其量化序列.md](paper_086_无限折叠混沌映射及其量化序列.md) |
 
 
 ---
