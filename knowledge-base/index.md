@@ -96,6 +96,7 @@
 | 085 | Differentiation of SRB States | Ruelle D | 1997 | Commun. Math. Phys. 187 | SRB态对动力系统扰动的可微性理论；显式导数公式（线性响应）；时变与非一致双曲推广；非平衡统计力学数学基础 | [paper_085_SRB态微分与响应理论.md](paper_085_SRB态微分与响应理论.md) |
 | 086 | 一种无限折叠混沌映射及其量化序列 | 邱跃洪, 何晨, 诸鸿文 | 2002 | 上海交通大学学报 36(12) | 偶对称无限折叠一维混沌映射；LE解析公式($\ln a-2\ln b+2+2\ln 2$)；二值量化序列i.i.d.性质；频数检验+序偶检验 | [paper_086_无限折叠混沌映射及其量化序列.md](paper_086_无限折叠混沌映射及其量化序列.md) |
 | 087 | Period Three Implies Chaos | Li T Y, Yorke J A | 1975 | The American Mathematical Monthly 82(10) | 混沌理论奠基性论文；Li-Yorke定理（周期3⇒所有周期⇒混沌）；首次在数学文献中使用"Chaos"一词；区间嵌套+符号动力学证明技术 | [paper_087_周期三意味着混沌.md](paper_087_周期三意味着混沌.md) |
+| 088 | D-NTRU: More efficient and average-case IND-CPA secure NTRU variant | Wang B, Lei H, Hu Y | 2018 | Information Sciences 438 | D-NTRU格基公钥密码；双NTRU+一次性填充架构；标准模型IND-CPA安全；密文膨胀率降至2:1；加密速度2.5x提升 | [paper_088_D-NTRU高效IND-CPA安全NTRU变体.md](paper_088_D-NTRU高效IND-CPA安全NTRU变体.md) |
 
 
 ---
