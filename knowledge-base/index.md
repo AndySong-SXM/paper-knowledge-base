@@ -98,7 +98,7 @@
 | 087 | Period Three Implies Chaos | Li T Y, Yorke J A | 1975 | The American Mathematical Monthly 82(10) | 混沌理论奠基性论文；Li-Yorke定理（周期3⇒所有周期⇒混沌）；首次在数学文献中使用"Chaos"一词；区间嵌套+符号动力学证明技术 | [paper_087_周期三意味着混沌.md](paper_087_周期三意味着混沌.md) |
 | 088 | D-NTRU: More efficient and average-case IND-CPA secure NTRU variant | Wang B, Lei H, Hu Y | 2018 | Information Sciences 438 | D-NTRU格基公钥密码；双NTRU+一次性填充架构；标准模型IND-CPA安全；密文膨胀率降至2:1；加密速度2.5x提升 | [paper_088_D-NTRU高效IND-CPA安全NTRU变体.md](paper_088_D-NTRU高效IND-CPA安全NTRU变体.md) |
 | 089 | Dual neural network heterogeneous coupled complex multiscroll system with extreme multistability and its application in image encryption | Yin S, Li Z, Wang Q, Tan W, Wu X | 2026 | Nonlinear Dynamics | 双神经网络异质耦合复杂多涡卷系统(DNNHCMS)+极端多稳态+明文相关动态S盒图像加密 | [paper_089_双神经网络异质耦合多涡卷系统.md](paper_089_双神经网络异质耦合多涡卷系统.md) |
-
+| 090 | Expanded multi-scroll attractor system analysis and application for remote sensing image encryption | Qin M, Lai Q | 2024 | Applied Mathematical Modelling 125 | 扩展多涡卷混沌系统(EMSCS)：8项极简4维模型+多段函数k(z)生成N+2涡卷+幅度/偏置联控+遥感图像加密 | [paper_090_扩展多涡卷吸引子遥感图像加密.md](paper_090_扩展多涡卷吸引子遥感图像加密.md) |
 
 ---
 ## 🔬 研究方向脉络
@@ -589,7 +589,7 @@ Julia分形过程 (Gaston Julia, 1919)
 - **信噪比 (SNR)**：信号功率与噪声功率的比值，衡量抗噪声性能指标
 - **Julia分形过程 ($P_J$)**：基于Julia集迭代 $Z_{n+1} = Z_n^2 + Z_c$ 的开关函数，将混沌系统时间序列映射为分形多涡卷吸引子
 - **抛物线映射 (pm)**：$u=2p(1-p)-q^2, v=2q$，与Julia分形过程结合生成抛物线分布的多涡卷吸引子
-- **三角映射 (tm)**：$u=p+2p(1-p)-q^2, v=q+2q(1-2p)$，与Julia分形过程结合生成三角分布多涡卷吸引子
+- **三角映射 (tm)**：$u=p+2p(1-p)-q^2, v=q+2q(1-2p)$，与Julia分形过程结合生成三角分布的多涡卷吸引子
 - **分形级联**：多次串联 $P_J$ 操作，每次使涡卷数翻倍，满足 $C = C_1 \times 2^n$
 - **水波扩散**：受水波传播启发的像素扩散方法，以随机位置为"激励"中心向周围像素传播修改
 - **分离型吸引子**：通过多分形过程和不同输入函数生成的空间上完全或部分分离的多涡卷吸引子
@@ -692,33 +692,11 @@ Julia分形过程 (Gaston Julia, 1919)
 
 ---
 
-*最后更新：2026-09-19
-*本次更新：论文089精读笔记升级为全文级 - Dual neural network heterogeneous coupled complex multiscroll system with extreme multistability and its application in image encryption (Nonlinear Dynamics 114:1134, 2026)。通过坚果云文献库获取原文全文后补齐全部技术细节：7维DNNHCMS系统方程与多段线性忆阻器模型（W(ϕ)=a+bϕ, ϕ̇=cv−d·f(ϕ), N=3, m₀=−0.4, E₁=0.5, a=1.8, b=0.01, c=0.7, d=7）；涡卷数量=N+1由忆阻器分段参数N控制；S盒密码学指标NL=105.00/SAC=0.5022/DU=12/LP=0.1328/BIC-NL=103.29；加密方案密钥空间2⁴¹²、NIST SP800-22十五项全过、GSE≈7.9993、LSE全部落入理想区间、NPCR 99.6066%–99.6108%、UACI 33.4518%–33.4796%、相邻像素相关性≈0、512×512灰度图加密仅0.256s（对比文献最快0.6–5.5s）；硬件完成Multisim仿真+STM32F103+FPGA（5369 LUTs, 332 FFs, 24 BRAMs, 18 DSPs, 29.90MHz）三重验证；提出SHA-512+吸引域分布先验的初值边界约束映射，防止混沌加密系统跌入周期轨道——该范式值得移植到自己的加密方案设计。此前"未见NIST数据/S盒性质未展开"等不足已全部补实，新的关注点：S盒DU=12略偏高（最优文献10）、单轮置乱-扩散结构、抗已知明文攻击分析偏经验性*
+## 📝 更新日志
 
-*上次更新：2026-09-19 - 新增论文089精读笔记（摘要级试运行） - Yin等人提出多段线性忆阻器模拟神经突触并构建双神经网络异质耦合复杂多涡卷系统(DNNHCMS)，耦合强度决定动力学特性，极端多稳态+幅度控制，10个明文相关动态S盒图像加密*
+> 自 2026-09-19 起，每日更新详情拆分到 [updates/](updates/) 目录，本文件只保留论文总表与研究脉络。
 
-*上次更新：2026-07-26 - 新增论文085精读笔记 - Differentiation of SRB States (Commun. Math. Phys. 187, 1997)，David Ruelle在IHES完成的开创性工作。核心贡献：(1) 严格证明了在具有局部乘积结构的双曲集上，映射 f → ρ_f（SRB态）是 C^{r-2} 可微的；(2) 显式给出了导数公式 δρ_f(Φ) = Σ ρ_f⟨grad(Φ∘f^n), X⟩（吸引子情形），其中 X = δf∘f^{-1}；(3) 将框架推广到有界时变扰动序列，给出时变SRB态的四种等价刻画；(4) 给出非一致双曲情形下的形式导数公式。方法论上，该文将结构稳定性理论（隐函数定理+Banach流形）与热力学形式主义（压力函数C^ω性+均衡态）无缝融合，为混乱线性响应理论建立了数学基础。意义：是非平衡统计力学中Onsager互易关系和涨落-耗散定理的严格数学支柱。不足之处：需要C^3正则性假设、非一致双曲部分仅为形式推导、缺乏具体系统数值示例。该论文与知识库中025号(Lorenz 1963混沌发现)、035号(Sprott简单混沌流)、042号(Kirchgraber Hénon同宿点)、049号(Kaneko CML)共同构成从混沌发现→定性分析→定量分析→统计性质的理论深化脉络——本文的独特价值在于首次建立了"SRB测度如何响应系统微扰"这一非平衡统计力学核心问题的严格数学理论*
+- [2026-09-19](updates/2026-09-19.md) — 新增论文090全文精读笔记 + 论文089升级为全文级
+- [历史更新归档（2026-06-07 ~ 2026-07-26）](updates/history.md)
 
-*上次更新：2026-07-19 - 新增论文079精读笔记 - Effortless estimation of basins of attraction (Chaos 32, 023104, 2022)，George Datseris和Alexandre Wagemakers提出基于有限状态机(FSM)和Poincaré回复定理的全自动吸引盆估计方法。核心贡献：(1)无需先验知识的吸引子自动识别——在离散化状态空间网格上通过轨迹回复检测发现吸引子，5种FSM状态(att_search/att_found/att_hit/bas_hit/lost)统一管理全部匹配过程；(2)普适性极强——适用于离散/连续系统、Poincaré映射、频闪映射、高维投影；(3)9种场景验证——含6D Lorenz96EBM和~26吸引子的4D耦合Logistic映射；(4)实现于DynamicalSystems.jl，约10行代码即可使用，性能超越暴力法。不足之处：高维内存瓶颈(~ρ^D)、不可并行化、极端多稳态下可能漏吸吸引子。该论文与知识库中020号(Ge&Lee 1997改进插值细胞映射)和061号(Ge et al. 2002 MICM参数分析)形成状态空间网格方法的演进脉络——本文的独特价值在于其"零先验知识"的普适性框架和FSM的系统化形式化方法*
-
-*上次更新：2026-07-08 - 新增论文069精读笔记 - Dynamical analysis of a new 3D chaotic system: non-equilibrium point, conservative, rotationally hidden attractor (Physica Scripta 99, 2024)，辽宁科技大学Zhao Boyu和Ye Xiaolin基于Sprott-B系统改造，引入e^{-z^2}指数项构造了一个新型无平衡点保守三维混沌系统。核心贡献：(1)系统证明无平衡点（方程组无解）、保守性（∑LE≈0）和永恒点集P=(0,0,c)；(2)首次利用旋转矩阵R对原始系统方程进行变换，在x-y、x-z、y-z三个方向上生成不同旋转角度（0,π/3,2π/3,π/4,π/2,3π/4）的旋转隐藏吸引子；(3)四种分析工具（2D LE、2D动力学图、SE谱熵、C₀复杂度）交叉验证；(4)TMS320F28335 DSP硬件实现。不足之处：缺乏应用验证（图像加密/PRNG/NIST）、参数分析不充分、多稳态未探索、旋转方法缺乏物理解释深度。该论文与知识库中035号(Sprott 1994)、025号(Lorenz 1963)、055号(Yang 2023)、045号(Zhang 2021)形成从经典混沌→保守混沌→隐藏混沌→无平衡点保守混沌的完整研究链条——本文的独特价值在于首次将旋转矩阵引入无平衡点混沌系统动力学分析，实现了吸引子的可控旋转，且通讯作者Ye Xiaolin的博士论文(043号)已收录，形成"理论分析—工程应用"闭环*
-
-*上次更新：2026-06-17 - 新增论文049精读笔记 - Spatiotemporal Intermittency in Coupled Map Lattices (Progress of Theoretical Physics 74(5), 1985)，东京大学Kaneko Kunihiko的CML奠基性论文。核心贡献：(1)首次系统研究耦合映射格子(CML)中的时空间歇性现象，发现burst和层流区域在时空中形成具有自相似性的几何结构；(2)建立CML与Wolfram元胞自动机(Class 3)之间的深刻联系，通过二态约化方法展示两者的图案相似性；(3)揭示层流团簇传播速度$v_r$和burst传播速度$v_s$的双传播机制，burst传播时间满足临界标度律$\tau_s \propto (\varepsilon - \varepsilon_c)^{-\gamma}$，$\gamma \approx 0.6 \sim 0.9$；(4)计算Lyapunov谱发现双峰结构，分别对应层流运动($\lambda \approx -0.32$)和burst运动($\lambda \approx 0.40$)；(5)提出"平均场映射"概念，为耦合混沌的"平均场理论"奠定基础。正Lyapunov指数数量满足$N_{LE^+} \propto (\varepsilon - \varepsilon_c)^\beta$，$\beta \approx 1/3 \sim 1/2$。不足之处：仅研究一维最近邻耦合，缺乏严格数学证明，平均场理论框架不完整。该论文与知识库中008号(Tao MDCML动态耦合)、010号(Du NCMLP非邻接耦合)、011号(He DMSML离散忆阻器耦合)、023号(Fan PWLCM-CML)、024号(Wang TWMCML)、037号(Liu SAMCML)共同构成CML从理论奠基到工程应用的完整研究谱系——本文的独特价值在于其开创性和理论深度，为后续所有CML研究奠定了方法论基础*
-
-*上次更新：2026-06-16 - 新增论文048精读笔记 - Multi-image Reorganization Encryption Based on S-L-F Cascade Chaos and Bit Scrambling (Journal of Web Engineering 20(4), 2021)，桂林电子科技大学Song Xiaoming等人在李国东教授指导下完成的研究。核心贡献是提出了一种基于Sine-Sine映射、Logistic混沌和广义三阶Fibonacci级联的复合混沌系统(S-L-F)，参数范围扩展至[0,4]，谱熵可达0.95；设计了可加密任意数量、不同尺寸、不同类型图像的多图像重组加密方案，采用SHA-256明文相关密钥实现"一密一钥"。安全性指标达到理想水平：NPCR=0.9961，UACI=0.3345，信息熵>7.999。不足之处：缺乏Lyapunov指数等混沌理论分析、密钥空间量化、已知明文/选择明文攻击测试、噪声/裁剪鲁棒性评估、以及硬件实现验证。该论文与知识库中023号(Fan CML-PWLCM级联加密)、024号(Wang TWMCML全混沌耦合)、037号(Liu SAMCML时空混沌DNA加密)、010号(Du NCMLP多人脸加密)共同构成多图像混沌加密的研究谱系——本文方法的独特价值在于其多图像通用重组能力和简洁的级联混沌设计*
-
-*上次更新：2026-06-15 - 新增论文047精读笔记 - Design of multi-wing chaotic systems with higher largest Lyapunov exponent (Chaos, Solitons and Fractals 157, 2022)，Sahoo和Roy在印度国家技术学院Silchar完成的研究。核心贡献是提出了一种极其简洁的多翼混沌系统构造方法：将原始双翼混沌系统（Chen、Lu）的某个非线性项乘以正弦调制函数 $f(x) = (1 - k \sin(k_1 x))$，通过调节参数 $k_1$ 控制翼数。方法的核心突破在于实现了翼数与最大Lyapunov指数（LLE）的同步提升——原始Chen系统LLE=2.022，改造后可达32.7（提升约16倍）；原始Lu系统LLE=1.327，改造后可达6.755（提升约5倍）。这是现有文献中首个实现翼数与LLE同步增长的多翼混沌系统设计技术。作者还发现了"伪多翼"现象：当 $k_1 > 8$ 时，由于翼间距过小，相图中实际不可分辨所有翼。不足之处：缺乏硬件实现验证、未设计具体加密应用、未进行NIST随机性测试。该论文与知识库中002号(Liu T分数阶多翼，LLE未随翼数增加)、015号(Yan D Julia分形多涡卷)、028号(Yan D分形变换多涡卷)、032号(Zhang J Jerk系统多涡卷DSP实现)、039号(Bouallegue Julia分形多涡卷奠基工作)形成多翼/多涡卷混沌系统生成方法的完整对比谱系——本文方法的独特价值在于其极简性和LLE同步提升能力*
-
-*上次更新：2026-06-13 - 新增论文045精读笔记 - A fractional-order ship power system with extreme multistability (Nonlinear Dynamics, 2021)，Zhang Haoyu、Sun Kehui和He Shaobo在中南大学完成的研究。核心工作是将Caputo分数阶导数引入双发电机并联船舶电力系统，构建了具有极端多稳态的分数阶船舶电力系统模型。方法创新包括：(1) 优化了Adomian分解法(ADM)中三角函数乘积项的分解方法，利用积化和差公式 $b\sin x\cos z = \frac{b}{2}[\sin(x+z)+\sin(x-z)]$ 简化复合非线性项处理；(2) 首次将分数阶微积分应用于船舶电力系统动力学分析。核心发现包括：(1) 系统展现角度不稳定性现象——混沌涡卷数随仿真时间增加而不可逆转地增加，最终导致电力系统崩溃；(2) 无需添加忆阻器、控制器或常数，系统因时变平衡点特性自然产生极端多稳态、多涡卷混沌吸引子和吸引子偏移；(3) 谱熵复杂度分析揭示角度不稳定性下系统不可预测性显著增强。在TMS320F28335 DSP平台上成功实现并通过示波器验证。该论文与知识库中002号(Liu T分数阶多翼)、009号(Kong分数阶忆阻HNN)、018号(Bukhari分数阶Rössler)形成分数阶混沌系统研究的互补脉络，同时与003号(Bao并行双忆阻器)、016号(Zhang S双忆阻器初始增强)、027号(Lai离散忆阻高斯映射)形成极端多稳态产生机制的对比——本文的独特价值在于极端多稳态完全源于系统自身的时变平衡点特性，而非通过添加外部元件*
-
-*上次更新：2026-06-12 - 新增论文044精读笔记 - 非对称细胞神经网络稳定平衡点的存在性 (电子测量与仪器学报, 2005)，张发明利用饱和域特性和拟对角列支配矩阵与M-矩阵之间的关系，获得了非对称CNNs稳定平衡点存在的两个充分条件：(1) $A-I \in \mathcal{R}$（拟对角列支配矩阵类，推广了文献[5]的 $\mathcal{C}$ 类M-矩阵条件）；(2) $A-I \in \mathcal{F}$（与 $\mathcal{R}$ 类不可比较的独立矩阵类）。核心创新包括发现 $\mathcal{R}$ 类与 $\mathcal{F}$ 类的不可比较性、将文献[4,5,6]的结论统一为本文结果的特例、对二细胞CNNs完全稳定性给出严格证明。该论文与知识库中031号(王宏霞2003 CNN动力学行为)形成互补——031关注混沌产生条件，本文关注稳定性保证条件，共同构成了CNNs从稳定到混沌的完整动力学图景*
-
-*上次更新：2026-06-11 - 忆阻混沌电路的设计及其在图像加密算法中的应用 (大连海事大学博士论文, 2022)，叶晓林在安居白和王兴元教授指导下完成的博士学位论文，系统研究了忆阻/忆感混沌电路的设计及其在图像加密中的应用。核心创新包括：(1) 提出新型二维离散Logistic映射(2D-LM)，以极简结构实现优于经典2D-LMM的混沌性能（LLE=0.6881, SE=0.9582），生成时间最短(556.5μs)，DSP+FPGA双平台验证；(2) 首次在文氏桥电路中引入1个磁控忆阻器+2个荷控忆阻器构建七阶超混沌电路，更接近商用忆阻电路模型；(3) 设计忆感器等效电路并构建五阶超混沌系统，发现无限共存吸引子现象，利用超多稳定性产生无限混沌密钥，设计基于多重哈希索引链的非相邻像素加密算法（NPCR≈99.61%, UACI≈33.46%, IE=7.99988）；(4) 提出多涡卷蔡氏电路的动态加密思想——涡卷数↔Arnold参数↔混沌密钥的三层关联机制，密钥空间2²⁵⁰。该论文与知识库中021号(Strukov忆阻器物理实现)、003号(Bao并行双忆阻器)、004号(Liu X离散忆阻器+忆感器)、009号(Kong分数阶忆阻HNN)、027号(Lai离散忆阻高斯映射)等论文形成完整的忆阻器从物理实现→数学建模→电路设计→加密应用的脉络*
-
-*上次更新：2026-06-10 - 新增论文042精读笔记 - Transversal homoclinic points of the Hénon map (Annali di Matematica, 2006)，Kirchgraber和Stoffer利用shadowing（跟踪）技术证明了Hénon映射在较大参数范围内存在横向同宿点。核心创新包括：(1) 将shadowing技术从计算机辅助工具提升为解析证明工具，首次展示了其在获得纯解析结果方面的能力；(2) 巧妙利用Hénon映射的特殊代数结构，将二维shadowing问题简化为一维线性算子K的逆估计；(3) 解析证明保面积Hénon映射（b=-1）在a≥0.265625时存在横向同宿点；(4) 结合计算机辅助方法（区间算术+参数延拓）将结果推广到a≥-0.866360，显著推进了Devaney-Nitecki猜想（a>-1）。该论文为混沌系统的严格数学证明提供了新的方法论工具，与知识库中025号(Lorenz 1963混沌发现)、020号(Ge&Lee 1997细胞映射全局分析)、012号(de Souza 2004冲击系统LE计算)等论文共同构成了动力系统严格分析的方法论体系*
-
-*上次更新：2026-06-09 - 新增论文041精读笔记 - Precise and scalable analogue matrix equation solving using resistive random-access memory chips (Nature Electronics, 2025)，北京大学孙仲团队提出了一种全模拟域的高精度矩阵方程求解方案。核心创新包括：(1) LP-INV（低精度模拟矩阵求逆）+ HP-MVM（高精度位切片矩阵-向量乘法）的迭代精化框架，完全在模拟域实现；(2) 3位RRAM芯片通过位切片实现24位定点精度；(3) BlockAMC算法实现16×16矩阵求逆的硬件验证；(4) 40nm CMOS工厂流片芯片验证。应用验证：128×8大规模MIMO、256-QAM调制下仅需3轮迭代即匹配FP32数字处理器性能。理论预测可实现1000×吞吐量和100×能效提升。该论文为忆阻计算从实验室走向实际应用提供了重要里程碑，与知识库中021号(Strukov 2008忆阻器物理实现)、033号(Huang 2026忆阻混沌信号检测)等论文形成互补研究脉络*
-
-*上次更新：2026-06-08 - 新增论文040精读笔记 - Visually secure medical image encryption algorithm based on improved YOLOv11 and replacement strategy for region of interest (Nonlinear Dynamics, 2026)，Zhu等人提出了一种三层架构的视觉安全医学图像加密方案：(1)改进YOLOv11集成DFF动态特征融合和MSDA多尺度膨胀注意力机制，提升病变ROI检测精度；(2)MLBPE多层比特平面加密结合5D忆阻超混沌系统实现高强度ROI加密；(3)LaMa图像修复模型生成自然伪ROI，通过矩阵编码将加密ROI嵌入伪明文图像，实现视觉有意义的密文。该论文跨学科融合了深度学习目标检测、图像修复和混沌加密三大领域，是医学图像隐私保护的新方向。不足之处：混沌系统直接引用他人工作、LaMa模型依赖预训练、未测试彩色图像、缺乏抗裁剪/噪声鲁棒性评估*
-
-*上次更新：2026-06-07 - 新增论文039精读笔记 - Multi-scroll and multi-wing chaotic attractor generated with Julia process fractal (Chaos, Solitons and Fractals, 2011)，Bouallegue等人首次将Julia分形过程作为开关函数与Lorenz系统组合，通过级联机制实现涡卷/翼数量按$2^n$指数增长。核心方法包括：Julia过程+单Lorenz系统生成多涡卷、Julia过程+主从Lorenz系统、Julia过程+双耦合Lorenz系统生成多翼（最多32翼）、Julia过程+Qi四翼系统。该工作是Bouallegue分形多涡卷混沌系统系列研究的奠基论文（早于019号Bouallegue 2015），为后续Yan et al. 2022（028号）和Yan et al. 2023（015号）的改进Julia分形算法提供了方法论基础。不足之处：缺乏Lyapunov指数计算、分岔分析等理论深度，无硬件验证和加密应用评估*
+*最后更新：2026-09-19*
