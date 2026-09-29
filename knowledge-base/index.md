@@ -44,7 +44,7 @@
 | 033 | Dynamical analysis of controllable multi-double-scroll memristive chaotic systems for signal detection | Huang D, Lai Q, Erkan U, Toktas A | 2026 | Chaos, Solitons and Fractals 202 | 可控多双涡流忆阻混沌系统渐进式耦合构造及弱信号检测应用 | [paper_033_可控多双涡流忆阻混沌系统信号检测.md](paper_033_可控多双涡流忆阻混沌系统信号检测.md) |
 | 034 | Shannon Entropy based Randomness Measurement and Test for Image Encryption | Wu Y, Noonan J P, Agaian S | 2018 | Information Sciences | 基于香农熵的图像加密随机性测量与测试（分块熵测试+Z检验+Berry-Esseen误差控制） | [paper_034_基于香农熵的图像加密随机性测量与测试.md](paper_034_基于香农熵的图像加密随机性测量与测试.md) |
 | 035 | Some simple chaotic flows | Sprott J C | 1994 | Physical Review E 50(2) | 最简混沌流的系统搜索与Sprott-A保守混沌系统发现 | [paper_035_Sprott简单混沌流.md](paper_035_Sprott简单混沌流.md) |
-| 036 | Flexible cascade and parallel operations of discrete memristor | Yuan F, Xing G, Deng Y | 2023 | Chaos, Solitons and Fractals 166 | 离散忆阻器的柔性级联与并联操作框架（多DM组合构造超混沌映射） | [paper_036_离散忆阻器柔性级联与并联操作.md](paper_036_离散忆阻器柔性级联与并联操作.md) |
+| 036 | Flexible cascade and parallel operations of discrete memristor | Yuan F, Xing G, Deng Y | 2023 | Chaos, Solitons and Fractals 166 | 离散忆阻器的柔性级联与并联操作框架（多DM组合构造超混沌映射） | [paper_036_离散忆阻器柔性级联与并联.md](paper_036_离散忆阻器柔性级联与并联.md) |
 | 037 | Multi-medical image encryption by a new spatiotemporal chaos model and DNA new computing | Liu H, Teng L, Zhang Y, Si R, Liu P | 2024 | Expert Systems With Applications 235 | SAMCML时空混沌模型+像素模糊+新型DNA操作+3D-Fisher多医学图像加密 | [paper_037_SAMCML多医学图像DNA加密.md](paper_037_SAMCML多医学图像DNA加密.md) |
 | 038 | A Parallel Color Image Encryption Algorithm Based on a 2-D Logistic-Rulkov Neuron Map | Gao S, Zhang Z, Iu HHC, Ding S, Mou J, Erkan U, Toktas A, Li Q, Wang C, Cao Y | 2025 | IEEE Internet of Things Journal 12(11) | 二维Logistic-Rulkov神经元映射(2D-LRNM)并行彩色图像加密 | [paper_038_二维Logistic-Rulkov神经元映射并行图像加密.md](paper_038_二维Logistic-Rulkov神经元映射并行图像加密.md) |
 | 039 | Multi-scroll and multi-wing chaotic attractor generated with Julia process fractal | Bouallegue K, Chaari A, Toumi A | 2011 | Chaos, Solitons and Fractals 44 | Julia分形过程生成多涡卷多翼混沌吸引子（级联机制） | [paper_039_Julia过程分形生成多涡卷多翼混沌吸引子.md](paper_039_Julia过程分形生成多涡卷多翼混沌吸引子.md) |
@@ -69,13 +69,13 @@
 | 058 | Image compression-hiding algorithm based on compressive sensing and integer wavelet transformation | Ye G, Du S, Huang X | 2023 | Applied Mathematical Modelling 124 | 压缩感知+IWT图像压缩隐藏算法（TransM+GetM+2DCS+RSA+十进制分解嵌入） | [paper_058_压缩感知IWT图像压缩隐藏算法.md](paper_058_压缩感知IWT图像压缩隐藏算法.md) |
 | 059 | Example of robust chaos in a smooth map | Andrecut M, Ali M K | 2001 | Europhysics Letters 54(3) | 光滑一维映射鲁棒混沌反例（推翻Banerjee-Yorke-Grebogi猜想） | [paper_059_平滑映射鲁棒混沌反例.md](paper_059_平滑映射鲁棒混沌反例.md) |
 | 060 | Memristive Hénon Map with Hidden Neimark–Sacker Bifurcations | Rong K, Bao H, Li H, Hua Z, Bao B | 2022 | Nonlinear Dynamics 108 | 忆阻Hénon映射隐藏Neimark-Sacker分岔（维度约化方法+双路径通向混沌+多稳态+STM32F407硬件实现） | [paper_060_忆阻Hénon映射隐藏Neimark-Sacker分岔.md](paper_060_忆阻Hénon映射隐藏Neimark-Sacker分岔.md) |
-| 061 | Parametric Analysis and Fractal-like Basins of Attraction by Modified Interpolated Cell Mapping | Ge Z-M, Tsen P-C, Lee S-C | 2002 | Journal of Sound and Vibration 253(3) | MICM扩展：大区域定位+参数分析+分形盆正不变集判定（10倍效率提升） | [paper_061_改进插值细胞映射参数分析与分形吸引盆.md](paper_061_改进插值细胞映射参数分析与分形吸引盆.md) |
+| 061 | Parametric Analysis and Fractal-like Basins of Attraction by Modified Interpolated Cell Mapping | Ge Z.-M., Tsen P-C., Lee S-C. | 2002 | Journal of Sound and Vibration 253(3) | MICM扩展：大区域定位+参数分析+分形盆正不变集判定（10倍效率提升） | [paper_061_改进插值细胞映射参数分析与分形吸引盆.md](paper_061_改进插值细胞映射参数分析与分形吸引盆.md) |
 | 062 | Communication Theory of Secrecy Systems | Shannon C E | 1949 | Bell System Technical Journal 28 | 现代密码学奠基：完美保密、疑义度、唯一解距离、扩散与混淆、TFS架构 | [paper_062_Shannon保密系统通信理论.md](paper_062_Shannon保密系统通信理论.md) |
 | 063 | Local exponential divergence plot and optimal embedding of a chaotic time series | Gao J, Zheng Z | 1993 | Physics Letters A 181(2) | 局部指数发散图：统一确定最优嵌入维数、延迟时间和最大Lyapunov指数 | [paper_063_局部指数发散图最优嵌入.md](paper_063_局部指数发散图最优嵌入.md) |
 | 064 | 动态猫变换和混沌映射的图像加密算法 | Han X, Li G | 2020 | 计算机工程与设计 41(3) | 分块置乱+动态多轮Arnold Cat Map+四混沌双扩散（Henon-Logistic/Henon/Tent/Logistic协同） | [paper_064_动态猫变换混沌映射图像加密.md](paper_064_动态猫变换混沌映射图像加密.md) |
 | 065 | 基于优化耦合映像格子的比特级图像加密方法 | Shen Q, Liu W B, Zhu Y J, Lin Y | 2020 | 测控技术 39(8) | OLM消除周期窗+OCML稳定全混沌+CS分级测量比特级加密（WSN图像加密） | [paper_065_优化耦合映像格子比特级图像加密.md](paper_065_优化耦合映像格子比特级图像加密.md) |
 | 066 | Fractional quantum Julia set | Wang Y | 2023 | Applied Mathematics and Computation 453 | 分数阶q-差分算子构建量子Julia集；记忆参数α影响外观，尺度参数q决定存在性；三种噪声（系统/记忆/尺度）差异化响应 | [paper_066_分数阶量子Julia集.md](paper_066_分数阶量子Julia集.md) |
-| 067 | Chaos in a novel Wien bridge-based RC chaotic oscillator: dynamic analysis with application to image encryption | Ramadoss J, Kengne J, Telem ANK, Tsafack N, Rajagopal K | 2022 | Analog Integr. Circ. Sig. Process. 112 | 反并联二极管对称非线性Wien桥RC混沌振荡器；气泡/反气泡分岔（反单调性）；Hahn正交矩+Knuth置换图像加密 | [paper_067_Wien桥RC混沌振荡器图像加密.md](paper_067_Wien桥RC混沌振荡器图像加密.md) |
+| 067 | Chaos in a novel Wien bridge-based RC chaotic oscillator: dynamic analysis with application in image encryption | Ramadoss J, Kengne J, Telem ANK, Tsafack N, Rajagopal K | 2022 | Analog Integr. Circ. Sig. Process. 112 | 反并联二极管对称非线性Wien桥RC混沌振荡器；气泡/反气泡分岔（反单调性）；Hahn正交矩+Knuth置换图像加密 | [paper_067_Wien桥RC混沌振荡器图像加密.md](paper_067_Wien桥RC混沌振荡器图像加密.md) |
 | 068 | New Fractal Sets Coined from Fractional Maps | Wang Y, Liu S, Li H | 2021 | Fractals 29(8) 2150270 | 三种分数阶算子（微分/差分/GL）生成新Julia集和Mandelbrot集；分数阶化判据+核函数分析+变阶数记忆 | [paper_068_分数阶映射生成新分形集.md](paper_068_分数阶映射生成新分形集.md) |
 | 069 | Dynamical analysis of a new 3D chaotic system: non-equilibrium point, conservative, rotationally hidden attractor | Zhao B, Ye X | 2024 | Physica Scripta 99 035241 | 基于Sprott-B改造的无平衡点保守混沌系统；旋转矩阵生成旋转隐藏吸引子；e^{-z^2}指数非线性增强；DSP硬件实现 | [paper_069_无平衡点保守旋转隐藏吸引子3D混沌系统.md](paper_069_无平衡点保守旋转隐藏吸引子3D混沌系统.md) |
 | 070 | A new one-dimensional chaotic system with applications in image encryption | Wang X, Li Y, Jin J | 2020 | Chaos, Solitons and Fractals 139 | 新型I1DS一维混沌系统（Logistic+Sin+取模融合，参数范围无限）；动态比特移位重组+同步置乱扩散(SSDO)图像加密 | [paper_070_I1DS一维混沌系统图像加密.md](paper_070_I1DS一维混沌系统图像加密.md) |
@@ -99,6 +99,16 @@
 | 088 | D-NTRU: More efficient and average-case IND-CPA secure NTRU variant | Wang B, Lei H, Hu Y | 2018 | Information Sciences 438 | D-NTRU格基公钥密码；双NTRU+一次性填充架构；标准模型IND-CPA安全；密文膨胀率降至2:1；加密速度2.5x提升 | [paper_088_D-NTRU高效IND-CPA安全NTRU变体.md](paper_088_D-NTRU高效IND-CPA安全NTRU变体.md) |
 | 089 | Dual neural network heterogeneous coupled complex multiscroll system with extreme multistability and its application in image encryption | Yin S, Li Z, Wang Q, Tan W, Wu X | 2026 | Nonlinear Dynamics | 双神经网络异质耦合复杂多涡卷系统(DNNHCMS)+极端多稳态+明文相关动态S盒图像加密 | [paper_089_双神经网络异质耦合多涡卷系统.md](paper_089_双神经网络异质耦合多涡卷系统.md) |
 | 090 | Expanded multi-scroll attractor system analysis and application for remote sensing image encryption | Qin M, Lai Q | 2024 | Applied Mathematical Modelling 125 | 扩展多涡卷混沌系统(EMSCS)：8项极简4维模型+多段函数k(z)生成N+2涡卷+幅度/偏置联控+遥感图像加密 | [paper_090_扩展多涡卷吸引子遥感图像加密.md](paper_090_扩展多涡卷吸引子遥感图像加密.md) |
+| 091 | Memristor-induced hyperchaos, multiscroll and extreme multistability in fractional-order HNN: Image encryption and FPGA implementation | Kong X, Yu F, Yao W, Cai S, Zhang J, Lin H | 2024 | Neural Networks 171 | 分数阶忆阻HNN超混沌多涡卷极端多稳态及FPGA完整加密实现 | [paper_091_分数阶忆阻HNN超混沌多涡卷极端多稳态.md](paper_091_分数阶忆阻HNN超混沌多涡卷极端多稳态.md) |
+| 092 | Multiscroll Hopfield neural network with extreme multistability and its application in video encryption for IIoT | Yu F, Lin Y, Yao W, Cai S, Lin H, Li Y | 2025 | Neural Networks 182 | 多卷积HNN三维极端多稳态及IIoT视频加密（树莓派链路+FPGA验证） | [paper_092_多卷积Hopfield神经网络三维极端多稳态工业物联网视频加密.md](paper_092_多卷积Hopfield神经网络三维极端多稳态工业物联网视频加密.md) |
+| 093 | Memristive Neural Network With Controllable Extreme Multistability and Its Application in Multi-Type Medical Multimedia Data Encryption | Leng X, Wang X, Zhang Z, Zeng Z | 2026 | IEEE TCSVT 36(8) | 可控极端多稳态忆阻神经网络及多类型医疗多媒体数据统一加密 | [paper_093_忆阻神经网络可控极端多稳态多类型医疗数据加密.md](paper_093_忆阻神经网络可控极端多稳态多类型医疗数据加密.md) |
+| 094 | A 5D Fractional-Order Dual-Memristor Hopfield Neural Network: Hidden Multi-Scroll Attractors, FPGA Implementation, and Image Encryption | Guo R, Yu F, Zhang D, Zheng M, Cai S | 2026 | Fractal and Fractional 10(9) 602 | 5D分数阶双忆阻HNN隐藏多涡卷吸引子+FPGA实现+图像加密 | [paper_094_分数阶双忆阻HNN隐藏多涡卷FPGA图像加密.md](paper_094_分数阶双忆阻HNN隐藏多涡卷FPGA图像加密.md) |
+| 095 | Harnessing Complex-Valued Chaos in Discrete-Time Hopfield Neural Network for Secure Image Encryption | Deng Q, Wang C, Sun Y, Yang G | 2026 | IEEE TCSVT 36(8) | 复值离散时间HNN超混沌+Brent周期检测+TestU01+FPGA图像加密 | [paper_095_复值离散HNN超混沌FPGA图像加密.md](paper_095_复值离散HNN超混沌FPGA图像加密.md) |
+| 096 | Memristive Multiring Rulkov Neuron Model With Hyperchaotic Firings and Application to Image Cryptosystem | Lv W, Zhang S, Wang Y, Wu Q, Ding X, Gao X | 2026 | IEEE TII 22(9) | 忆阻多环Rulkov神经元超混沌放电+STM32物理验证+图像密码系统 | [paper_096_忆阻多环Rulkov神经元超混沌放电STM32图像加密.md](paper_096_忆阻多环Rulkov神经元超混沌放电STM32图像加密.md) |
+| 097 | Image encryption algorithm based on 2D-CICFM using cross-granularity sinusoidal-Joseph coupled permutation and bidirectional interleaved-bitplane diffusion | Liu Y, Liu X | 2026 | Chaos, Solitons and Fractals 210 | 2D-CICFM跨粒度正弦-约瑟夫耦合置乱+双向交织位平面扩散图像加密 | [paper_097_二维CICFM跨粒度正弦约瑟夫耦合置乱双向交织位平面扩散图像加密.md](paper_097_二维CICFM跨粒度正弦约瑟夫耦合置乱双向交织位平面扩散图像加密.md) |
+| 098 | Injecting a Chaos-Based Image Encryption Scheme in the Hardware Domain of IIoT | Peng X, Li C-L, Li C | 2026 | IEEE TCAS-I 73(5) | IIoT硬件域混沌图像加密故障注入攻击（结构/状态/参数三类+VFI实测） | [paper_098_面向IIoT硬件域混沌图像加密故障注入攻击.md](paper_098_面向IIoT硬件域混沌图像加密故障注入攻击.md) |
+| 099 | A novel scheme for constructing grid multi-scroll chaotic systems applied to image encryption | Liu D, Yu G, Zhao Y, Ding Q | 2025 | Nonlinear Dynamics 113 | 网格多滚动混沌系统三步递进构造（Chua基座+忆阻替换+UVEM升维）及FPGA图像加密 | [paper_099_六维忆阻网格多滚动超混沌系统图像加密.md](paper_099_六维忆阻网格多滚动超混沌系统图像加密.md) |
+| 100 | Design and evaluation of a novel chaotic logistic-tent-sine map for S-box construction in image encryption | Alali A S, Jamil M K, Ali R, Alotaibi R, Albalawi W | 2026 | Chaos, Solitons and Fractals 211 | 混沌Logistic-Tent-Sine复合映射S盒构建与评估（NL=107.5/NIST存疑） | [paper_100_LTS混沌映射S盒构建与评估.md](paper_100_LTS混沌映射S盒构建与评估.md) |
 
 ---
 ## 🔬 研究方向脉络
@@ -662,7 +672,7 @@ Julia分形过程 (Gaston Julia, 1919)
 ### 离散忆阻器系统演进对比
 
 | 对比维度 | 003 - Bao et al. (2022) 并行双忆阻器 | 004 - Liu X et al. (2024) 离散忆阻器+忆感器 | **007 - Zhou et al. (2025) 异质同质多稳态** | **016 - Zhang et al. (2023) 初始增强极端多稳态** | **027 - Lai et al. (2022) 忆阻高斯映射** |
-|---------|-------------------------------------|------------------------------------------|---------------------------------------------|--------------------------------------------------|------------------------------------------|
+|---------|-------------------------------------|------------------------------------------|---------------------------------------------|--------------------------------------------------|-------------------------------------------|
 | **系统类型** | 并行双忆阻器超混沌映射 | 离散忆阻器+忆感器5-D超混沌映射 | **正弦-指数型离散忆阻器3-D超混沌映射** | **三角函数双忆阻器3-D超混沌映射** | **正弦忆阻器耦合高斯映射2-D超混沌** |
 | **维度** | 2维 | 5维 | **3维** | **3维** | **2维** |
 | **忆阻器模型** | 双忆阻器并行（二次型） | 离散忆阻器+离散忆感器 | **指数-正弦组合型忆阻器** | **正弦+正弦/正弦+余弦型忆阻器** | **正弦忆导离散忆阻器** |
@@ -699,4 +709,4 @@ Julia分形过程 (Gaston Julia, 1919)
 - [2026-09-19](updates/2026-09-19.md) — 新增论文090全文精读笔记 + 论文089升级为全文级
 - [历史更新归档（2026-06-07 ~ 2026-07-26）](updates/history.md)
 
-*最后更新：2026-09-19*
+*最后更新：2026-09-29（论文总数满 100 篇，论文表统一更新至 100）*
