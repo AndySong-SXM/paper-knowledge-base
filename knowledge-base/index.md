@@ -109,6 +109,27 @@
 | 098 | Injecting a Chaos-Based Image Encryption Scheme in the Hardware Domain of IIoT | Peng X, Li C-L, Li C | 2026 | IEEE TCAS-I 73(5) | IIoT硬件域混沌图像加密故障注入攻击（结构/状态/参数三类+VFI实测） | [paper_098_面向IIoT硬件域混沌图像加密故障注入攻击.md](paper_098_面向IIoT硬件域混沌图像加密故障注入攻击.md) |
 | 099 | A novel scheme for constructing grid multi-scroll chaotic systems applied to image encryption | Liu D, Yu G, Zhao Y, Ding Q | 2025 | Nonlinear Dynamics 113 | 网格多滚动混沌系统三步递进构造（Chua基座+忆阻替换+UVEM升维）及FPGA图像加密 | [paper_099_六维忆阻网格多滚动超混沌系统图像加密.md](paper_099_六维忆阻网格多滚动超混沌系统图像加密.md) |
 | 100 | Design and evaluation of a novel chaotic logistic-tent-sine map for S-box construction in image encryption | Alali A S, Jamil M K, Ali R, Alotaibi R, Albalawi W | 2026 | Chaos, Solitons and Fractals 211 | 混沌Logistic-Tent-Sine复合映射S盒构建与评估（NL=107.5/NIST存疑） | [paper_100_LTS混沌映射S盒构建与评估.md](paper_100_LTS混沌映射S盒构建与评估.md) |
+| 101 | Dynamics analysis and FPGA implementation of multi-scroll chaotic attractors in a memcapacitor-based Hopfield neural network | Wang D, Wang C, Yang G, Deng Q | 2026 | Nonlinear Dynamics 114:848 | 膜电容器HNN多滚动混沌吸引子动力学分析与FPGA实现 | [paper_101_膜电容器HNN多滚动混沌吸引子FPGA实现.md](paper_101_膜电容器HNN多滚动混沌吸引子FPGA实现.md) |
+| 102 | Bursting firings in memristive Hopfield neural network with image encryption and hardware implementation | Yu F, He S, Yao W, Cai S, Xu Q | 2025 | IEEE TCAD 44(12) | 忆阻HNN突发触发放电多涡卷+图像加密+FPGA实现 | [paper_102_忆阻HNN突发触发放电多涡卷图像加密FPGA实现.md](paper_102_忆阻HNN突发触发放电多涡卷图像加密FPGA实现.md) |
+| 103 | Post-Quantum Secure Lattice-Based Lightweight Authentication and Key Agreement Scheme for Multilayer IoT-Enabled Smart Grid System | Kumar G, Killi B R, Das A K, Park Y | 2026 | IEEE IoT J 13(11) | 后量子格基轻量级认证密钥协商（多层智能电网） | [paper_103_后量子格基轻量级认证密钥协商智能电网.md](paper_103_后量子格基轻量级认证密钥协商智能电网.md) |
+| 104 | Discrete two-memristor-based Hopfield neural network with grid-polyhedral hyperchaos for spatial-distribution-based pseudorandom number generator | Bao H, Wang R, Wang N, Chen M, Bao B | 2026 | Neural Networks 196:108340 | 离散双忆阻HNN网格多面体超混沌+FPGA伪随机数发生器 | [paper_104_离散双忆阻HNN网格多面体超混沌FPGA伪随机数发生器.md](paper_104_离散双忆阻HNN网格多面体超混沌FPGA伪随机数发生器.md) |
+| 105 | Generating grid hyperchaotic attractors for image encryption application | Xi M, Bao H, Su Y, Wang N, Bao B | 2025 | Nonlinear Dynamics 113(24) | 环面激活HNN网格分布共存超混沌吸引子+图像加密 | [paper_105_环面HNN网格分布共存超混沌图像加密.md](paper_105_环面HNN网格分布共存超混沌图像加密.md) |
+| 106 | Robust Hyperchaotic Attractor-Based Image Encryption and FPGA Implementation | Bao H, Fan Z, Zhang Y, Wang N, Chen M, Bao B | 2026 | IEEE IoT J 13(12) | 环面二维超混沌映射花瓣吸引子特征编码+FPGA鲁棒图像加密 | [paper_106_环面超混沌映射花瓣吸引子特征编码图像加密FPGA实现.md](paper_106_环面超混沌映射花瓣吸引子特征编码图像加密FPGA实现.md) |
+| 107 | An Effective Visually Meaningful Image Encryption Based on Compressive Sensing and Multiobjective Optimization Algorithm | Peng Y, Huang Z, Li Z, He S, Zou J | 2026 | IEEE IoT J 13(3) | 压缩感知+多目标优化视觉有意义图像加密 | [paper_107_压缩感知多目标优化视觉有意义图像加密.md](paper_107_压缩感知多目标优化视觉有意义图像加密.md) |
+| 108 | Dynamical analysis, FPGA implementation and optical remote sensing image sensitive targets encryption of locally active Memristive HNN | Liu S, Yan D, Yuan Y, Wang L, Wu J, Liu Z, Wang L, Duan S | 2026 | Chaos, Solitons and Fractals 209:118409 | 局部有源忆阻HNN动力学+FPGA+遥感敏感目标选区加密 | [paper_108_局部有源忆阻HNN动力学FPGA遥感敏感目标加密.md](paper_108_局部有源忆阻HNN动力学FPGA遥感敏感目标加密.md) |
+| 109 | Bistable discrete memristor-based hyperchaotic neuron model and hardware implementation for image encryption | Li J, Zhang S, Wang Z, Lu S, Ding X | 2026 | Chaos, Solitons and Fractals 210:118719 | 双稳态离散忆阻器超混沌神经元模型+硬件图像加密 | [paper_109_双稳态离散忆阻器超混沌神经元模型与硬件图像加密.md](paper_109_双稳态离散忆阻器超混沌神经元模型与硬件图像加密.md) |
+| 110 | Dual Memristor-coupled Unidirectional Ring Neural Network: Abundant Hidden Firings and Application in Hardware Image Encryption | Li B, Zhang S, Wang J, Chen C, Ding X | 2026 | IEEE IoT J 13(10) | 双忆阻器耦合单向环形神经网络丰富隐藏放电+硬件图像加密 | [paper_110_双忆阻器耦合单向环形神经网络丰富隐藏放电与硬件图像加密.md](paper_110_双忆阻器耦合单向环形神经网络丰富隐藏放电与硬件图像加密.md) |
+| 111 | Block-Wise Random Diffusion Encryption Using 4-D Dynamic Feedback Memristive Chaotic System | Xia J, Zeng W, Zhang C, Li Y, Liang X, Lin Y, Qiu K | 2026 | IEEE Trans. Consumer Electronics 72(1) | 4D动态反馈忆阻混沌系统+ECDHE密钥协商+块级随机扩散加密 | [paper_111_4D动态反馈忆阻混沌系统块状随机扩散加密.md](paper_111_4D动态反馈忆阻混沌系统块状随机扩散加密.md) |
+| 112 | Chaos-based video encryption techniques: A review | Gao S, Wu R, Iu HHC, Erkan U, Cao Y, Li Q, Toktas A, Mou J | 2025 | Computer Science Review 58:100816 | 混沌视频加密技术综述 | [paper_112_混沌视频加密技术综述.md](paper_112_混沌视频加密技术综述.md) |
+| 113 | Three-Dimensional Discrete Heterogeneous-Neuron HNN and Hardware Image Encryption | Yuan Y, Yan D, Cao Z, Jiang Q, Wang L, Duan S | 2026 | Nonlinear Dynamics 114:290 | 三维离散异质神经元HNN+硬件图像加密 | [paper_113_三维离散异质神经元HNN硬件图像加密.md](paper_113_三维离散异质神经元HNN硬件图像加密.md) |
+| 114 | Dynamics in a memristive neural network with three discrete heterogeneous neurons and its application | Luo D, Wang C, Deng Q, Sun Y | 2025 | Nonlinear Dynamics 113(6) | 三离散异质神经元忆阻神经网络动力学+GAN应用 | [paper_114_三离散异质神经元忆阻神经网络动力学及GAN应用.md](paper_114_三离散异质神经元忆阻神经网络动力学及GAN应用.md) |
+| 115 | A discrete memristive heterogeneous Hopfield neural network with multi-penguin-like/silkworm-like attractors and its application in secure communication | Yang G, Wang C, Sun Y, Deng Q | 2026 | Nonlinear Dynamics 114:259 | 离散忆阻异质激活HNN多企鹅/蚕形吸引子+RM-DCSK安全通信 | [paper_115_离散忆阻异质激活HNN多企鹅蚕形吸引子RM-DCSK安全通信.md](paper_115_离散忆阻异质激活HNN多企鹅蚕形吸引子RM-DCSK安全通信.md) |
+| 116 | A universal discrete multi-attractor chaotic system framework: Construction, analysis and application | Yuan F, Li R, Deng Y, Li Y, Chen G | 2026 | Chaos, Solitons and Fractals 206:117875 | 通用离散多吸引子混沌系统框架+COTP动态口令应用 | [paper_116_通用离散多吸引子混沌系统框架与COTP.md](paper_116_通用离散多吸引子混沌系统框架与COTP.md) |
+| 117 | A Class of Discrete Memristive Hyperchaotic Maps With Multicavity Multistructure Attractors and Its Application in Secure Communication | Yang G, Wang C, Sun Y, Deng Q | 2026 | IEEE TII 22(6) | 一类离散忆阻超混沌映射多腔多结构吸引子+RS-DCSK安全通信 | [paper_117_离散忆阻超混沌映射多腔多结构吸引子RS-DCSK安全通信.md](paper_117_离散忆阻超混沌映射多腔多结构吸引子RS-DCSK安全通信.md) |
+| 118 | Encrypt a Story: A video segment encryption method based on the discrete sinusoidal memristive Rulkov neuron | Gao S, Zhang Z, Li Q, Ding S, Iu HHC, Cao Y, Xu X, Wang C, Mou J | 2025 | IEEE TDSC 22(6) | EAS叙事视频分段加密（离散正弦忆阻Rulkov神经元） | [paper_118_EAS视频分段加密离散正弦忆阻Rulkov神经元.md](paper_118_EAS视频分段加密离散正弦忆阻Rulkov神经元.md) |
+| 119 | Discrete bidirectional memristive neural network-based hyperchaotic system and its FPGA implementation | Wang C, Gong Z, Deng Q | 2026 | Neural Networks 201:108887 | 离散双向忆阻神经网络(BAM)超混沌系统+FPGA实现 | [paper_119_离散双向忆阻神经网络超混沌系统FPGA实现.md](paper_119_离散双向忆阻神经网络超混沌系统FPGA实现.md) |
+| 120 | A Fast Multi-Image Encryption Scheme Using Hyperchaotic Map and Parallel Algorithm for Vehicle Detection Applications | Lai Q, Miao B | 2026 | IEEE IoT J 13(9):19590-19599 | 双忆阻指数映射3D-DMEM并行多图像加密+车辆检测（原误编101，2026-10-26更正为120） | [paper_120_快速多图像加密超混沌映射并行算法车辆检测.md](paper_120_快速多图像加密超混沌映射并行算法车辆检测.md) |
+| 121 | 基于离散忆阻器的复值混沌系统动力学分析及其在双图像加密中的应用 | 邓全利, 王春华(通讯), 杨港 | 2026 | 物理学报 75(1):010003 | 离散忆阻复值高斯混沌(MCVGM)+对偶对称性+FPGA+双图像复值加密 | [paper_121_离散忆阻复值高斯混沌系统双图像加密.md](paper_121_离散忆阻复值高斯混沌系统双图像加密.md) |
 
 ---
 ## 🔬 研究方向脉络
@@ -672,7 +693,7 @@ Julia分形过程 (Gaston Julia, 1919)
 ### 离散忆阻器系统演进对比
 
 | 对比维度 | 003 - Bao et al. (2022) 并行双忆阻器 | 004 - Liu X et al. (2024) 离散忆阻器+忆感器 | **007 - Zhou et al. (2025) 异质同质多稳态** | **016 - Zhang et al. (2023) 初始增强极端多稳态** | **027 - Lai et al. (2022) 忆阻高斯映射** |
-|---------|-------------------------------------|------------------------------------------|---------------------------------------------|--------------------------------------------------|-------------------------------------------|
+|---------|-------------------------------------|------------------------------------------|---------------------------------------------|--------------------------------------------------|------------------------------------------|
 | **系统类型** | 并行双忆阻器超混沌映射 | 离散忆阻器+忆感器5-D超混沌映射 | **正弦-指数型离散忆阻器3-D超混沌映射** | **三角函数双忆阻器3-D超混沌映射** | **正弦忆阻器耦合高斯映射2-D超混沌** |
 | **维度** | 2维 | 5维 | **3维** | **3维** | **2维** |
 | **忆阻器模型** | 双忆阻器并行（二次型） | 离散忆阻器+离散忆感器 | **指数-正弦组合型忆阻器** | **正弦+正弦/正弦+余弦型忆阻器** | **正弦忆导离散忆阻器** |
@@ -707,6 +728,8 @@ Julia分形过程 (Gaston Julia, 1919)
 > 自 2026-09-19 起，每日更新详情拆分到 [updates/](updates/) 目录，本文件只保留论文总表与研究脉络。
 
 - [2026-09-19](updates/2026-09-19.md) — 新增论文090全文精读笔记 + 论文089升级为全文级
+- [2026-10-25](updates/2026-10-25.md) — paper_119；120 节点预告
+- [2026-10-26](updates/2026-10-26.md) — paper_121（物理学报）；120 节点总表统一更新至 121；paper_101 重号更正（Lai 篇 → paper_120）
 - [历史更新归档（2026-06-07 ~ 2026-07-26）](updates/history.md)
 
-*最后更新：2026-09-29（论文总数满 100 篇，论文表统一更新至 100）*
+*最后更新：2026-10-26（论文总数 121 篇，论文表统一更新至 121；重号更正：原 paper_101 之 Lai & Miao 车检多图加密改号为 paper_120）*
