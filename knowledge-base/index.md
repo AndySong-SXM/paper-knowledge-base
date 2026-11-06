@@ -130,6 +130,15 @@
 | 119 | Discrete bidirectional memristive neural network-based hyperchaotic system and its FPGA implementation | Wang C, Gong Z, Deng Q | 2026 | Neural Networks 201:108887 | 离散双向忆阻神经网络(BAM)超混沌系统+FPGA实现 | [paper_119_离散双向忆阻神经网络超混沌系统FPGA实现.md](paper_119_离散双向忆阻神经网络超混沌系统FPGA实现.md) |
 | 120 | A Fast Multi-Image Encryption Scheme Using Hyperchaotic Map and Parallel Algorithm for Vehicle Detection Applications | Lai Q, Miao B | 2026 | IEEE IoT J 13(9):19590-19599 | 双忆阻指数映射3D-DMEM并行多图像加密+车辆检测（原误编101，2026-10-26更正为120） | [paper_120_快速多图像加密超混沌映射并行算法车辆检测.md](paper_120_快速多图像加密超混沌映射并行算法车辆检测.md) |
 | 121 | 基于离散忆阻器的复值混沌系统动力学分析及其在双图像加密中的应用 | 邓全利, 王春华(通讯), 杨港 | 2026 | 物理学报 75(1):010003 | 离散忆阻复值高斯混沌(MCVGM)+对偶对称性+FPGA+双图像复值加密 | [paper_121_离散忆阻复值高斯混沌系统双图像加密.md](paper_121_离散忆阻复值高斯混沌系统双图像加密.md) |
+| 122 | Discrete Memristive Hopfield Neural Network With Multi-Stripe/Wave Hyperchaos | Bao H, Wang R, Tang H, Chen M, Bao B | 2025 | IEEE IoT J 12(12):20902-20912 | 离散忆阻HNN多条纹/波超混沌（三角波内态函数工程+FPGA PRLG） | [paper_122_离散忆阻Hopfield神经网络多条纹波超混沌.md](paper_122_离散忆阻Hopfield神经网络多条纹波超混沌.md) |
+| 123 | Differential photonic quantum memristor–modulated Hopfield neural network with secure IoMT federated learning | Sağbaş M, Minaei S | 2026 | Chaos, Solitons and Fractals 210:118677 | 差分光子量子忆阻HNN+IoMT联邦学习安全（Table 1式LE稳健性自我证伪） | [paper_123_差分光子量子忆阻HNN与IoMT联邦学习安全.md](paper_123_差分光子量子忆阻HNN与IoMT联邦学习安全.md) |
+| 124 | A discrete memristive heterogeneous neural network with grid multi-windmill hyperchaotic attractors and application in secure communication | Yang G, Wang C, Sun Y, Deng Q | 2026 | Mathematics and Computers in Simulation 249:727-743 | 离散忆阻异质神经网络网格多风车型超混沌+安全通信（六正LE宣称） | [paper_124_离散忆阻异质神经网络网格多风车型超混沌安全通信.md](paper_124_离散忆阻异质神经网络网格多风车型超混沌安全通信.md) |
+| 125 | Discrete Memristive Conservative Chaotic Map: Dynamics, Hardware Implementation, and Application in Secure Communication | Deng Q, Wang C, Sun Y, Yang G | 2025 | IEEE Trans. Cybernetics (Early Access) | 离散忆阻保守混沌映射（det(J)≡1骨架构造+RS-DCSK，首个DMCM） | [paper_125_离散忆阻保守混沌映射动力学硬件实现及安全通信.md](paper_125_离散忆阻保守混沌映射动力学硬件实现及安全通信.md) |
+| 126 | Two-Dimensional Cyclic Chaotic System for Noise-Reduced OFDM-DCSK Communication | Hua Z, Wu Z, Zhang Y, Bao H, Zhou Y | 2025 | IEEE TCAS-I 72(1):323-336 | 二维循环混沌系统降噪OFDM-DCSK通信（Gershgorin可证明超混沌+TestU01八电池） | [paper_126_二维循环混沌系统降噪OFDM-DCSK通信.md](paper_126_二维循环混沌系统降噪OFDM-DCSK通信.md) |
+| 127 | A hidden multiwing memristive neural network and its application in remote sensing data security | Ding S, Lin H, Deng X, Yao W, Jin J | 2025 | Expert Systems With Applications 277:127168 | 隐藏多翼忆阻神经网络遥感数据安全（2N翼律+DNA块间链式扩散） | [paper_127_隐藏多翼忆阻神经网络遥感数据安全.md](paper_127_隐藏多翼忆阻神经网络遥感数据安全.md) |
+| 128 | Discrete Memristive Hopfield Neural Network and Application in Memristor-State-Based Encryption | Bao H, Fan J, Hua Z, Xu Q, Bao B | 2025 | IEEE IoT J 12(15):31843-31855 | 离散忆阻HNN忆阻器内态加密（ILT查找表+风车形吸引子+FPGA） | [paper_128_离散忆阻Hopfield神经网络与忆阻状态加密.md](paper_128_离散忆阻Hopfield神经网络与忆阻状态加密.md) |
+| 129 | A Discrete Memristive Hopfield Neural Network With Grid Multi-Structure/Scroll-Like Attractors | Yang G, Wang C, Sun Y, Deng Q | 2026 | IEEE TCAD 45(10):4853-4862 | 离散忆阻HNN网格多结构/滚动型吸引子（形态目录+PRNG+FPGA） | [paper_129_网格多结构滚动型吸引子离散忆阻Hopfield神经网络.md](paper_129_网格多结构滚动型吸引子离散忆阻Hopfield神经网络.md) |
+| 130 | Discrete memristive hyperchaotic maps with high Lyapunov exponents | Luo D, Wang C, Deng Q, Yang G | 2025 | Nonlinear Dynamics 113(20):28381-28395 | 高LE离散忆阻超混沌映射（三类DM模型+32周期激励+FPGA+NIST） | [paper_130_高Lyapunov指数离散忆阻超混沌映射.md](paper_130_高Lyapunov指数离散忆阻超混沌映射.md) |
 
 ---
 ## 🔬 研究方向脉络
@@ -730,6 +739,7 @@ Julia分形过程 (Gaston Julia, 1919)
 - [2026-09-19](updates/2026-09-19.md) — 新增论文090全文精读笔记 + 论文089升级为全文级
 - [2026-10-25](updates/2026-10-25.md) — paper_119；120 节点预告
 - [2026-10-26](updates/2026-10-26.md) — paper_121（物理学报）；120 节点总表统一更新至 121；paper_101 重号更正（Lai 篇 → paper_120）
+- [2026-11-07](updates/2026-11-07.md) — paper_130（高LE离散忆阻超混沌映射）；130 节点总表统一更新至 130（补登 122–130）
 - [历史更新归档（2026-06-07 ~ 2026-07-26）](updates/history.md)
 
-*最后更新：2026-10-26（论文总数 121 篇，论文表统一更新至 121；重号更正：原 paper_101 之 Lai & Miao 车检多图加密改号为 paper_120）*
+*最后更新：2026-11-07（论文总数 130 篇，论文表统一更新至 130）*
