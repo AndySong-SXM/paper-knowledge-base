@@ -139,6 +139,16 @@
 | 128 | Discrete Memristive Hopfield Neural Network and Application in Memristor-State-Based Encryption | Bao H, Fan J, Hua Z, Xu Q, Bao B | 2025 | IEEE IoT J 12(15):31843-31855 | 离散忆阻HNN忆阻器内态加密（ILT查找表+风车形吸引子+FPGA） | [paper_128_离散忆阻Hopfield神经网络与忆阻状态加密.md](paper_128_离散忆阻Hopfield神经网络与忆阻状态加密.md) |
 | 129 | A Discrete Memristive Hopfield Neural Network With Grid Multi-Structure/Scroll-Like Attractors | Yang G, Wang C, Sun Y, Deng Q | 2026 | IEEE TCAD 45(10):4853-4862 | 离散忆阻HNN网格多结构/滚动型吸引子（形态目录+PRNG+FPGA） | [paper_129_网格多结构滚动型吸引子离散忆阻Hopfield神经网络.md](paper_129_网格多结构滚动型吸引子离散忆阻Hopfield神经网络.md) |
 | 130 | Discrete memristive hyperchaotic maps with high Lyapunov exponents | Luo D, Wang C, Deng Q, Yang G | 2025 | Nonlinear Dynamics 113(20):28381-28395 | 高LE离散忆阻超混沌映射（三类DM模型+32周期激励+FPGA+NIST） | [paper_130_高Lyapunov指数离散忆阻超混沌映射.md](paper_130_高Lyapunov指数离散忆阻超混沌映射.md) |
+| 131 | Pre-driven and post-gated memristive Hopfield network: Dynamics, FPGA realization and image encryption | Xiong Z, Sun J, He J, Yu F, Sun Y | 2027 | Neural Networks 205:109690 | 预驱动与后门控忆阻Hopfield网络（前驱动-后门控忆阻突触+FPGA+图像加密） | [paper_131_预驱动与后门控忆阻Hopfield网络.md](paper_131_预驱动与后门控忆阻Hopfield网络.md) |
+| 132 | A Novel Hybrid Medical Image Encryption Scheme Based on Memristive Chaos and DNA-ARX-3DES with Real-Time Implementation | Suzgen E E, Şahin M E, Ulutaş H | 2026 | Scientific Reports 16:6230 | 忆阻混沌DNA-ARX-3DES混合医学图像加密（四层管线+Jetson Nano/PYNQ-Z1实时实现） | [paper_132_忆阻混沌DNA-ARX-3DES混合医学图像加密.md](paper_132_忆阻混沌DNA-ARX-3DES混合医学图像加密.md) |
+| 133 | An image encryption algorithm based on memristive chaotic neuron in medical internet of things environments | Yu Z, Zhu K, Song X, Yang F | 2026 | Engineering Applications of Artificial Intelligence 173:114371 | 忆阻混沌神经元医疗物联网图像加密（四叉树自适应分块置乱+动态S-box+螺旋链式扩散） | [paper_133_忆阻混沌神经元医疗物联网图像加密.md](paper_133_忆阻混沌神经元医疗物联网图像加密.md) |
+| 134 | Multi-structural attractor generation and FPGA implementation of reconfigurable memristor-based dual-pathway Hopfield neural networks | Wu X, Gao S, Erkan U, Toktas A, Iu H H-C, Mou J | 2026 | Chaos, Solitons and Fractals 211:118823 | 可重构忆阻双通路HNN多结构吸引子FPGA（R+L+2规则+方向偏置+2–6涡卷共存） | [paper_134_可重构忆阻双通路HNN多结构吸引子FPGA实现.md](paper_134_可重构忆阻双通路HNN多结构吸引子FPGA实现.md) |
+| 135 | Exploring uncharted dynamics of a novel memristive Hopfield network with a dGaussian activation function | Tan A, Song H, Chai Y, Wang T, Yan Z, Zhu R | 2026 | Chaos, Solitons and Fractals 206:117925 | dGaussian激活忆阻HNN未探明动力学（非单调激活+Lambert W平衡点工程+LTspice/FPGA） | [paper_135_dGaussian激活忆阻Hopfield网络动力学.md](paper_135_dGaussian激活忆阻Hopfield网络动力学.md) |
+| 136 | Medical Data Security in Blockchain: A Telemedicine Data Sharing Scheme Based on Custom OPE and 4D-YG Hyperchaotic | Man Z, Gao C, Yu Z, Meng X | 2026 | IEEE TCSVT 36(6):8888-8900 | 自定义OPE与4D-YG超混沌区块链医疗数据共享（分级解密+密文态可诊断+FOMT算法） | [paper_136_自定义OPE与4D-YG超混沌区块链医疗数据共享方案.md](paper_136_自定义OPE与4D-YG超混沌区块链医疗数据共享方案.md) |
+| 137 | Fractal sorting matrix and its application on chaotic image encryption | Xian Y, Wang X | 2021 | Information Sciences 547:1154-1169 | 分形排序矩阵与全局混沌像素扩散（FSM分层秩置换+双序列值-位置分离扩散） | [paper_137_分形排序矩阵与全局混沌像素扩散图像加密.md](paper_137_分形排序矩阵与全局混沌像素扩散图像加密.md) |
+| 138 | 3D Non-Degenerate Hyperchaos: Design, Analysis, and Application in Image Encryption | Lin Y, Liao Y, Zeng W, Wei Y, Chen D | 2026 | IEEE Trans. Consumer Electronics (Early Access) | 3D非退化超混沌+混沌驱动3D S-box+384规则基因编码加密（三正LE+明文哈希派生密钥） | [paper_138_3D非退化超混沌与混沌驱动3DS盒基因编码图像加密.md](paper_138_3D非退化超混沌与混沌驱动3DS盒基因编码图像加密.md) |
+| 139 | Constructing Multiscroll Memristive Neural Network With Local Activity Memristor and Application in Image Encryption | Lai Q, Yang L, Hu G, Guan Z-H, Iu H H-C | 2024 | IEEE Trans. Cybernetics 54(7):4039-4048 | 局部活动忆阻器多滚动忆阻HNN（Sigmoid阶梯忆阻器+STM32+像素级bit-layering加密） | [paper_139_局部活动忆阻器多滚动忆阻HNN图像加密.md](paper_139_局部活动忆阻器多滚动忆阻HNN图像加密.md) |
+| 140 | Design and application of spatial multi-structure hidden attractors in memristor-coupled heterogeneous neural networks | Zhang J, Yang L, Zuo J, Wei X, Cheng N | 2025 | Chaos, Solitons and Fractals 199:116662 | 忆阻耦合异质神经网络空间多结构隐藏吸引子（1D/2D/3D-MSHAs+幅度控制+CSK低信噪比通信） | [paper_140_忆阻耦合异质神经网络空间多结构隐藏吸引子.md](paper_140_忆阻耦合异质神经网络空间多结构隐藏吸引子.md) |
 
 ---
 ## 🔬 研究方向脉络
@@ -740,6 +750,7 @@ Julia分形过程 (Gaston Julia, 1919)
 - [2026-10-25](updates/2026-10-25.md) — paper_119；120 节点预告
 - [2026-10-26](updates/2026-10-26.md) — paper_121（物理学报）；120 节点总表统一更新至 121；paper_101 重号更正（Lai 篇 → paper_120）
 - [2026-11-07](updates/2026-11-07.md) — paper_130（高LE离散忆阻超混沌映射）；130 节点总表统一更新至 130（补登 122–130）
+- [2026-11-17](updates/2026-11-17.md) — paper_140（忆阻耦合异质神经网络空间多结构隐藏吸引子）；140 节点总表统一更新至 140（补登 131–140）
 - [历史更新归档（2026-06-07 ~ 2026-07-26）](updates/history.md)
 
-*最后更新：2026-11-07（论文总数 130 篇，论文表统一更新至 130）*
+*最后更新：2026-11-17（论文总数 140 篇，论文表统一更新至 140）*
